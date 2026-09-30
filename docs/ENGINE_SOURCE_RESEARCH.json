@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "repositories": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-09-30T09:20:05.329161+00:00",
+    "source": "Real GitHub repository and default-branch commit API responses; sanitized selected fields, no author identity or email",
+    "repositories": [
+      {
+        "repository": "uoftcprg/pokerkit",
+        "url": "https://github.com/uoftcprg/pokerkit",
+        "defaultBranch": "main",
+        "archived": false,
+        "language": "Python",
+        "githubLicense": "MIT",
+        "pushedAt": "2026-09-21T15:21:10Z",
+        "revision": "b2fcc75c05ac43b210dd7e5ea71c0bd2f82ac3d6",
+        "commitDate": "2026-09-21T15:20:16Z",
+        "commitSubject": "Add Leduc and Numeral211 Hold'em"
+      },
+      {
+        "repository": "andrewprock/pokerstove",
+        "url": "https://github.com/andrewprock/pokerstove",
+        "defaultBranch": "master",
+        "archived": false,
+        "language": "C++",
+        "githubLicense": "BSD-3-Clause",
+        "pushedAt": "2024-12-14T02:14:37Z",
+        "revision": "ae377e23cfd0cf2a5e2cdc11891a93307a30a65d",
+        "commitDate": "2024-12-14T02:13:28Z",
+        "commitSubject": "remove unused gtest build info in root CMakeLists.txt"
+      },
+      {
+        "repository": "b-inary/desktop-postflop",
+        "url": "https://github.com/b-inary/desktop-postflop",
+        "defaultBranch": "main",
+        "archived": false,
+        "language": "Vue",
+        "githubLicense": "AGPL-3.0",
+        "pushedAt": "2023-11-13T10:57:10Z",
+        "revision": "0c15f97f204e5533b09cd83fda5939c110a98e75",
+        "commitDate": "2023-10-01T13:23:17Z",
+        "commitSubject": "v0.2.7"
+      },
+      {
+        "repository": "b-inary/postflop-solver",
+        "url": "https://github.com/b-inary/postflop-solver",
+        "defaultBranch": "main",
+        "archived": false,
+        "language": "Rust",
+        "githubLicense": "AGPL-3.0",
+        "pushedAt": "2024-07-09T07:11:20Z",
+        "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+        "commitDate": "2023-10-01T12:59:55Z",
+        "commitSubject": "docs: update README"
+      },
+      {
+        "repository": "b-inary/wasm-postflop",
+        "url": "https://github.com/b-inary/wasm-postflop",
+        "defaultBranch": "main",
+        "archived": false,
+        "language": "Vue",
+        "githubLicense": "AGPL-3.0",
+        "pushedAt": "2023-10-01T13:10:48Z",
+        "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+        "commitDate": "2023-10-01T13:10:31Z",
+        "commitSubject": "v0.2.7"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "url": "https://github.com/datamllab/rlcard",
+        "defaultBranch": "master",
+        "archived": false,
+        "language": "Python",
+        "githubLicense": "MIT",
+        "pushedAt": "2024-06-26T23:01:52Z",
+        "revision": "d7d0a957baf4cc7225a50522adb0164bf130a9d0",
+        "commitDate": "2024-06-26T23:01:52Z",
+        "commitSubject": "Update README.md"
+      }
+    ]
+  },
+  "sourceFiles": {
+    "checkedAt": "2026-09-30T09:25:17.572516+00:00",
+    "files": [
+      {
+        "repository": "uoftcprg/pokerkit",
+        "revision": "b2fcc75c05ac43b210dd7e5ea71c0bd2f82ac3d6",
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/uoftcprg/pokerkit/b2fcc75c05ac43b210dd7e5ea71c0bd2f82ac3d6/LICENSE",
+        "bytes": 1130,
+        "sha256": "d9cec800feb20933ba04f8b980f4f578ce24d72e1c5a42793969726f682c846b",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "uoftcprg/pokerkit",
+        "revision": "b2fcc75c05ac43b210dd7e5ea71c0bd2f82ac3d6",
+        "path": "setup.py",
+        "url": "https://raw.githubusercontent.com/uoftcprg/pokerkit/b2fcc75c05ac43b210dd7e5ea71c0bd2f82ac3d6/setup.py",
+        "bytes": 2183,
+        "sha256": "c2a65b2e7535ccf867e3e821d309a440449cc95b6912b7ad1aaec8e3ca893bbf",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "uoftcprg/pokerkit",
+        "revision": "b2fcc75c05ac43b210dd7e5ea71c0bd2f82ac3d6",
+        "path": "pokerkit/hands.py",
+        "url": "https://raw.githubusercontent.com/uoftcprg/pokerkit/b2fcc75c05ac43b210dd7e5ea71c0bd2f82ac3d6/pokerkit/hands.py",
+        "bytes": 25009,
+        "sha256": "8bd1877b4b14c8ec1162742723e5daf9efb52e3d43d99fe871af9c5fed931fa9",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "andrewprock/pokerstove",
+        "revision": "ae377e23cfd0cf2a5e2cdc11891a93307a30a65d",
+        "path": "LICENSE.txt",
+        "url": "https://raw.githubusercontent.com/andrewprock/pokerstove/ae377e23cfd0cf2a5e2cdc11891a93307a30a65d/LICENSE.txt",
+        "bytes": 1505,
+        "sha256": "bb4d7d0c00a750375a751bf3087e632937138c151b720ccad00461dfbbfdce5d",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "andrewprock/pokerstove",
+        "revision": "ae377e23cfd0cf2a5e2cdc11891a93307a30a65d",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/andrewprock/pokerstove/ae377e23cfd0cf2a5e2cdc11891a93307a30a65d/README.md",
+        "bytes": 6248,
+        "sha256": "5c7d4ae8bfe68dc2da7c1b06527404b62fadee1c883f72d6f91edc1ad33710f1",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "andrewprock/pokerstove",
+        "revision": "ae377e23cfd0cf2a5e2cdc11891a93307a30a65d",
+        "path": "CMakeLists.txt",
+        "url": "https://raw.githubusercontent.com/andrewprock/pokerstove/ae377e23cfd0cf2a5e2cdc11891a93307a30a65d/CMakeLists.txt",
+        "bytes": 1548,
+        "sha256": "c13877f0c122c6fb01b8337e453fdbdfc466a7231f0c414ac2e376be280141a3",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "andrewprock/pokerstove",
+        "revision": "ae377e23cfd0cf2a5e2cdc11891a93307a30a65d",
+        "path": "src/lib/pokerstove/peval/PokerHandEvaluator.h",
+        "url": "https://raw.githubusercontent.com/andrewprock/pokerstove/ae377e23cfd0cf2a5e2cdc11891a93307a30a65d/src/lib/pokerstove/peval/PokerHandEvaluator.h",
+        "bytes": 6934,
+        "sha256": "f90c149311d81e8fcb7587164e6bf0b9d9fe4e9b1f0cb71b2a3a948d990bfc6d",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/desktop-postflop",
+        "revision": "0c15f97f204e5533b09cd83fda5939c110a98e75",
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/b-inary/desktop-postflop/0c15f97f204e5533b09cd83fda5939c110a98e75/LICENSE",
+        "bytes": 34523,
+        "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/desktop-postflop",
+        "revision": "0c15f97f204e5533b09cd83fda5939c110a98e75",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/b-inary/desktop-postflop/0c15f97f204e5533b09cd83fda5939c110a98e75/README.md",
+        "bytes": 5033,
+        "sha256": "96cea069fa1fb2fbb05cefe5cc885aa606ba295940c9d23d7104b8fceb5e93f9",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/desktop-postflop",
+        "revision": "0c15f97f204e5533b09cd83fda5939c110a98e75",
+        "path": "package.json",
+        "url": "https://raw.githubusercontent.com/b-inary/desktop-postflop/0c15f97f204e5533b09cd83fda5939c110a98e75/package.json",
+        "bytes": 1103,
+        "sha256": "667cd24c185c9c86bf71eeed041e01da2ad64259c2266ff2dd42bb00b2dc266c",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/desktop-postflop",
+        "revision": "0c15f97f204e5533b09cd83fda5939c110a98e75",
+        "path": "src-tauri/Cargo.toml",
+        "url": "https://raw.githubusercontent.com/b-inary/desktop-postflop/0c15f97f204e5533b09cd83fda5939c110a98e75/src-tauri/Cargo.toml",
+        "bytes": 1218,
+        "sha256": "87042afb3c5ce595a74dc1df6c9ef983531f5f7f57f54be227472f6615be9d33",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/postflop-solver",
+        "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/LICENSE",
+        "bytes": 34523,
+        "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/postflop-solver",
+        "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/README.md",
+        "bytes": 4995,
+        "sha256": "aa517e067eb0b9e3d474d5ff39e05d788e29e7b5c60e6594bd0627bbf906aa36",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/postflop-solver",
+        "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+        "path": "Cargo.toml",
+        "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/Cargo.toml",
+        "bytes": 661,
+        "sha256": "2b7f563ac5db2bbf86224c0074c9988f326ebe55775818767ca62c89ff6de7d8",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/postflop-solver",
+        "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+        "path": "src/interface.rs",
+        "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/src/interface.rs",
+        "bytes": 7889,
+        "sha256": "4ae05741395c191480b4fac24dfc7eefca5818ef8370b7c1511a984350de4469",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/wasm-postflop",
+        "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/b-inary/wasm-postflop/97360db7644329b1c23a7adf06e9aa59406e4d4b/LICENSE",
+        "bytes": 34523,
+        "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/wasm-postflop",
+        "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/b-inary/wasm-postflop/97360db7644329b1c23a7adf06e9aa59406e4d4b/README.md",
+        "bytes": 6622,
+        "sha256": "34d3b6c59c2b7d753b5c9f17d11a94d52031d7b72c636cb0546481b4facaaf92",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/wasm-postflop",
+        "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+        "path": "package.json",
+        "url": "https://raw.githubusercontent.com/b-inary/wasm-postflop/97360db7644329b1c23a7adf06e9aa59406e4d4b/package.json",
+        "bytes": 1922,
+        "sha256": "ae2705a17b38dcd249bf4e6fe71ee91b3568a981f91adf74c4cbce711da0a35f",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/wasm-postflop",
+        "path": "src-tauri/Cargo.toml",
+        "url": "https://raw.githubusercontent.com/b-inary/wasm-postflop/97360db7644329b1c23a7adf06e9aa59406e4d4b/src-tauri/Cargo.toml",
+        "status": "UNAVAILABLE",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/datamllab/rlcard/d7d0a957baf4cc7225a50522adb0164bf130a9d0/LICENSE",
+        "status": "UNAVAILABLE",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "revision": "d7d0a957baf4cc7225a50522adb0164bf130a9d0",
+        "path": "setup.py",
+        "url": "https://raw.githubusercontent.com/datamllab/rlcard/d7d0a957baf4cc7225a50522adb0164bf130a9d0/setup.py",
+        "bytes": 1831,
+        "sha256": "456bca2e9b1c93b5873d295276dc1bf8524ef9c466c766e6bf15df0e20c9fda2",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "revision": "d7d0a957baf4cc7225a50522adb0164bf130a9d0",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/datamllab/rlcard/d7d0a957baf4cc7225a50522adb0164bf130a9d0/README.md",
+        "bytes": 23665,
+        "sha256": "4036700ed4519ccf0494fb97991dc5cc482da185a4a01390ff1250ad92a46b21",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "revision": "d7d0a957baf4cc7225a50522adb0164bf130a9d0",
+        "path": "rlcard/envs/nolimitholdem.py",
+        "url": "https://raw.githubusercontent.com/datamllab/rlcard/d7d0a957baf4cc7225a50522adb0164bf130a9d0/rlcard/envs/nolimitholdem.py",
+        "bytes": 4040,
+        "sha256": "697f83936696d246c44e78759d9246cbb37057b49b536ea2ecb6274e5c499ae5",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "revision": "d7d0a957baf4cc7225a50522adb0164bf130a9d0",
+        "path": "rlcard/__init__.py",
+        "url": "https://raw.githubusercontent.com/datamllab/rlcard/d7d0a957baf4cc7225a50522adb0164bf130a9d0/rlcard/__init__.py",
+        "bytes": 68,
+        "sha256": "857938aa0d67a874174e26282a8c8ebf2f42f5425132c6799179c7ff75001fbc",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "revision": "d7d0a957baf4cc7225a50522adb0164bf130a9d0",
+        "path": "rlcard/games/nolimitholdem/round.py",
+        "url": "https://raw.githubusercontent.com/datamllab/rlcard/d7d0a957baf4cc7225a50522adb0164bf130a9d0/rlcard/games/nolimitholdem/round.py",
+        "bytes": 5758,
+        "sha256": "b92dae402db8414ff471b3f538f1ce20255f6d714961f79b1048771c12288d5d",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "b-inary/postflop-solver",
+        "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+        "path": "src/game/base.rs",
+        "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/src/game/base.rs",
+        "bytes": 52518,
+        "sha256": "80a72aba87f1426cc5c26940d33490f27f2008fc055f3dd658bcd3a27ec6e8b1",
+        "status": "INSPECTED"
+      },
+      {
+        "repository": "datamllab/rlcard",
+        "revision": "d7d0a957baf4cc7225a50522adb0164bf130a9d0",
+        "path": "LICENSE.md",
+        "url": "https://raw.githubusercontent.com/datamllab/rlcard/d7d0a957baf4cc7225a50522adb0164bf130a9d0/LICENSE.md",
+        "bytes": 1075,
+        "sha256": "a270d6a262d51883583fc2fc21c8f506460909b28f61cf7243882c83bf42979f",
+        "status": "INSPECTED"
+      }
+    ]
+  },
+  "limitations": [
+    "Dated bounded primary-source inspection, not maintenance or performance certification",
+    "Repository pushed_at can differ from selected default-branch commit time",
+    "No author identities, email addresses, machine paths or credentials are included",
+    "Reference source files are ignored development artifacts, not shipped dependencies"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-30T10:35:25.559Z",
+  "plan": "Three fixed repetitions of the first original 10000-iteration river fixture, one JVM at a time; includes startup, Windows Job verification, JSON IPC and result validation. No adaptive reruns.",
+  "runtime": "JDK 21, one active processor, 256 MiB heap, 512 MiB OS process commitment cap",
+  "runs": [
+    {
+      "repetition": 1,
+      "iterations": 10000,
+      "status": "COMPLETE",
+      "totalAdapterMs": 1293.0459,
+      "nashConvChips": 0.0303802490234375,
+      "inputHash": "3283f4e2f9b14bb18038a268a5374a9144ddcdcdfd8775ea15b455d429a0a16e"
+    },
+    {
+      "repetition": 2,
+      "iterations": 10000,
+      "status": "COMPLETE",
+      "totalAdapterMs": 1361.3062,
+      "nashConvChips": 0.0303802490234375,
+      "inputHash": "3283f4e2f9b14bb18038a268a5374a9144ddcdcdfd8775ea15b455d429a0a16e"
+    },
+    {
+      "repetition": 3,
+      "iterations": 10000,
+      "status": "COMPLETE",
+      "totalAdapterMs": 1373.0619000000002,
+      "nashConvChips": 0.0303802490234375,
+      "inputHash": "3283f4e2f9b14bb18038a268a5374a9144ddcdcdfd8775ea15b455d429a0a16e"
+    }
+  ],
+  "medianMs": 1361.3062,
+  "rangeMs": [
+    1293.0459,
+    1373.0619000000002
+  ],
+  "limits": "Workstation measurement, not professional strength. Browser UI latency recorded separately. Android runtime measurement NOT_RUN without a target."
+}

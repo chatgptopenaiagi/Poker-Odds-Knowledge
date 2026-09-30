@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "checkedUtc": "2026-09-30T10:19:06.946Z",
+  "tests": [
+    {
+      "name": "actual JVM info and queried OS job bounds",
+      "status": "PASS",
+      "elapsedMs": 1427.6272000000001
+    },
+    {
+      "name": "closing owner guard terminates only attached waiting JVM",
+      "status": "PASS",
+      "elapsedMs": 1163.1900999999998
+    },
+    {
+      "name": "mismatched ownership token cannot attach to the child",
+      "status": "PASS",
+      "elapsedMs": 1141.3094999999998
+    },
+    {
+      "name": "real weighted river and finite normalized complete policies",
+      "status": "PASS",
+      "elapsedMs": 1396.0543000000002
+    },
+    {
+      "name": "all nine categories, wheel, kickers, board ties and 10000 generated hands match independent POK reference",
+      "status": "PASS",
+      "elapsedMs": 2256.0296
+    },
+    {
+      "name": "all hands playing the royal board produce zero centered profile value",
+      "status": "PASS",
+      "elapsedMs": 365.66070000000036
+    },
+    {
+      "name": "duplicates, excessive depth, paths, weights, impossible cards and oversized inputs fail closed",
+      "status": "PASS",
+      "elapsedMs": 2487.3373
+    },
+    {
+      "name": "bounded deadline produces no completed strategy answer",
+      "status": "PASS",
+      "elapsedMs": 387.8678
+    }
+  ],
+  "limits": {
+    "heapMiB": 256,
+    "metaspaceMiB": 128,
+    "codeCacheMiB": 64,
+    "osProcessCommittedMiB": 512,
+    "computeThreads": 1
+  },
+  "jarSha256": "507a3ec2ca578f96550ae840f95ed9a332f2e64bbe8b3d8e7fbf719ab82e115e",
+  "passed": 8
+}

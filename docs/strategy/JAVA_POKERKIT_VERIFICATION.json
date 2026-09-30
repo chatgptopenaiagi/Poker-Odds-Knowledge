@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-30T10:21:38.903330+00:00",
+  "status": "PASS",
+  "oracle": "PokerKit",
+  "version": "0.7.6",
+  "corpusSha256": "525ff62bfa3876b8595aca528f1352313a8c96c119d2d9c9e6bca4bb13aab1b2",
+  "seed": 61701,
+  "hands": 10011,
+  "handSizes": {
+    "5": 3345,
+    "6": 3333,
+    "7": 3333
+  },
+  "categoryChecks": 10011,
+  "orderingAndTieChecks": 10010,
+  "disagreementCount": 0,
+  "disagreements": [],
+  "elapsedSeconds": 1.0146,
+  "scope": "Independent PokerKit comparison of actual Java reference-comparator outputs. Generated and structured legal 5/6/7-card hands; not exhaustive evaluation and not strategy convergence evidence."
+}

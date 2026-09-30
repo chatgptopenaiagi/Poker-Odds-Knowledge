@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "checkedUtc": "2026-09-30T09:21:53.196Z",
+  "native": {
+    "available": true,
+    "code": "built_and_hash_verified",
+    "revision": "4aec210ff75b0851af0ee170b35a7899e1a4fe8f",
+    "sha256": "fd43303862eefabd7c24dba0da424803afb458a701d4313246492be6938154a7"
+  },
+  "corpus": {
+    "sha256": "c6972e41203ffa643d98e580e40d193bcaaf5a8004fb1f31d4668a63243233af",
+    "seed": 1346915393,
+    "phEngine": "ph-evaluator-0.6.1/10be452e4c1ee40a6a56f06457f46bff27ca495a/pok-wasm-port-1",
+    "hands": 10000,
+    "orderingComparisons": 9999,
+    "categoryChecks": 10000,
+    "disagreements": 0,
+    "evaluationWallMs": 205.12519999999998,
+    "peakProcessMemoryBytes": 4145152
+  },
+  "boundedEquity": {
+    "states": 79200,
+    "method": "EXACT_ENUMERATION",
+    "nativeElapsedMs": 19.3802,
+    "wallMs": 80.60969999999998,
+    "fullOutcomeStatesPerSecond": 982512.0301899153,
+    "physicalEvaluations": 9307,
+    "peakProcessMemoryBytes": 1101824,
+    "rangeSizes": [
+      1,
+      80
+    ],
+    "heroEquity": 0.6969570707070707
+  },
+  "limitations": [
+    "One bounded workload, not a general performance guarantee",
+    "Native symmetry can reduce physical evaluations; states counts multiplicity",
+    "PokerKit independent comparison is recorded separately over the identical shared corpus"
+  ]
+}

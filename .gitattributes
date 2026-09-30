@@ -1,0 +1,8 @@
+# Preserve pinned upstream bytes and generated native/browser assets.
+vendor/** -text
+native/vendor/** -text
+*.wasm binary
+*.exe binary
+
+# Keep solver legal notices byte-identical to the reviewed artifact record.
+engine-adapters/java/notices/** -text

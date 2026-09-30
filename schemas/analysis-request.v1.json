@@ -1,0 +1,24 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema", "$id":"urn:pok:analysis-request:1", "title":"POK analysis request v1",
+  "type":"object", "additionalProperties":false,
+  "required":["schemaVersion","requestId","analysisRevision","operation","variant","ruleset","engine","method","executionPermission","informationScope","heroId","players","board","dead","budget"],
+  "properties":{
+    "schemaVersion":{"const":1},"requestId":{"type":"string","minLength":1,"maxLength":80,"pattern":"^[A-Za-z0-9_-]+$"},"analysisRevision":{"type":"integer","minimum":0,"maximum":9007199254740991},
+    "operation":{"const":"equity"},"variant":{"const":"holdem-high"},"ruleset":{"const":"pok-cash-no-rake-v1"},
+    "engine":{"enum":["automatic","pok-standard","pok-ph","ompeval-native"]},"method":{"enum":["auto","exact","monte-carlo"]},
+    "executionPermission":{"enum":["browser-only","local-native-opt-in"]},"informationScope":{"enum":["player-perspective","reveal-all-study","review"]},
+    "heroId":{"type":"string","minLength":1,"maxLength":40,"pattern":"^[A-Za-z0-9_-]+$"},
+    "players":{"type":"array","minItems":2,"maxItems":6,"items":{"type":"object","additionalProperties":false,"required":["id"],"properties":{
+      "id":{"type":"string","minLength":1,"maxLength":40,"pattern":"^[A-Za-z0-9_-]+$"},
+      "hand":{"type":"array","minItems":2,"maxItems":2,"uniqueItems":true,"items":{"type":"string","pattern":"^[2-9TJQKA][cdhs]$"}},
+      "combinations":{"type":"array","minItems":1,"maxItems":1326,"items":{"type":"object","additionalProperties":false,"required":["cards","weight"],"properties":{
+        "cards":{"type":"array","minItems":2,"maxItems":2,"uniqueItems":true,"items":{"type":"string","pattern":"^[2-9TJQKA][cdhs]$"}},"weight":{"type":"number","minimum":0,"maximum":1000000000000}}}}
+    }}},
+    "board":{"type":"array","maxItems":5,"uniqueItems":true,"items":{"type":"string","pattern":"^[2-9TJQKA][cdhs]$"}},
+    "dead":{"type":"array","maxItems":48,"uniqueItems":true,"items":{"type":"string","pattern":"^[2-9TJQKA][cdhs]$"}},
+    "seed":{"type":"integer","minimum":0,"maximum":4294967295},
+    "pots":{"type":"array","maxItems":6,"items":{"type":"object","additionalProperties":false,"required":["id","amount","eligible"],"properties":{"id":{"type":"string","minLength":1,"maxLength":40},"amount":{"type":"integer","minimum":0,"maximum":6000000},"eligible":{"type":"array","minItems":1,"maxItems":6,"uniqueItems":true,"items":{"type":"string","minLength":1,"maxLength":40}}}}},
+    "uncalledReturns":{"type":"array","maxItems":6,"items":{"type":"object","additionalProperties":false,"required":["playerId","amount"],"properties":{"playerId":{"type":"string","minLength":1,"maxLength":40},"amount":{"type":"integer","minimum":0,"maximum":6000000}}}},
+    "budget":{"type":"object","additionalProperties":false,"required":["samples","states","timeMs","memoryMiB","threads"],"properties":{"samples":{"type":"integer","minimum":100,"maximum":200000},"states":{"type":"integer","minimum":1,"maximum":250000},"timeMs":{"type":"integer","minimum":250,"maximum":30000},"memoryMiB":{"type":"integer","minimum":32,"maximum":256},"threads":{"const":1}}}
+  }
+}

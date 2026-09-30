@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "observedAt": "2026-09-30T09:24:32.484443+00:00",
+  "oracle": "PokerKit",
+  "version": "0.7.6",
+  "python": "3.14.7",
+  "engine": "ph-evaluator-0.6.1/10be452e4c1ee40a6a56f06457f46bff27ca495a/pok-wasm-port-1",
+  "corpusSha256": "c6972e41203ffa643d98e580e40d193bcaaf5a8004fb1f31d4668a63243233af",
+  "seed": 1346915393,
+  "hands": 10000,
+  "categoryChecks": 10000,
+  "normalizedIndexChecks": 10000,
+  "adjacentOrderingAndTieChecks": 9999,
+  "disagreementCount": 0,
+  "disagreements": [],
+  "durationSeconds": 2.182,
+  "scope": "10,000 deterministic legal seven-card hands evaluated by compiled PH C/WASM, cross-checked with installed independent PokerKit 0.7.6. Not exhaustive seven-card or strategy verification."
+}

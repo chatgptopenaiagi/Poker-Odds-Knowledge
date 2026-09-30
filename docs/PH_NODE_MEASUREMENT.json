@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-30T09:15:32.618Z",
+  "callsPerRoute": 100000,
+  "sevenCardCorpus": 10000,
+  "seed": 7351,
+  "method": "Node real WASM CPU wall time; ten passes per route; no GPU and no browser/worker performance claim",
+  "timingsMs": {
+    "phChecked": 14.891700000000014,
+    "phUnchecked": 4.0031999999999925,
+    "originalUnchecked": 80.42720000000008
+  },
+  "checksum": 0,
+  "metrics": {
+    "bytes": 174063,
+    "memoryBytes": 393216,
+    "compileAndInstantiateMs": 2.0030000000000427
+  }
+}

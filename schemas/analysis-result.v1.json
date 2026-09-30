@@ -1,0 +1,498 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pok:analysis-result:1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "analysisRevision",
+    "inputHash",
+    "cacheKey",
+    "engineId",
+    "adapterVersion",
+    "upstreamRevision",
+    "location",
+    "status",
+    "completionReason",
+    "method",
+    "result",
+    "counts",
+    "elapsedMs",
+    "overheadMs",
+    "reproducibility",
+    "uncertainty",
+    "sharedComponents",
+    "limitations",
+    "uncalledReturns"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "analysisRevision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "inputHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "cacheKey": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "engineId": {
+      "enum": [
+        "pok-standard",
+        "pok-ph",
+        "ompeval-native"
+      ]
+    },
+    "adapterVersion": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "upstreamRevision": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "location": {
+      "enum": [
+        "browser-worker",
+        "local-native",
+        "development-node"
+      ]
+    },
+    "status": {
+      "enum": [
+        "COMPLETE",
+        "PARTIAL",
+        "CANCELLED",
+        "TIMEOUT",
+        "UNSUPPORTED",
+        "ERROR"
+      ]
+    },
+    "completionReason": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "method": {
+      "enum": [
+        "EXACT ENUMERATION",
+        "MONTE CARLO ESTIMATE",
+        "NONE"
+      ]
+    },
+    "result": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "method",
+            "equity",
+            "win",
+            "tie",
+            "loss",
+            "samples",
+            "evaluatedWeight",
+            "interval",
+            "confidence",
+            "seed",
+            "attempts",
+            "elapsedMs",
+            "engineVersion",
+            "inputs",
+            "knownCards",
+            "rangeCombinationCounts",
+            "units",
+            "limitations",
+            "perPot"
+          ],
+          "properties": {
+            "method": {
+              "enum": [
+                "EXACT ENUMERATION",
+                "MONTE CARLO ESTIMATE"
+              ]
+            },
+            "equity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "win": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "tie": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "loss": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "samples": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "evaluatedWeight": {
+              "type": "number",
+              "minimum": 0
+            },
+            "interval": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "confidence": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              ]
+            },
+            "seed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "attempts": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "elapsedMs": {
+              "type": "number",
+              "minimum": 0
+            },
+            "engineVersion": {
+              "type": "string",
+              "maxLength": 2000
+            },
+            "inputs": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "hero",
+                "board",
+                "opponents"
+              ],
+              "properties": {
+                "hero": {
+                  "type": "array",
+                  "maxItems": 52,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 51
+                  }
+                },
+                "board": {
+                  "type": "array",
+                  "maxItems": 52,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 51
+                  }
+                },
+                "dead": {
+                  "type": "array",
+                  "maxItems": 52,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 51
+                  }
+                },
+                "opponents": {
+                  "type": "array",
+                  "maxItems": 5,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [],
+                    "properties": {
+                      "hand": {
+                        "type": "array",
+                        "maxItems": 52,
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 51
+                        }
+                      },
+                      "range": {
+                        "type": "array",
+                        "maxItems": 1326,
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "cards",
+                            "weight"
+                          ],
+                          "properties": {
+                            "cards": {
+                              "type": "array",
+                              "maxItems": 52,
+                              "items": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 51
+                              }
+                            },
+                            "weight": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "method": {
+                  "enum": [
+                    "auto",
+                    "exact",
+                    "monte-carlo"
+                  ]
+                },
+                "samples": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "seed": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "pots": {
+                  "type": "array",
+                  "maxItems": 6,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "id",
+                      "amount",
+                      "eligible"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "maxLength": 2000
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "eligible": {
+                        "type": "array",
+                        "maxItems": 6,
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "knownCards": {
+              "type": "array",
+              "maxItems": 52,
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 51
+              }
+            },
+            "rangeCombinationCounts": {
+              "type": "array",
+              "maxItems": 5,
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "units": {
+              "type": "string",
+              "maxLength": 2000
+            },
+            "limitations": {
+              "type": "array",
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "maxLength": 2000
+              }
+            },
+            "perPot": {
+              "type": "array",
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "heroShare",
+                  "expectedChips",
+                  "interval"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "maxLength": 2000
+                  },
+                  "heroShare": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "expectedChips": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "interval": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "completed",
+        "probabilityMass"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "enumerated-showdowns",
+            "independent-observations",
+            "none"
+          ]
+        },
+        "completed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "probabilityMass": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ]
+        }
+      }
+    },
+    "elapsedMs": {
+      "type": "number",
+      "minimum": 0
+    },
+    "overheadMs": {
+      "type": "number",
+      "minimum": 0
+    },
+    "reproducibility": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "uncertainty": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "sharedComponents": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "uncalledReturns": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "playerId",
+          "amount"
+        ],
+        "properties": {
+          "playerId": {
+            "type": "string",
+            "maxLength": 2000
+          },
+          "amount": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          }
+        }
+      }
+    }
+  }
+}

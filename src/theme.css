@@ -1,0 +1,24 @@
+/* Local default tokens; persisted settings override these before normal interaction. */
+:root {
+  --paper:#f2f4f1; --panel:#ffffff; --surface:#e8eeea; --ink:#1c3028; --muted:#50655b; --line:#70877b;
+  --nav:#193c30; --nav-ink:#f2f8f4; --nav-muted:#c0d6ca; --nav-hover:#2c5544;
+  --accent:#216349; --accent-ink:#ffffff; --accent-soft:#e2eee7;
+  --felt:#214f40; --felt-bright:#306955; --felt-ink:#ffffff; --felt-line:#d5e2d9;
+  --table-rim:#9b8a63; --table-outer:#d4c9ae; --card:#fffdf8; --card-ink:#172b25; --card-red:#a22030; --card-line:#7c8a82; --card-back:#214f40;
+  --warning-bg:#fff2ce; --warning-ink:#654913; --error-bg:#ffebe8; --error-ink:#972d20;
+  --success-bg:#e2f1e1; --success-ink:#24522d; --shadow:#12271c18;
+  --orange:var(--accent); --rust:var(--accent); --green:var(--accent); --warm:#f2d39a;
+  --font:system-ui,"Segoe UI","Noto Sans",Arial,sans-serif; --text-scale:1; --card-scale:1; --space:1;
+}
+.engine-control {display:flex;align-items:end;gap:1rem;flex-wrap:wrap;margin-block:1rem}
+.engine-control label {min-width:min(22rem,100%);flex:1}
+.engine-choices {display:grid;gap:.75rem;margin-block:1rem}
+.engine-choices article,.engine-comparison article {border:1px solid var(--line);border-radius:.75rem;padding:1rem;background:var(--surface)}
+.engine-attribution {border-inline-start:.25rem solid var(--accent);padding-inline-start:.75rem;overflow-wrap:anywhere}
+.engine-comparison {margin-block:1.5rem}
+.engine-comparison-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr));gap:1rem}
+.engine-json {max-height:18rem;overflow:auto;direction:ltr;text-align:left;font-size:.85rem}
+.preview-notice {margin-block:0 1rem}
+
+.range-matrix {direction:ltr}
+.engine-control bdi,.engine-attribution bdi,.engine-comparison bdi {unicode-bidi:isolate;direction:ltr}

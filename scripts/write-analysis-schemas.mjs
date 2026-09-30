@@ -1,0 +1,11 @@
+import {writeFileSync} from 'node:fs';
+const str={type:'string',maxLength:2000},num={type:'number',minimum:0},share={type:'number',minimum:0,maximum:1},integer={type:'integer',minimum:0,maximum:9007199254740991};
+const arr=(items,maxItems=100)=>({type:'array',maxItems,items});
+const obj=(properties,required=Object.keys(properties))=>({type:'object',additionalProperties:false,required,properties});
+const nullable=rule=>({anyOf:[{type:'null'},rule]});
+const cards=arr({type:'integer',minimum:0,maximum:51},52),interval={type:'array',minItems:2,maxItems:2,items:share};
+const pot=obj({id:str,amount:integer,eligible:arr(integer,6)});
+const inputs=obj({hero:cards,board:cards,dead:cards,opponents:arr(obj({hand:cards,range:arr(obj({cards,weight:share}),1326)},[]),5),method:{enum:['auto','exact','monte-carlo']},samples:integer,seed:integer,pots:arr(pot,6)},['hero','board','opponents']);
+const result=obj({method:{enum:['EXACT ENUMERATION','MONTE CARLO ESTIMATE']},equity:share,win:share,tie:share,loss:share,samples:integer,evaluatedWeight:num,interval,confidence:nullable(share),seed:integer,attempts:integer,elapsedMs:num,engineVersion:str,inputs,knownCards:cards,rangeCombinationCounts:arr(integer,5),units:str,limitations:arr(str),perPot:arr(obj({id:str,heroShare:share,expectedChips:num,interval}),6)});
+const root=obj({schemaVersion:{const:1},requestId:{type:'string',minLength:1,maxLength:80},analysisRevision:integer,inputHash:{type:'string',pattern:'^[a-f0-9]{64}$'},cacheKey:str,engineId:{enum:['pok-standard','pok-ph','ompeval-native']},adapterVersion:str,upstreamRevision:str,location:{enum:['browser-worker','local-native','development-node']},status:{enum:['COMPLETE','PARTIAL','CANCELLED','TIMEOUT','UNSUPPORTED','ERROR']},completionReason:str,method:{enum:['EXACT ENUMERATION','MONTE CARLO ESTIMATE','NONE']},result:nullable(result),counts:obj({kind:{enum:['enumerated-showdowns','independent-observations','none']},completed:integer,probabilityMass:nullable(num)}),elapsedMs:num,overheadMs:num,reproducibility:str,uncertainty:str,sharedComponents:arr(str),limitations:arr(str),uncalledReturns:arr(obj({playerId:str,amount:integer}),6)});
+writeFileSync('schemas/analysis-result.v1.json',JSON.stringify({$schema:'https://json-schema.org/draft/2020-12/schema',$id:'urn:pok:analysis-result:1',...root},null,2)+'\n');

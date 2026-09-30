@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "upstream": {"repository":"https://github.com/bupticybee/TexasHoldemSolverJava","revision":"e90d1bb4c7cf6fbd433428d6acf41f606e0c8530","license":"MIT"},
+  "dependencies": [
+    {"coordinate":"com/alibaba/fastjson2/fastjson2/2.0.65/fastjson2-2.0.65","sha256":"e12cd0e49047e052533d897d4b45d1074a21229f2a1939404234398d4c10c06d","license":"Apache-2.0"},
+    {"coordinate":"com/fasterxml/jackson/core/jackson-core/2.22.3/jackson-core-2.22.3","sha256":"8a501126a385b25841915d839508f8a66e2a0dbc8a6709d055ef3b3e852b094c","license":"Apache-2.0"},
+    {"coordinate":"com/fasterxml/jackson/core/jackson-databind/2.22.3/jackson-databind-2.22.3","sha256":"556db5439e206114346043f68d200497dc96a0bca62a360a81784092ebd0e0a9","license":"Apache-2.0"},
+    {"coordinate":"com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22","sha256":"21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0","license":"Apache-2.0"}
+  ]
+}

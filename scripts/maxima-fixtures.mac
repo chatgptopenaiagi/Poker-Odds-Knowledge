@@ -1,0 +1,16 @@
+/* HIL fixed, reviewed developer-only batch. Never accepts browser input. */
+display2d:false$
+printf(true,"HIL|choose52_2|~a~%",binomial(52,2))$
+printf(true,"HIL|choose45_2|~a~%",binomial(45,2))$
+printf(true,"HIL|flop_one|~a~%",9/47)$
+printf(true,"HIL|flop_two|~a~%",1-binomial(38,2)/binomial(47,2))$
+printf(true,"HIL|turn_one|~a~%",9/46)$
+printf(true,"HIL|call_threshold|~a~%",20/(80+20))$
+printf(true,"HIL|call_ev|~a~%",(1/4)*(80+20)-20)$
+printf(true,"HIL|bluff_threshold|~a~%",50/(100+50))$
+printf(true,"HIL|bluff_ev|~a~%",(2/5)*100-(1-2/5)*50)$
+printf(true,"HIL|call_identity|~a~%",ratsimp(e*p-(1-e)*c-(e*(p+c)-c)))$
+printf(true,"HIL|bluff_identity|~a~%",ratsimp(f*p0-(1-f)*b-(f*(p0+b)-b)))$
+printf(true,"HIL|call_zero|~a~%",ratsimp(subst(c/(p+c),e,e*(p+c)-c)))$
+printf(true,"HIL|bluff_zero|~a~%",ratsimp(subst(b/(p0+b),f,f*p0-(1-f)*b)))$
+quit();

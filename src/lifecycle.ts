@@ -1,0 +1,2 @@
+/** Browser visibility and the Android host's fixed lifecycle event share one cancellation path. */
+export function onBackground(cancel:()=>void){const visibility=()=>{if(document.hidden)cancel()};document.addEventListener('visibilitychange',visibility);window.addEventListener('pok-background',cancel);return()=>{document.removeEventListener('visibilitychange',visibility);window.removeEventListener('pok-background',cancel)}}

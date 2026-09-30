@@ -1,0 +1,8618 @@
+{
+  "schemaVersion": 1,
+  "generatorSeed": 1347373873,
+  "fixtures": [
+    {
+      "id": "fixture-000",
+      "description": "2 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-000",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ts",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "9c",
+              "4h"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Qs",
+          "8h",
+          "Jh",
+          "9d",
+          "6h",
+          "Kc",
+          "8d",
+          "3h",
+          "9h",
+          "2c",
+          "Th",
+          "3c",
+          "Jc",
+          "7d",
+          "9s",
+          "7c",
+          "As",
+          "8c",
+          "Td",
+          "7s",
+          "4d",
+          "Js",
+          "4s",
+          "7h",
+          "Tc",
+          "6c",
+          "2h",
+          "8s",
+          "3d",
+          "2s",
+          "Kh",
+          "Ks",
+          "2d",
+          "Kd",
+          "5h",
+          "Ad",
+          "Qd",
+          "Qh",
+          "Ac",
+          "3s"
+        ],
+        "seed": 1000,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-001",
+      "description": "3 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-001",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3c",
+              "Jc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ts",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6h",
+              "4d"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Kd",
+          "Ad",
+          "As",
+          "Th",
+          "6s",
+          "6d",
+          "Qc",
+          "2d",
+          "4c",
+          "2s",
+          "7h",
+          "Td",
+          "Kh",
+          "5c",
+          "8d",
+          "Js",
+          "4h",
+          "Qd",
+          "8c",
+          "Ah",
+          "7d",
+          "Kc",
+          "5h",
+          "Qh",
+          "4s",
+          "8h",
+          "8s",
+          "9h",
+          "2c",
+          "Ks",
+          "9c",
+          "9d",
+          "Jh",
+          "Tc",
+          "2h",
+          "Jd",
+          "3s",
+          "3d"
+        ],
+        "seed": 1001,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-002",
+      "description": "4 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-002",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4h",
+              "6c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5d",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4c",
+              "2d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "2c",
+              "Td"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "5s",
+          "Ac",
+          "Kd",
+          "3h",
+          "Js",
+          "6d",
+          "9s",
+          "Qh",
+          "8c",
+          "9h",
+          "5c",
+          "7c",
+          "9c",
+          "3d",
+          "3s",
+          "Tc",
+          "2s",
+          "Th",
+          "8d",
+          "7d",
+          "8s",
+          "5h",
+          "Jd",
+          "7h",
+          "3c",
+          "Ad",
+          "Qs",
+          "Kc",
+          "6s",
+          "2h",
+          "9d",
+          "4s",
+          "4d",
+          "Ah",
+          "7s",
+          "Kh"
+        ],
+        "seed": 1002,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-003",
+      "description": "5 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-003",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7s",
+              "8d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4s",
+              "4d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "9c",
+              "6c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "3h",
+              "5d"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "As",
+              "Qd"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Ac",
+          "3s",
+          "2d",
+          "6h",
+          "3c",
+          "9h",
+          "9d",
+          "7d",
+          "Ah",
+          "Td",
+          "Qh",
+          "Ks",
+          "2s",
+          "Jd",
+          "8h",
+          "Ad",
+          "2h",
+          "Th",
+          "5s",
+          "Jh",
+          "3d",
+          "8c",
+          "4c",
+          "5c",
+          "Qc",
+          "Kh",
+          "Qs",
+          "9s",
+          "2c",
+          "6d",
+          "Kc",
+          "8s",
+          "5h",
+          "4h"
+        ],
+        "seed": 1003,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-004",
+      "description": "6 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-004",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8d",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ad",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ac",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4h",
+              "As"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Jd",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "4d",
+              "6d"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Qh",
+          "Qc",
+          "9d",
+          "5s",
+          "6s",
+          "4c",
+          "3c",
+          "6h",
+          "Jc",
+          "7d",
+          "Th",
+          "Ts",
+          "8c",
+          "Td",
+          "8s",
+          "Kd",
+          "3d",
+          "4s",
+          "Kc",
+          "3s",
+          "Qd",
+          "2h",
+          "5h",
+          "Js",
+          "Kh",
+          "9s",
+          "2c",
+          "7h",
+          "3h",
+          "9h",
+          "Tc",
+          "7s"
+        ],
+        "seed": 1004,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-005",
+      "description": "2 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-005",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7h",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Th",
+              "5s"
+            ]
+          }
+        ],
+        "board": [
+          "8s",
+          "Tc",
+          "9s"
+        ],
+        "dead": [],
+        "seed": 1005,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-006",
+      "description": "3 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-006",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Td",
+              "Tc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8d",
+              "9d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "9s",
+              "2s"
+            ]
+          }
+        ],
+        "board": [
+          "5h",
+          "4c",
+          "6d"
+        ],
+        "dead": [],
+        "seed": 1006,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-007",
+      "description": "4 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-007",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8d",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3c",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6h",
+              "Qd"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "6d",
+              "2s"
+            ]
+          }
+        ],
+        "board": [
+          "Qs",
+          "5s",
+          "3d"
+        ],
+        "dead": [],
+        "seed": 1007,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-008",
+      "description": "5 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-008",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6c",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "9h",
+              "5h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5c",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "9s",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Qc",
+              "Ah"
+            ]
+          }
+        ],
+        "board": [
+          "6d",
+          "9d",
+          "7h"
+        ],
+        "dead": [],
+        "seed": 1008,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-009",
+      "description": "6 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-009",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ad",
+              "Js"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Th",
+              "3s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3h",
+              "4d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Ah",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "2c",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Jh",
+              "4h"
+            ]
+          }
+        ],
+        "board": [
+          "9c",
+          "2s",
+          "6s"
+        ],
+        "dead": [],
+        "seed": 1009,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-010",
+      "description": "2 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-010",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4d",
+              "4s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5c",
+              "8s"
+            ]
+          }
+        ],
+        "board": [
+          "Ad",
+          "3h",
+          "Ks",
+          "2c"
+        ],
+        "dead": [],
+        "seed": 1010,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-011",
+      "description": "3 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-011",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8h",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8c",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6h",
+              "2d"
+            ]
+          }
+        ],
+        "board": [
+          "6s",
+          "5s",
+          "3s",
+          "Kd"
+        ],
+        "dead": [],
+        "seed": 1011,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-012",
+      "description": "4 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-012",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qs",
+              "7h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4s",
+              "Tc"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "7d",
+              "9s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4c",
+              "2s"
+            ]
+          }
+        ],
+        "board": [
+          "3s",
+          "6s",
+          "Th",
+          "5h"
+        ],
+        "dead": [],
+        "seed": 1012,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-013",
+      "description": "5 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-013",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7h",
+              "6d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qh",
+              "8d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "9c",
+              "Ad"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "8s",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Qs",
+              "2h"
+            ]
+          }
+        ],
+        "board": [
+          "Jh",
+          "3d",
+          "9h",
+          "6h"
+        ],
+        "dead": [],
+        "seed": 1013,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-014",
+      "description": "6 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-014",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3s",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Jc",
+              "9s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "9d",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "2c",
+              "7d"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "8s",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "7c",
+              "2h"
+            ]
+          }
+        ],
+        "board": [
+          "4s",
+          "6d",
+          "7h",
+          "9c"
+        ],
+        "dead": [],
+        "seed": 1014,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-015",
+      "description": "2 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-015",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9s",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qd",
+              "2h"
+            ]
+          }
+        ],
+        "board": [
+          "Jd",
+          "7c",
+          "Kc",
+          "Th",
+          "5d"
+        ],
+        "dead": [],
+        "seed": 1015,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-016",
+      "description": "3 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-016",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9h",
+              "Qd"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3s",
+              "4c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6h",
+              "4d"
+            ]
+          }
+        ],
+        "board": [
+          "Qh",
+          "Tc",
+          "6c",
+          "2c",
+          "9d"
+        ],
+        "dead": [],
+        "seed": 1016,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-017",
+      "description": "4 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-017",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3c",
+              "4c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Jd",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3d",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "8h",
+              "Js"
+            ]
+          }
+        ],
+        "board": [
+          "Ad",
+          "Kh",
+          "3s",
+          "6c",
+          "6h"
+        ],
+        "dead": [],
+        "seed": 1017,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-018",
+      "description": "5 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-018",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3s",
+              "4d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5d",
+              "Qs"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8c",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Ah",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Jc",
+              "4s"
+            ]
+          }
+        ],
+        "board": [
+          "Ac",
+          "Ks",
+          "7s",
+          "4c",
+          "5s"
+        ],
+        "dead": [],
+        "seed": 1018,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-019",
+      "description": "6 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-019",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2h",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qd",
+              "7d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ts",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4c",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Ks",
+              "Ad"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Ah",
+              "Jd"
+            ]
+          }
+        ],
+        "board": [
+          "4s",
+          "6h",
+          "5c",
+          "8s",
+          "Js"
+        ],
+        "dead": [],
+        "seed": 1019,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-020",
+      "description": "2 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-020",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2d",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2c",
+              "Ks"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Ah",
+          "Qc",
+          "Ad",
+          "Qs",
+          "8d",
+          "Ac",
+          "6s",
+          "5d",
+          "4c",
+          "2h",
+          "As",
+          "4s",
+          "Jc",
+          "Tc",
+          "7h",
+          "Js",
+          "6d",
+          "Ts",
+          "9d",
+          "3c",
+          "Qd",
+          "3s",
+          "5h",
+          "Th",
+          "Jd",
+          "Jh",
+          "9c",
+          "7c",
+          "Kh",
+          "Kc",
+          "Kd",
+          "9s",
+          "8h",
+          "7d",
+          "5c",
+          "4h",
+          "6c",
+          "3d",
+          "2s",
+          "Td"
+        ],
+        "seed": 1020,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-021",
+      "description": "3 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-021",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Tc",
+              "8c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4c",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Th",
+              "3s"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "9d",
+          "Jc",
+          "3c",
+          "4d",
+          "8h",
+          "4s",
+          "Td",
+          "Jd",
+          "Qs",
+          "7c",
+          "7s",
+          "6h",
+          "Qd",
+          "4h",
+          "9s",
+          "5h",
+          "6d",
+          "Jh",
+          "5s",
+          "3h",
+          "9c",
+          "Kh",
+          "5d",
+          "2c",
+          "9h",
+          "8d",
+          "2d",
+          "8s",
+          "As",
+          "Ks",
+          "7d",
+          "6c",
+          "Ac",
+          "Qc",
+          "3d",
+          "2h",
+          "Js",
+          "5c"
+        ],
+        "seed": 1021,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-022",
+      "description": "4 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-022",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ah",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "6s",
+              "5d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5c",
+              "Jc"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "6d",
+              "9s"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "As",
+          "4s",
+          "Qc",
+          "8s",
+          "3h",
+          "Th",
+          "Qd",
+          "4c",
+          "4h",
+          "9d",
+          "7h",
+          "8h",
+          "8d",
+          "Td",
+          "2h",
+          "2c",
+          "3d",
+          "Ts",
+          "Kd",
+          "Jd",
+          "4d",
+          "Ad",
+          "Qs",
+          "9h",
+          "9c",
+          "3c",
+          "Qh",
+          "2d",
+          "2s",
+          "Ac",
+          "Kh",
+          "7d",
+          "Jh",
+          "8c",
+          "7s",
+          "5h"
+        ],
+        "seed": 1022,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-023",
+      "description": "5 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-023",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4d",
+              "9d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Td",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6c",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "5s",
+              "Qh"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Ac",
+              "Js"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "6s",
+          "3c",
+          "3s",
+          "4c",
+          "4h",
+          "Tc",
+          "Jd",
+          "Jc",
+          "8c",
+          "Kh",
+          "7s",
+          "2h",
+          "7d",
+          "9h",
+          "Ks",
+          "9c",
+          "As",
+          "8s",
+          "2d",
+          "Ad",
+          "Th",
+          "5d",
+          "8d",
+          "3h",
+          "Ts",
+          "Qc",
+          "2c",
+          "Kc",
+          "Jh",
+          "4s",
+          "Qs",
+          "6h",
+          "9s",
+          "6d"
+        ],
+        "seed": 1023,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-024",
+      "description": "6 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-024",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5c",
+              "Qs"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4c",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Kc",
+              "Kd"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Js",
+              "Jc"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Ah",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Qc",
+              "Th"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "3c",
+          "7h",
+          "3s",
+          "Ts",
+          "7s",
+          "Ks",
+          "6s",
+          "9c",
+          "Qh",
+          "4s",
+          "6d",
+          "As",
+          "8c",
+          "Kh",
+          "Ad",
+          "Jd",
+          "Td",
+          "8h",
+          "3d",
+          "2c",
+          "9d",
+          "8s",
+          "4d",
+          "2h",
+          "5d",
+          "Qd",
+          "Tc",
+          "4h",
+          "5h",
+          "8d",
+          "2s",
+          "6h"
+        ],
+        "seed": 1024,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-025",
+      "description": "2 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-025",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qd",
+              "5h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4c",
+              "As"
+            ]
+          }
+        ],
+        "board": [
+          "Ac",
+          "8h",
+          "9c"
+        ],
+        "dead": [],
+        "seed": 1025,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-026",
+      "description": "3 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-026",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Th",
+              "4h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qd",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2h",
+              "Ks"
+            ]
+          }
+        ],
+        "board": [
+          "8c",
+          "Ac",
+          "Kd"
+        ],
+        "dead": [],
+        "seed": 1026,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-027",
+      "description": "4 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-027",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Td",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "6c",
+              "Ad"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4s",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "6s",
+              "Qd"
+            ]
+          }
+        ],
+        "board": [
+          "7h",
+          "Kh",
+          "6d"
+        ],
+        "dead": [],
+        "seed": 1027,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-028",
+      "description": "5 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-028",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9h",
+              "7d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qd",
+              "Td"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6d",
+              "Kc"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Ts",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "4c",
+              "Jd"
+            ]
+          }
+        ],
+        "board": [
+          "5s",
+          "7c",
+          "8s"
+        ],
+        "dead": [],
+        "seed": 1028,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-029",
+      "description": "6 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-029",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2s",
+              "5h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Tc",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ts",
+              "Td"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4h",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "7s",
+              "6d"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "2c",
+              "7d"
+            ]
+          }
+        ],
+        "board": [
+          "4s",
+          "Ks",
+          "9c"
+        ],
+        "dead": [],
+        "seed": 1029,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-030",
+      "description": "2 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-030",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qd",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3s",
+              "5s"
+            ]
+          }
+        ],
+        "board": [
+          "6c",
+          "8h",
+          "2s",
+          "6s"
+        ],
+        "dead": [],
+        "seed": 1030,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-031",
+      "description": "3 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-031",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3d",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3c",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6h",
+              "4c"
+            ]
+          }
+        ],
+        "board": [
+          "Ah",
+          "Ad",
+          "9c",
+          "9h"
+        ],
+        "dead": [],
+        "seed": 1031,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-032",
+      "description": "4 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-032",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3h",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ks",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5h",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Qh",
+              "4c"
+            ]
+          }
+        ],
+        "board": [
+          "8c",
+          "Tc",
+          "Jh",
+          "Ad"
+        ],
+        "dead": [],
+        "seed": 1032,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-033",
+      "description": "5 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-033",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3h",
+              "Ad"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7s",
+              "8c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Kc",
+              "8d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Qh",
+              "Kd"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "3c",
+              "Js"
+            ]
+          }
+        ],
+        "board": [
+          "Th",
+          "Tc",
+          "8s",
+          "2c"
+        ],
+        "dead": [],
+        "seed": 1033,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-034",
+      "description": "6 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-034",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Tc",
+              "Kc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ad",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4c",
+              "9s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "2s",
+              "Kd"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "6d",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Ac",
+              "Qc"
+            ]
+          }
+        ],
+        "board": [
+          "Th",
+          "7d",
+          "3h",
+          "9c"
+        ],
+        "dead": [],
+        "seed": 1034,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-035",
+      "description": "2 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-035",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9h",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "combinations": [
+              {
+                "cards": [
+                  "3c",
+                  "9s"
+                ],
+                "weight": 1
+              },
+              {
+                "cards": [
+                  "Ad",
+                  "2c"
+                ],
+                "weight": 0.25
+              }
+            ]
+          }
+        ],
+        "board": [
+          "Kc",
+          "3h",
+          "8d",
+          "8c",
+          "3s"
+        ],
+        "dead": [],
+        "seed": 1035,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-036",
+      "description": "3 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-036",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qd",
+              "As"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Js",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Qh",
+              "9c"
+            ]
+          }
+        ],
+        "board": [
+          "Kc",
+          "8d",
+          "8s",
+          "Tc",
+          "7c"
+        ],
+        "dead": [],
+        "seed": 1036,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-037",
+      "description": "4 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-037",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3c",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5c",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6d",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "7c",
+              "3s"
+            ]
+          }
+        ],
+        "board": [
+          "Jd",
+          "9s",
+          "8d",
+          "2c",
+          "2h"
+        ],
+        "dead": [],
+        "seed": 1037,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-038",
+      "description": "5 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-038",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ts",
+              "Kd"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "As",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2d",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "6s",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "6c",
+              "5s"
+            ]
+          }
+        ],
+        "board": [
+          "8c",
+          "4h",
+          "2c",
+          "Kc",
+          "Jc"
+        ],
+        "dead": [],
+        "seed": 1038,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-039",
+      "description": "6 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-039",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7c",
+              "9c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "9d",
+              "2d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8h",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4c",
+              "8c"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "As",
+              "5h"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Ts",
+              "6h"
+            ]
+          }
+        ],
+        "board": [
+          "4h",
+          "Tc",
+          "Js",
+          "3c",
+          "6c"
+        ],
+        "dead": [],
+        "seed": 1039,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-040",
+      "description": "2 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-040",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5h",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ks",
+              "6c"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "4c",
+          "Th",
+          "7c",
+          "Qs",
+          "As",
+          "4h",
+          "5d",
+          "6s",
+          "3c",
+          "Jc",
+          "2h",
+          "4s",
+          "6h",
+          "Qc",
+          "3d",
+          "7d",
+          "Ah",
+          "Td",
+          "5s",
+          "8d",
+          "8s",
+          "7h",
+          "Ad",
+          "Js",
+          "9c",
+          "Jd",
+          "6d",
+          "Kh",
+          "Qd",
+          "8h",
+          "Tc",
+          "8c",
+          "Kc",
+          "Ts",
+          "9d",
+          "Jh",
+          "7s",
+          "4d",
+          "5c",
+          "Qh"
+        ],
+        "seed": 1040,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-041",
+      "description": "3 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-041",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6d",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ad",
+              "8c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ac",
+              "8s"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "5c",
+          "As",
+          "Jc",
+          "9c",
+          "3s",
+          "3c",
+          "7s",
+          "4h",
+          "Jd",
+          "Kd",
+          "Th",
+          "4s",
+          "9h",
+          "2c",
+          "9d",
+          "8h",
+          "6h",
+          "2h",
+          "5s",
+          "3h",
+          "Td",
+          "5d",
+          "3d",
+          "Tc",
+          "Kh",
+          "Qh",
+          "5h",
+          "6s",
+          "7h",
+          "9s",
+          "2d",
+          "Js",
+          "Kc",
+          "4d",
+          "Qs",
+          "6c",
+          "Ah",
+          "Qd"
+        ],
+        "seed": 1041,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-042",
+      "description": "4 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-042",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7d",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4s",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6h",
+              "Js"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Ts",
+              "Tc"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "5s",
+          "Jd",
+          "5d",
+          "8s",
+          "Jh",
+          "Qd",
+          "2c",
+          "2d",
+          "3d",
+          "8h",
+          "Qh",
+          "Qs",
+          "Jc",
+          "6d",
+          "9d",
+          "4c",
+          "7h",
+          "8d",
+          "7s",
+          "8c",
+          "7c",
+          "9c",
+          "6c",
+          "Qc",
+          "3c",
+          "Kd",
+          "As",
+          "Kc",
+          "9h",
+          "4h",
+          "9s",
+          "Ad",
+          "5h",
+          "Td",
+          "Ks",
+          "5c"
+        ],
+        "seed": 1042,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-043",
+      "description": "5 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-043",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Jd",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Js",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ts",
+              "3s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "9h",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Ah",
+              "Qs"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "4h",
+          "5c",
+          "6s",
+          "8c",
+          "6c",
+          "Ks",
+          "4d",
+          "2c",
+          "2h",
+          "7s",
+          "4c",
+          "9c",
+          "Kd",
+          "7h",
+          "3d",
+          "Qh",
+          "Qc",
+          "Jh",
+          "Th",
+          "9d",
+          "Jc",
+          "Qd",
+          "Kh",
+          "Td",
+          "5h",
+          "5d",
+          "Ad",
+          "7d",
+          "3c",
+          "9s",
+          "6d",
+          "Tc",
+          "8h",
+          "8d"
+        ],
+        "seed": 1043,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-044",
+      "description": "6 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-044",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Jh",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "6c",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Qh",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Td",
+              "8d"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "As",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Ad",
+              "Kd"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Qc",
+          "3s",
+          "4s",
+          "4c",
+          "5h",
+          "Tc",
+          "9d",
+          "5d",
+          "6h",
+          "8c",
+          "9c",
+          "Ah",
+          "7s",
+          "4h",
+          "Jc",
+          "8h",
+          "3d",
+          "4d",
+          "7d",
+          "2s",
+          "8s",
+          "Qd",
+          "5s",
+          "Js",
+          "3c",
+          "5c",
+          "Th",
+          "7c",
+          "Jd",
+          "2c",
+          "9s",
+          "Ac"
+        ],
+        "seed": 1044,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-045",
+      "description": "2 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-045",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8s",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5h",
+              "Kc"
+            ]
+          }
+        ],
+        "board": [
+          "6d",
+          "Js",
+          "7c"
+        ],
+        "dead": [],
+        "seed": 1045,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-046",
+      "description": "3 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-046",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4c",
+              "Qh"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2d",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4h",
+              "Kh"
+            ]
+          }
+        ],
+        "board": [
+          "8d",
+          "5s",
+          "6h"
+        ],
+        "dead": [],
+        "seed": 1046,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-047",
+      "description": "4 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-047",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9d",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "6c",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "As",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "2d",
+              "9h"
+            ]
+          }
+        ],
+        "board": [
+          "7h",
+          "Qs",
+          "4d"
+        ],
+        "dead": [],
+        "seed": 1047,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-048",
+      "description": "5 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-048",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5h",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qs",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2c",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Jd",
+              "Tc"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "3c",
+              "Ac"
+            ]
+          }
+        ],
+        "board": [
+          "2s",
+          "7d",
+          "8d"
+        ],
+        "dead": [],
+        "seed": 1048,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-049",
+      "description": "6 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-049",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Kd",
+              "3s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "As",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4h",
+              "9s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "5c",
+              "7d"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "3h",
+              "6d"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Jc",
+              "3d"
+            ]
+          }
+        ],
+        "board": [
+          "8c",
+          "2d",
+          "9c"
+        ],
+        "dead": [],
+        "seed": 1049,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-050",
+      "description": "2 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-050",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Kh",
+              "Th"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2h",
+              "Ac"
+            ]
+          }
+        ],
+        "board": [
+          "Jh",
+          "4s",
+          "4c",
+          "7h"
+        ],
+        "dead": [],
+        "seed": 1050,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-051",
+      "description": "3 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-051",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qs",
+              "2c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4s",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ac",
+              "Js"
+            ]
+          }
+        ],
+        "board": [
+          "Jh",
+          "7c",
+          "5d",
+          "5h"
+        ],
+        "dead": [],
+        "seed": 1051,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-052",
+      "description": "4 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-052",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8h",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "9d",
+              "7h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3s",
+              "7d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4s",
+              "9s"
+            ]
+          }
+        ],
+        "board": [
+          "Kh",
+          "Ad",
+          "Qd",
+          "Js"
+        ],
+        "dead": [],
+        "seed": 1052,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-053",
+      "description": "5 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-053",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7s",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7h",
+              "6d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Kd",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "5d",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "8s",
+              "4h"
+            ]
+          }
+        ],
+        "board": [
+          "Js",
+          "3d",
+          "4s",
+          "6s"
+        ],
+        "dead": [],
+        "seed": 1053,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-054",
+      "description": "6 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-054",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2d",
+              "7d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4h",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "9s",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Js",
+              "4c"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "6d",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Qs",
+              "Kd"
+            ]
+          }
+        ],
+        "board": [
+          "Tc",
+          "Qh",
+          "9c",
+          "5d"
+        ],
+        "dead": [],
+        "seed": 1054,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-055",
+      "description": "2 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-055",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ah",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Kd",
+              "3s"
+            ]
+          }
+        ],
+        "board": [
+          "5d",
+          "Th",
+          "2s",
+          "4c",
+          "5h"
+        ],
+        "dead": [],
+        "seed": 1055,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-056",
+      "description": "3 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-056",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9c",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "combinations": [
+              {
+                "cards": [
+                  "7c",
+                  "Kc"
+                ],
+                "weight": 1
+              },
+              {
+                "cards": [
+                  "7s",
+                  "Jd"
+                ],
+                "weight": 0.25
+              }
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8c",
+              "Qd"
+            ]
+          }
+        ],
+        "board": [
+          "5d",
+          "9d",
+          "3s",
+          "Jc",
+          "Qc"
+        ],
+        "dead": [],
+        "seed": 1056,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-057",
+      "description": "4 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-057",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ks",
+              "Kc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Jd",
+              "6d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "As",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Qs",
+              "8h"
+            ]
+          }
+        ],
+        "board": [
+          "Ts",
+          "Tc",
+          "2d",
+          "7d",
+          "9h"
+        ],
+        "dead": [],
+        "seed": 1057,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-058",
+      "description": "5 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-058",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9c",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4c",
+              "Qs"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2d",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "7d",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "2h",
+              "9s"
+            ]
+          }
+        ],
+        "board": [
+          "7h",
+          "5d",
+          "Ts",
+          "Ks",
+          "Tc"
+        ],
+        "dead": [],
+        "seed": 1058,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-059",
+      "description": "6 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-059",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Kd",
+              "5h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7c",
+              "4s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "7h",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "7d",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "3s",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Ah",
+              "4d"
+            ]
+          }
+        ],
+        "board": [
+          "Kh",
+          "Ks",
+          "5d",
+          "5s",
+          "8c"
+        ],
+        "dead": [],
+        "seed": 1059,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-060",
+      "description": "2 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-060",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8d",
+              "Jc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ad",
+              "7d"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "4h",
+          "Qh",
+          "Js",
+          "4d",
+          "Tc",
+          "Th",
+          "7h",
+          "3h",
+          "2s",
+          "Td",
+          "Ts",
+          "9d",
+          "2h",
+          "5s",
+          "Kc",
+          "2d",
+          "6h",
+          "6s",
+          "Kh",
+          "5d",
+          "6d",
+          "7s",
+          "Qc",
+          "9s",
+          "9c",
+          "9h",
+          "Ah",
+          "Jd",
+          "5h",
+          "Kd",
+          "2c",
+          "8s",
+          "As",
+          "8h",
+          "Qd",
+          "7c",
+          "3c",
+          "5c",
+          "8c",
+          "4c"
+        ],
+        "seed": 1060,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-061",
+      "description": "3 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-061",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4h",
+              "6c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8s",
+              "3s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4d",
+              "Jd"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "6s",
+          "2c",
+          "9h",
+          "8c",
+          "3h",
+          "8d",
+          "Ac",
+          "3c",
+          "Kc",
+          "Qs",
+          "Ks",
+          "7h",
+          "5d",
+          "Ad",
+          "7c",
+          "Qd",
+          "2d",
+          "Jh",
+          "Td",
+          "6d",
+          "9c",
+          "7s",
+          "5s",
+          "5h",
+          "5c",
+          "Ts",
+          "Ah",
+          "4c",
+          "2h",
+          "Th",
+          "7d",
+          "4s",
+          "Qh",
+          "9s",
+          "3d",
+          "2s",
+          "Js",
+          "Kh"
+        ],
+        "seed": 1061,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-062",
+      "description": "4 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-062",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6d",
+              "9s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qc",
+              "As"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3c",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "9h",
+              "2d"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "5c",
+          "Td",
+          "Ac",
+          "4s",
+          "5d",
+          "4d",
+          "4c",
+          "Kd",
+          "9d",
+          "6c",
+          "Ts",
+          "3h",
+          "Qd",
+          "Ks",
+          "6s",
+          "7s",
+          "8d",
+          "Js",
+          "7c",
+          "Ah",
+          "Jh",
+          "3d",
+          "9c",
+          "Ad",
+          "8h",
+          "7d",
+          "5h",
+          "Th",
+          "Qh",
+          "5s",
+          "Jd",
+          "2c",
+          "2s",
+          "Kh",
+          "Jc",
+          "6h"
+        ],
+        "seed": 1062,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-063",
+      "description": "5 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-063",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5s",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4c",
+              "9s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4s",
+              "Js"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Qc",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "8s",
+              "9h"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "5d",
+          "Qd",
+          "6s",
+          "6h",
+          "Jh",
+          "7h",
+          "7s",
+          "9d",
+          "2h",
+          "3d",
+          "Th",
+          "6d",
+          "3h",
+          "As",
+          "Jd",
+          "2c",
+          "3s",
+          "3c",
+          "Kd",
+          "Qh",
+          "Kh",
+          "Ks",
+          "4h",
+          "8h",
+          "Ah",
+          "2s",
+          "Td",
+          "Jc",
+          "6c",
+          "9c",
+          "2d",
+          "Tc",
+          "8d",
+          "Ac"
+        ],
+        "seed": 1063,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-064",
+      "description": "6 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-064",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7s",
+              "9d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Jh",
+              "Js"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5d",
+              "4h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "9c",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Qs",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Ts",
+              "Ah"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "3d",
+          "8d",
+          "6d",
+          "9h",
+          "2d",
+          "Ad",
+          "Qh",
+          "4s",
+          "Qc",
+          "Kh",
+          "8h",
+          "5s",
+          "5h",
+          "7c",
+          "5c",
+          "6s",
+          "Td",
+          "Kc",
+          "Kd",
+          "Ac",
+          "9s",
+          "Tc",
+          "8c",
+          "Th",
+          "3s",
+          "3c",
+          "Jd",
+          "4d",
+          "Qd",
+          "6c",
+          "6h",
+          "Jc"
+        ],
+        "seed": 1064,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-065",
+      "description": "2 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-065",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6s",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ac",
+              "Js"
+            ]
+          }
+        ],
+        "board": [
+          "8h",
+          "Qh",
+          "4s"
+        ],
+        "dead": [],
+        "seed": 1065,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-066",
+      "description": "3 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-066",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4c",
+              "4s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Td",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Qs",
+              "Jd"
+            ]
+          }
+        ],
+        "board": [
+          "6s",
+          "2d",
+          "8h"
+        ],
+        "dead": [],
+        "seed": 1066,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-067",
+      "description": "4 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-067",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Jh",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qh",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8d",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "9d",
+              "7d"
+            ]
+          }
+        ],
+        "board": [
+          "Ac",
+          "5h",
+          "Td"
+        ],
+        "dead": [],
+        "seed": 1067,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-068",
+      "description": "5 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-068",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8c",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8h",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3h",
+              "2c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "2s",
+              "5d"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Tc",
+              "9s"
+            ]
+          }
+        ],
+        "board": [
+          "2d",
+          "6h",
+          "Ah"
+        ],
+        "dead": [],
+        "seed": 1068,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-069",
+      "description": "6 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-069",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5s",
+              "4c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4h",
+              "Qd"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5d",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "3c",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "6d",
+              "6c"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "As",
+              "9d"
+            ]
+          }
+        ],
+        "board": [
+          "8c",
+          "Js",
+          "Qs"
+        ],
+        "dead": [],
+        "seed": 1069,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-070",
+      "description": "2 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-070",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qs",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8h",
+              "Kh"
+            ]
+          }
+        ],
+        "board": [
+          "7d",
+          "Tc",
+          "Td",
+          "Ad"
+        ],
+        "dead": [],
+        "seed": 1070,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-071",
+      "description": "3 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-071",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Jc",
+              "Td"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Kc",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "7c",
+              "5d"
+            ]
+          }
+        ],
+        "board": [
+          "Qd",
+          "5c",
+          "Ac",
+          "2s"
+        ],
+        "dead": [],
+        "seed": 1071,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-072",
+      "description": "4 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-072",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ks",
+              "As"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7c",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ts",
+              "Qs"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Qd",
+              "4d"
+            ]
+          }
+        ],
+        "board": [
+          "8d",
+          "Qc",
+          "8s",
+          "Qh"
+        ],
+        "dead": [],
+        "seed": 1072,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-073",
+      "description": "5 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-073",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Td",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2h",
+              "Qs"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Jh",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "5h",
+              "6d"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Kc",
+              "Ad"
+            ]
+          }
+        ],
+        "board": [
+          "9s",
+          "Jc",
+          "Jd",
+          "Tc"
+        ],
+        "dead": [],
+        "seed": 1073,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-074",
+      "description": "6 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-074",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8d",
+              "Js"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qs",
+              "4s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2s",
+              "2c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4h",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Th",
+              "Qd"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Qc",
+              "As"
+            ]
+          }
+        ],
+        "board": [
+          "5c",
+          "6h",
+          "Ac",
+          "7s"
+        ],
+        "dead": [],
+        "seed": 1074,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-075",
+      "description": "2 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-075",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5h",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2d",
+              "3s"
+            ]
+          }
+        ],
+        "board": [
+          "Jc",
+          "Td",
+          "Qd",
+          "Qs",
+          "Th"
+        ],
+        "dead": [],
+        "seed": 1075,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-076",
+      "description": "3 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-076",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qd",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4s",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Jh",
+              "Kc"
+            ]
+          }
+        ],
+        "board": [
+          "Td",
+          "Qs",
+          "Th",
+          "Ac",
+          "4h"
+        ],
+        "dead": [],
+        "seed": 1076,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-077",
+      "description": "4 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-077",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6c",
+              "7h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "combinations": [
+              {
+                "cards": [
+                  "Qs",
+                  "9s"
+                ],
+                "weight": 1
+              },
+              {
+                "cards": [
+                  "Qh",
+                  "Ks"
+                ],
+                "weight": 0.25
+              }
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Td",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4d",
+              "5d"
+            ]
+          }
+        ],
+        "board": [
+          "7s",
+          "9c",
+          "8s",
+          "Qc",
+          "2c"
+        ],
+        "dead": [],
+        "seed": 1077,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-078",
+      "description": "5 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-078",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9c",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4d",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5h",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Jc",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "5d",
+              "8s"
+            ]
+          }
+        ],
+        "board": [
+          "9d",
+          "8d",
+          "Qh",
+          "6c",
+          "2s"
+        ],
+        "dead": [],
+        "seed": 1078,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-079",
+      "description": "6 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-079",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5d",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3s",
+              "Td"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4h",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "5c",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "7h",
+              "Qh"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Jh",
+              "Ks"
+            ]
+          }
+        ],
+        "board": [
+          "6d",
+          "9c",
+          "2d",
+          "Jc",
+          "Ts"
+        ],
+        "dead": [],
+        "seed": 1079,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-080",
+      "description": "2 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-080",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4s",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2h",
+              "8c"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "8d",
+          "Ac",
+          "4h",
+          "3s",
+          "9d",
+          "7d",
+          "Ah",
+          "Jc",
+          "9h",
+          "Js",
+          "4c",
+          "5d",
+          "Tc",
+          "5h",
+          "6h",
+          "2s",
+          "Ks",
+          "Qd",
+          "2c",
+          "3c",
+          "Qc",
+          "Kc",
+          "5s",
+          "6c",
+          "Jh",
+          "9c",
+          "Qh",
+          "3h",
+          "As",
+          "3d",
+          "7c",
+          "7h",
+          "2d",
+          "Td",
+          "Jd",
+          "8s",
+          "6d",
+          "Ad",
+          "5c",
+          "6s"
+        ],
+        "seed": 1080,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-081",
+      "description": "3 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-081",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2c",
+              "As"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2s",
+              "4c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ah",
+              "3h"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "6c",
+          "Jd",
+          "7s",
+          "5d",
+          "Jc",
+          "Js",
+          "Ac",
+          "Th",
+          "Tc",
+          "4s",
+          "6s",
+          "Qd",
+          "3s",
+          "9s",
+          "2d",
+          "8c",
+          "4d",
+          "7d",
+          "Td",
+          "5c",
+          "Qc",
+          "Ks",
+          "6d",
+          "5h",
+          "6h",
+          "Kd",
+          "7h",
+          "3c",
+          "Qs",
+          "8d",
+          "4h",
+          "Qh",
+          "9h",
+          "8s",
+          "9c",
+          "2h",
+          "Jh",
+          "Ts"
+        ],
+        "seed": 1081,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-082",
+      "description": "4 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-082",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3s",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "6h",
+              "4h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2s",
+              "2d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "8c",
+              "Jc"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Jh",
+          "Qc",
+          "3h",
+          "4c",
+          "9c",
+          "Kd",
+          "6d",
+          "Td",
+          "Th",
+          "6s",
+          "8h",
+          "5c",
+          "3c",
+          "Ac",
+          "9d",
+          "7s",
+          "4s",
+          "Jd",
+          "Kc",
+          "5h",
+          "Qd",
+          "5d",
+          "8s",
+          "7c",
+          "6c",
+          "2c",
+          "As",
+          "7h",
+          "8d",
+          "2h",
+          "3d",
+          "Ah",
+          "7d",
+          "Qh",
+          "Qs",
+          "9h"
+        ],
+        "seed": 1082,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-083",
+      "description": "5 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-083",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3s",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Th",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3d",
+              "As"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "3h",
+              "9c"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "7d",
+              "4c"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "6s",
+          "Ts",
+          "Ac",
+          "8h",
+          "5s",
+          "Qs",
+          "6d",
+          "7h",
+          "8s",
+          "9d",
+          "4d",
+          "Ah",
+          "5h",
+          "9s",
+          "Kh",
+          "Kc",
+          "6c",
+          "3c",
+          "8d",
+          "Qh",
+          "Tc",
+          "4h",
+          "Ad",
+          "9h",
+          "Kd",
+          "Qc",
+          "7c",
+          "5d",
+          "2d",
+          "2s",
+          "Js",
+          "8c",
+          "Qd",
+          "6h"
+        ],
+        "seed": 1083,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-084",
+      "description": "6 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-084",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2c",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2h",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ts",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "6s",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Kc",
+              "Jc"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "6h",
+              "3d"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "Qc",
+          "8c",
+          "6d",
+          "8s",
+          "Jh",
+          "2d",
+          "Ac",
+          "Td",
+          "3h",
+          "7d",
+          "7c",
+          "Tc",
+          "4h",
+          "Kd",
+          "Ah",
+          "9c",
+          "Kh",
+          "Qs",
+          "Js",
+          "5h",
+          "Ad",
+          "3s",
+          "9d",
+          "Jd",
+          "As",
+          "4s",
+          "Qd",
+          "Th",
+          "9s",
+          "6c",
+          "2s",
+          "7h"
+        ],
+        "seed": 1084,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-085",
+      "description": "2 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-085",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6c",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7c",
+              "Tc"
+            ]
+          }
+        ],
+        "board": [
+          "5d",
+          "Js",
+          "9h"
+        ],
+        "dead": [],
+        "seed": 1085,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-086",
+      "description": "3 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-086",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6c",
+              "Th"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "6h",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5h",
+              "9c"
+            ]
+          }
+        ],
+        "board": [
+          "5s",
+          "9d",
+          "Jc"
+        ],
+        "dead": [],
+        "seed": 1086,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-087",
+      "description": "4 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-087",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7c",
+              "Qh"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8d",
+              "Tc"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "7s",
+              "Kc"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4s",
+              "3c"
+            ]
+          }
+        ],
+        "board": [
+          "5d",
+          "Qs",
+          "Jd"
+        ],
+        "dead": [],
+        "seed": 1087,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-088",
+      "description": "5 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-088",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2h",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3c",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "7d",
+              "Kc"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "7h",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "5h",
+              "Kd"
+            ]
+          }
+        ],
+        "board": [
+          "Qc",
+          "Td",
+          "9s"
+        ],
+        "dead": [],
+        "seed": 1088,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-089",
+      "description": "6 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-089",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Td",
+              "Kc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7s",
+              "4c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3d",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "7h",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Qd",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "5h",
+              "Qh"
+            ]
+          }
+        ],
+        "board": [
+          "5d",
+          "As",
+          "Ks"
+        ],
+        "dead": [],
+        "seed": 1089,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-090",
+      "description": "2 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-090",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3s",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ah",
+              "6s"
+            ]
+          }
+        ],
+        "board": [
+          "2h",
+          "Qh",
+          "5s",
+          "7c"
+        ],
+        "dead": [],
+        "seed": 1090,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-091",
+      "description": "3 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-091",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ts",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2d",
+              "5h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Js",
+              "3d"
+            ]
+          }
+        ],
+        "board": [
+          "8d",
+          "7h",
+          "6d",
+          "Tc"
+        ],
+        "dead": [],
+        "seed": 1091,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-092",
+      "description": "4 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-092",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8h",
+              "Td"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7h",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2d",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4h",
+              "Kh"
+            ]
+          }
+        ],
+        "board": [
+          "2h",
+          "5h",
+          "9h",
+          "Ad"
+        ],
+        "dead": [],
+        "seed": 1092,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-093",
+      "description": "5 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-093",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8c",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Jd",
+              "Ks"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ts",
+              "4c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "5h",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "As",
+              "2c"
+            ]
+          }
+        ],
+        "board": [
+          "7s",
+          "9c",
+          "4d",
+          "Td"
+        ],
+        "dead": [],
+        "seed": 1093,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-094",
+      "description": "6 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-094",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "7h",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8d",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4c",
+              "9c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "3s",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Qd",
+              "Qs"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "7d",
+              "Ad"
+            ]
+          }
+        ],
+        "board": [
+          "6c",
+          "4d",
+          "8s",
+          "Qh"
+        ],
+        "dead": [],
+        "seed": 1094,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-095",
+      "description": "2 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-095",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3c",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ks",
+              "As"
+            ]
+          }
+        ],
+        "board": [
+          "Jd",
+          "Jc",
+          "4h",
+          "5d",
+          "7d"
+        ],
+        "dead": [],
+        "seed": 1095,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-096",
+      "description": "3 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-096",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6c",
+              "8s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2s",
+              "Qd"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2c",
+              "9d"
+            ]
+          }
+        ],
+        "board": [
+          "Jc",
+          "Qs",
+          "9s",
+          "As",
+          "4s"
+        ],
+        "dead": [],
+        "seed": 1096,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-097",
+      "description": "4 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-097",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Kh",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7h",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8s",
+              "3s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "3c",
+              "Js"
+            ]
+          }
+        ],
+        "board": [
+          "8d",
+          "2c",
+          "4s",
+          "9h",
+          "6c"
+        ],
+        "dead": [],
+        "seed": 1097,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-098",
+      "description": "5 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-098",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ks",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "combinations": [
+              {
+                "cards": [
+                  "Jd",
+                  "3d"
+                ],
+                "weight": 1
+              },
+              {
+                "cards": [
+                  "6s",
+                  "6c"
+                ],
+                "weight": 0.25
+              }
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Th",
+              "Qd"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Kh",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "4s",
+              "Kc"
+            ]
+          }
+        ],
+        "board": [
+          "3h",
+          "5c",
+          "8c",
+          "9d",
+          "Ac"
+        ],
+        "dead": [],
+        "seed": 1098,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-099",
+      "description": "6 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-099",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6s",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "9s",
+              "Tc"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Qs",
+              "4s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Jc",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "6c",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Qh",
+              "Th"
+            ]
+          }
+        ],
+        "board": [
+          "3d",
+          "8h",
+          "5d",
+          "4d",
+          "6d"
+        ],
+        "dead": [],
+        "seed": 1099,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-100",
+      "description": "2 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-100",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Tc",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3d",
+              "9h"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "8c",
+          "7h",
+          "Kh",
+          "5c",
+          "2h",
+          "Td",
+          "Qc",
+          "Jh",
+          "As",
+          "Qd",
+          "7d",
+          "Ac",
+          "4h",
+          "5h",
+          "Ks",
+          "Qs",
+          "9d",
+          "6d",
+          "8s",
+          "Kd",
+          "5d",
+          "Kc",
+          "4s",
+          "8h",
+          "Th",
+          "4c",
+          "Jc",
+          "Jd",
+          "6h",
+          "9s",
+          "4d",
+          "Ah",
+          "6s",
+          "7s",
+          "3c",
+          "Qh",
+          "6c",
+          "2d",
+          "Js",
+          "8d"
+        ],
+        "seed": 1100,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-101",
+      "description": "3 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-101",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qs",
+              "2s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5h",
+              "8d"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8c",
+              "4h"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "2d",
+          "Tc",
+          "3s",
+          "6h",
+          "4s",
+          "Jh",
+          "5c",
+          "As",
+          "5s",
+          "7d",
+          "Jd",
+          "Qd",
+          "Qc",
+          "3d",
+          "8s",
+          "9c",
+          "5d",
+          "2h",
+          "Ks",
+          "4d",
+          "Js",
+          "6d",
+          "9s",
+          "Qh",
+          "7s",
+          "6c",
+          "Jc",
+          "9d",
+          "Td",
+          "2c",
+          "7c",
+          "Kd",
+          "7h",
+          "8h",
+          "4c",
+          "Ad",
+          "Th",
+          "3h"
+        ],
+        "seed": 1101,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-102",
+      "description": "4 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-102",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2c",
+              "8c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "9d",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6d",
+              "6c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4c",
+              "8s"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "4d",
+          "Ks",
+          "5d",
+          "4s",
+          "6s",
+          "8d",
+          "Qd",
+          "3h",
+          "9c",
+          "2h",
+          "Ac",
+          "9s",
+          "Qc",
+          "Jc",
+          "3s",
+          "Ah",
+          "Kd",
+          "5h",
+          "Td",
+          "2d",
+          "6h",
+          "Js",
+          "7s",
+          "Jh",
+          "Kc",
+          "5c",
+          "Jd",
+          "7d",
+          "2s",
+          "5s",
+          "7h",
+          "Tc",
+          "7c",
+          "Th",
+          "As",
+          "3c"
+        ],
+        "seed": 1102,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-103",
+      "description": "5 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-103",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5c",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8s",
+              "Tc"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Ad",
+              "Jd"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "6d",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "7h",
+              "Jh"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "7d",
+          "8c",
+          "2h",
+          "Qd",
+          "7c",
+          "5s",
+          "Qh",
+          "4s",
+          "5d",
+          "Jc",
+          "Js",
+          "Kc",
+          "3s",
+          "9d",
+          "4h",
+          "6c",
+          "9h",
+          "9c",
+          "2s",
+          "8d",
+          "5h",
+          "9s",
+          "Qs",
+          "7s",
+          "6h",
+          "Kd",
+          "Td",
+          "Ks",
+          "2c",
+          "3c",
+          "4c",
+          "3h",
+          "Ah",
+          "8h"
+        ],
+        "seed": 1103,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-104",
+      "description": "6 players; board 0; explicit study dead cards",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-104",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "6c",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Kd",
+              "Jc"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3d",
+              "Tc"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "As",
+              "Qd"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Td",
+              "5h"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Qs",
+              "Ks"
+            ]
+          }
+        ],
+        "board": [],
+        "dead": [
+          "2c",
+          "6s",
+          "5d",
+          "Js",
+          "2h",
+          "7s",
+          "Ad",
+          "4d",
+          "8d",
+          "Jh",
+          "6h",
+          "9c",
+          "9d",
+          "2d",
+          "3s",
+          "8h",
+          "Kh",
+          "Qh",
+          "4s",
+          "Ac",
+          "Kc",
+          "3h",
+          "Jd",
+          "Qc",
+          "2s",
+          "9h",
+          "Ts",
+          "5c",
+          "4c",
+          "3c",
+          "7d",
+          "Ah"
+        ],
+        "seed": 1104,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-105",
+      "description": "2 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-105",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8c",
+              "3h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5c",
+              "9c"
+            ]
+          }
+        ],
+        "board": [
+          "2h",
+          "9s",
+          "Kd"
+        ],
+        "dead": [],
+        "seed": 1105,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-106",
+      "description": "3 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-106",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3d",
+              "Ad"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3h",
+              "Jc"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Td",
+              "Js"
+            ]
+          }
+        ],
+        "board": [
+          "Ks",
+          "9s",
+          "5s"
+        ],
+        "dead": [],
+        "seed": 1106,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-107",
+      "description": "4 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-107",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Ad",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7d",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "Qs",
+              "Js"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4c",
+              "Tc"
+            ]
+          }
+        ],
+        "board": [
+          "5s",
+          "6c",
+          "7s"
+        ],
+        "dead": [],
+        "seed": 1107,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-108",
+      "description": "5 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-108",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2d",
+              "4d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "3s",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "3c",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "3h",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "As",
+              "7d"
+            ]
+          }
+        ],
+        "board": [
+          "6h",
+          "5c",
+          "Kc"
+        ],
+        "dead": [],
+        "seed": 1108,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-109",
+      "description": "6 players; board 3; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-109",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8c",
+              "5s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Jc",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "As",
+              "6s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Ad",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Tc",
+              "8h"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "Qh",
+              "Td"
+            ]
+          }
+        ],
+        "board": [
+          "2s",
+          "8d",
+          "9c"
+        ],
+        "dead": [],
+        "seed": 1109,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-110",
+      "description": "2 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-110",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Jh",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "7c",
+              "Kc"
+            ]
+          }
+        ],
+        "board": [
+          "Ac",
+          "Js",
+          "Ks",
+          "9s"
+        ],
+        "dead": [],
+        "seed": 1110,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-111",
+      "description": "3 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-111",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Qc",
+              "Th"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "5h",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "4s",
+              "3h"
+            ]
+          }
+        ],
+        "board": [
+          "9s",
+          "7d",
+          "6s",
+          "3s"
+        ],
+        "dead": [],
+        "seed": 1111,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-112",
+      "description": "4 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-112",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Kh",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ad",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "7s",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "7c",
+              "3d"
+            ]
+          }
+        ],
+        "board": [
+          "Qc",
+          "4h",
+          "8c",
+          "6s"
+        ],
+        "dead": [],
+        "seed": 1112,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-113",
+      "description": "5 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-113",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "5c",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "9c",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6c",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4s",
+              "Ts"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "9d",
+              "4c"
+            ]
+          }
+        ],
+        "board": [
+          "7c",
+          "Qc",
+          "8c",
+          "5d"
+        ],
+        "dead": [],
+        "seed": 1113,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-114",
+      "description": "6 players; board 4; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-114",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "4h",
+              "Qc"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "2s",
+              "Kd"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "2d",
+              "7c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "9s",
+              "9h"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "9d",
+              "3d"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "2h",
+              "7h"
+            ]
+          }
+        ],
+        "board": [
+          "Qs",
+          "Ad",
+          "4d",
+          "Jh"
+        ],
+        "dead": [],
+        "seed": 1114,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-115",
+      "description": "2 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-115",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8d",
+              "2d"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "6d",
+              "4c"
+            ]
+          }
+        ],
+        "board": [
+          "Js",
+          "3d",
+          "7c",
+          "8s",
+          "3s"
+        ],
+        "dead": [],
+        "seed": 1115,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-116",
+      "description": "3 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-116",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "Jc",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Qh",
+              "2h"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "5d",
+              "4c"
+            ]
+          }
+        ],
+        "board": [
+          "Td",
+          "Kd",
+          "5h",
+          "7s",
+          "Kc"
+        ],
+        "dead": [],
+        "seed": 1116,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-117",
+      "description": "4 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-117",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "8s",
+              "6h"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Jd",
+              "9s"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8c",
+              "8d"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Jh",
+              "4s"
+            ]
+          }
+        ],
+        "board": [
+          "8h",
+          "Ks",
+          "6c",
+          "Kc",
+          "As"
+        ],
+        "dead": [],
+        "seed": 1117,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-118",
+      "description": "5 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-118",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "3h",
+              "Jh"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "8s",
+              "Ac"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "9s",
+              "8c"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "4s",
+              "7d"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "2d",
+              "Kd"
+            ]
+          }
+        ],
+        "board": [
+          "4c",
+          "Ad",
+          "As",
+          "3c",
+          "4h"
+        ],
+        "dead": [],
+        "seed": 1118,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "fixture-119",
+      "description": "6 players; board 5; ordinary known information",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "fixture-119",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "9h",
+              "As"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "combinations": [
+              {
+                "cards": [
+                  "4s",
+                  "2c"
+                ],
+                "weight": 1
+              },
+              {
+                "cards": [
+                  "Th",
+                  "6c"
+                ],
+                "weight": 0.25
+              }
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "8c",
+              "7s"
+            ]
+          },
+          {
+            "id": "opponent-3",
+            "hand": [
+              "Td",
+              "Kc"
+            ]
+          },
+          {
+            "id": "opponent-4",
+            "hand": [
+              "Jc",
+              "Kh"
+            ]
+          },
+          {
+            "id": "opponent-5",
+            "hand": [
+              "2h",
+              "3d"
+            ]
+          }
+        ],
+        "board": [
+          "5d",
+          "3c",
+          "4c",
+          "9c",
+          "4d"
+        ],
+        "dead": [],
+        "seed": 1119,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "royal-three-way",
+      "description": "royal-three-way",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "royal-three-way",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "2c",
+              "3c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "4c",
+              "5c"
+            ]
+          },
+          {
+            "id": "opponent-2",
+            "hand": [
+              "6c",
+              "7c"
+            ]
+          }
+        ],
+        "board": [
+          "Ts",
+          "Js",
+          "Qs",
+          "Ks",
+          "As"
+        ],
+        "dead": [],
+        "seed": 20260930,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "documented-990",
+      "description": "documented-990",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "documented-990",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "As",
+              "Ah"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ks",
+              "Kh"
+            ]
+          }
+        ],
+        "board": [
+          "2c",
+          "7d",
+          "Jh"
+        ],
+        "dead": [],
+        "seed": 20260930,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    },
+    {
+      "id": "wheel-kickers",
+      "description": "wheel-kickers",
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "wheel-kickers",
+        "analysisRevision": 0,
+        "operation": "equity",
+        "variant": "holdem-high",
+        "ruleset": "pok-cash-no-rake-v1",
+        "engine": "pok-standard",
+        "method": "exact",
+        "executionPermission": "browser-only",
+        "informationScope": "reveal-all-study",
+        "heroId": "hero",
+        "players": [
+          {
+            "id": "hero",
+            "hand": [
+              "As",
+              "2c"
+            ]
+          },
+          {
+            "id": "opponent-1",
+            "hand": [
+              "Ac",
+              "2d"
+            ]
+          }
+        ],
+        "board": [
+          "3d",
+          "4h",
+          "5s",
+          "9c",
+          "Kd"
+        ],
+        "dead": [],
+        "seed": 20260930,
+        "budget": {
+          "samples": 10000,
+          "states": 250000,
+          "timeMs": 30000,
+          "memoryMiB": 128,
+          "threads": 1
+        }
+      }
+    }
+  ]
+}

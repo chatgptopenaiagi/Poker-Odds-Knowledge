@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "builtUtc": "2026-09-30T10:19:06.5374423Z",
+  "adapterVersion": "pok-java-river-1",
+  "upstream": {
+    "repository": "https://github.com/bupticybee/TexasHoldemSolverJava",
+    "revision": "e90d1bb4c7cf6fbd433428d6acf41f606e0c8530",
+    "license": "MIT"
+  },
+  "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS",
+  "sourceCount": 31,
+  "artifact": {
+    "name": "pok-river-solver.jar",
+    "bytes": 77885,
+    "sha256": "507a3ec2ca578f96550ae840f95ed9a332f2e64bbe8b3d8e7fbf719ab82e115e"
+  },
+  "dependencies": [
+    {
+      "coordinate": "com/alibaba/fastjson2/fastjson2/2.0.65/fastjson2-2.0.65",
+      "bytes": 2239002,
+      "sha256": "e12cd0e49047e052533d897d4b45d1074a21229f2a1939404234398d4c10c06d",
+      "license": "Apache-2.0"
+    },
+    {
+      "coordinate": "com/fasterxml/jackson/core/jackson-core/2.22.3/jackson-core-2.22.3",
+      "bytes": 594776,
+      "sha256": "8a501126a385b25841915d839508f8a66e2a0dbc8a6709d055ef3b3e852b094c",
+      "license": "Apache-2.0"
+    },
+    {
+      "coordinate": "com/fasterxml/jackson/core/jackson-databind/2.22.3/jackson-databind-2.22.3",
+      "bytes": 1709604,
+      "sha256": "556db5439e206114346043f68d200497dc96a0bca62a360a81784092ebd0e0a9",
+      "license": "Apache-2.0"
+    },
+    {
+      "coordinate": "com/fasterxml/jackson/core/jackson-annotations/2.22/jackson-annotations-2.22",
+      "bytes": 84211,
+      "sha256": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0",
+      "license": "Apache-2.0"
+    }
+  ],
+  "notices": [
+    {
+      "file": "fastjson2-2.0.65-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "file": "jackson-annotations-2.22-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "jackson-annotations-2.22-NOTICE.txt",
+      "bytes": 738,
+      "sha256": "612b14bc77c944ce229cbba0d14919162cfea8ed802cbf06a8e865e032d03201"
+    },
+    {
+      "file": "jackson-core-2.22.3-FastDoubleParser-LICENSE.txt",
+      "bytes": 3228,
+      "sha256": "59067508e44346bf93dc9c5e4d673a67ecd77988c2020bb5e0f8667eb199f396"
+    },
+    {
+      "file": "jackson-core-2.22.3-FastDoubleParser-ThirdParty-LICENSE.txt",
+      "bytes": 4578,
+      "sha256": "dbc36f9422a40d58d1a214080583667cfd37d61c2fae1657d981edda2a60727f"
+    },
+    {
+      "file": "jackson-core-2.22.3-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "jackson-core-2.22.3-NOTICE.txt",
+      "bytes": 1616,
+      "sha256": "e6aef1c0f4cf5b0f802c16b31fce309b3c3737450b93c40d6291bf6540aae3d1"
+    },
+    {
+      "file": "jackson-core-2.22.3-Schubfach-LICENSE.txt",
+      "bytes": 1064,
+      "sha256": "12d39a6615219d73202300715e365bec2b958f858d1e837c8f2dace57f905969"
+    },
+    {
+      "file": "jackson-databind-2.22.3-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "jackson-databind-2.22.3-NOTICE.txt",
+      "bytes": 738,
+      "sha256": "612b14bc77c944ce229cbba0d14919162cfea8ed802cbf06a8e865e032d03201"
+    },
+    {
+      "file": "TexasHoldemSolverJava-MIT.txt",
+      "bytes": 1088,
+      "sha256": "1326381921ad48a6ca93881e293c59238ae22b07b8e3f1835561a58d62a516e0"
+    }
+  ],
+  "limitations": [
+    "Artifact hash identifies this tested build; JAR timestamps can change on rebuilding.",
+    "No JDK is bundled. Runtime paths are excluded from this sanitized record.",
+    "A later recipe-only change creates a fresh class directory to exclude stale classes; the tested artifact was not rebuilt because its inputs and selected classes were already verified."
+  ]
+}

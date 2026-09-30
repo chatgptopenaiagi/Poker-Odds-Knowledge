@@ -1,0 +1,3669 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-30T10:20:34.661018+00:00",
+  "oracle": "pok-independent-river-sequence-lp-1",
+  "sourceSha256": "66f08ce294694146a71cbc946d46f5876894cb5a7c6ac7cfc98581d2d7ef0518",
+  "solverJarSha256": "507a3ec2ca578f96550ae840f95ed9a332f2e64bbe8b3d8e7fbf719ab82e115e",
+  "predeclaredPlan": {
+    "iterations": [
+      500,
+      2000,
+      10000
+    ],
+    "jobs": 18,
+    "threads": 1,
+    "maxHeapMiB": 256,
+    "deadlineMs": 15000,
+    "parentTimeoutMs": 17000,
+    "maximumNashConvChips": 0.5,
+    "metricToleranceChips": 0.001,
+    "noAdaptiveReruns": true
+  },
+  "dependencies": {
+    "scipy": "1.18.1",
+    "numpy": "2.5.3",
+    "pokerkit": "0.7.6"
+  },
+  "scenarios": [
+    {
+      "id": "dry-broadway-bluff-catcher",
+      "version": 1,
+      "runs": [
+        {
+          "iterations": 500,
+          "status": "PASS",
+          "solverElapsedMs": 103.4066,
+          "totalWallSeconds": 0.4174,
+          "oracleSeconds": 0.0413,
+          "requestFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-500.request.json",
+          "resultFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-500.result.json",
+          "oracleFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-500.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 9,
+              "publicTerminals": 5,
+              "informationSets": [
+                16,
+                16
+              ],
+              "sequences": [
+                33,
+                33
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 290,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 36.78277992802335,
+            "dualityGapChips": 0.0,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                36.782615858195854,
+                -36.782615858195854
+              ],
+              "bestResponseEVChips": [
+                36.79814573960129,
+                -36.778075833516986
+              ],
+              "deviationGainsChips": [
+                0.015529881405434764,
+                0.004540024678867383
+              ],
+              "nashConvChips": 0.020069906084302147,
+              "exploitabilityChips": 0.010034953042151074,
+              "exploitabilityPotPercent": 0.010034953042151074,
+              "equilibriumValueIntervalOOP": [
+                36.778075833516986,
+                36.79814573960129
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.02007293701171875,
+                "independent": 0.020069906084302147,
+                "absoluteDifference": 3.0309274166029354e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.010036468505859375,
+                "independent": 0.010034953042151074,
+                "absoluteDifference": 1.5154637083014677e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.010036468505859375,
+                "independent": 0.010034953042151074,
+                "absoluteDifference": 1.5154637083014677e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 4.507356763383541e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 3.3692854302103115e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 72,
+            "reachChecks": 64,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 1.5167223459400248e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "21863b481e7dd6658ef993b2971a7d11371f32010ae9c834cf30b7c18b66839e",
+            "outputSha256": "ac43cff9df306662057ec9814b79b888a7da866c8f2f47810fe6fa3263c28b98"
+          },
+          "trace": [
+            {
+              "bestResponseValues": [
+                50.68242645263672,
+                -34.24322509765625
+              ],
+              "target": 500,
+              "iterations": 1,
+              "nashConvChips": 16.43920135498047,
+              "type": "progress",
+              "gap": 16.43920135498047
+            },
+            {
+              "bestResponseValues": [
+                36.79814910888672,
+                -36.778076171875
+              ],
+              "target": 500,
+              "iterations": 500,
+              "nashConvChips": 0.02007293701171875,
+              "type": "progress",
+              "gap": 0.02007293701171875
+            }
+          ]
+        },
+        {
+          "iterations": 2000,
+          "status": "PASS",
+          "solverElapsedMs": 125.9542,
+          "totalWallSeconds": 0.4502,
+          "oracleSeconds": 0.0398,
+          "requestFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-2000.request.json",
+          "resultFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-2000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-2000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 9,
+              "publicTerminals": 5,
+              "informationSets": [
+                16,
+                16
+              ],
+              "sequences": [
+                33,
+                33
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 290,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 36.78277992802335,
+            "dualityGapChips": 0.0,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                36.78286245070668,
+                -36.78286245070668
+              ],
+              "bestResponseEVChips": [
+                36.802704715039326,
+                -36.77785765323353
+              ],
+              "deviationGainsChips": [
+                0.019842264332645243,
+                0.005004797473148415
+              ],
+              "nashConvChips": 0.024847061805793658,
+              "exploitabilityChips": 0.012423530902896829,
+              "exploitabilityPotPercent": 0.012423530902896829,
+              "equilibriumValueIntervalOOP": [
+                36.77785765323353,
+                36.802704715039326
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.024852752685546875,
+                "independent": 0.024847061805793658,
+                "absoluteDifference": 5.690879753217359e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.012426376342773438,
+                "independent": 0.012423530902896829,
+                "absoluteDifference": 2.8454398766086797e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.01242637634277344,
+                "independent": 0.012423530902896829,
+                "absoluteDifference": 2.8454398766104144e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 4.5205595000652465e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 2.957079814791541e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 72,
+            "reachChecks": 64,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 1.5186713753223557e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "4ae2592b2d39dc7938e4558bc0fb684e10ac5ba7e47fe875ea5634c01610a7e9",
+            "outputSha256": "9a488ccaafb9fb26f934a80cb8935dda61969bf133fec1d305302a651bb0d2c2"
+          },
+          "trace": [
+            {
+              "bestResponseValues": [
+                50.68242645263672,
+                -34.24322509765625
+              ],
+              "target": 2000,
+              "iterations": 1,
+              "nashConvChips": 16.43920135498047,
+              "type": "progress",
+              "gap": 16.43920135498047
+            },
+            {
+              "bestResponseValues": [
+                36.79814910888672,
+                -36.778076171875
+              ],
+              "target": 2000,
+              "iterations": 500,
+              "nashConvChips": 0.02007293701171875,
+              "type": "progress",
+              "gap": 0.02007293701171875
+            },
+            {
+              "bestResponseValues": [
+                36.79733657836914,
+                -36.77920150756836
+              ],
+              "target": 2000,
+              "iterations": 1000,
+              "nashConvChips": 0.01813507080078125,
+              "type": "progress",
+              "gap": 0.01813507080078125
+            },
+            {
+              "bestResponseValues": [
+                36.802452087402344,
+                -36.77845001220703
+              ],
+              "target": 2000,
+              "iterations": 1500,
+              "nashConvChips": 0.0240020751953125,
+              "type": "progress",
+              "gap": 0.0240020751953125
+            },
+            {
+              "bestResponseValues": [
+                36.80270767211914,
+                -36.777854919433594
+              ],
+              "target": 2000,
+              "iterations": 2000,
+              "nashConvChips": 0.024852752685546875,
+              "type": "progress",
+              "gap": 0.024852752685546875
+            }
+          ]
+        },
+        {
+          "iterations": 10000,
+          "status": "PASS",
+          "solverElapsedMs": 223.651,
+          "totalWallSeconds": 0.5259,
+          "oracleSeconds": 0.0298,
+          "requestFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-10000.request.json",
+          "resultFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-10000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/dry-broadway-bluff-catcher-10000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 9,
+              "publicTerminals": 5,
+              "informationSets": [
+                16,
+                16
+              ],
+              "sequences": [
+                33,
+                33
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 290,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 36.78277992802335,
+            "dualityGapChips": 0.0,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                36.78279732948863,
+                -36.78279732948863
+              ],
+              "bestResponseEVChips": [
+                36.803642633727705,
+                -36.773273725656594
+              ],
+              "deviationGainsChips": [
+                0.02084530423907438,
+                0.009523603832036542
+              ],
+              "nashConvChips": 0.030368908071110923,
+              "exploitabilityChips": 0.015184454035555461,
+              "exploitabilityPotPercent": 0.015184454035555461,
+              "equilibriumValueIntervalOOP": [
+                36.773273725656594,
+                36.803642633727705
+              ],
+              "realizationResidual": 5.551115123125783e-17
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.0303802490234375,
+                "independent": 0.030368908071110923,
+                "absoluteDifference": 1.134095232657728e-05
+              },
+              "exploitabilityChips": {
+                "reported": 0.01519012451171875,
+                "independent": 0.015184454035555461,
+                "absoluteDifference": 5.67047616328864e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.01519012451171875,
+                "independent": 0.015184454035555461,
+                "absoluteDifference": 5.67047616328864e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 4.5272345516877976e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 7.887033547149258e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 72,
+            "reachChecks": 64,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 1.5132323625266508e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "3f06f2267f605286fd15f3f9740b4b3a4794c6adb4c8adccec152d913a6e6d77",
+            "outputSha256": "55e37f9ae6d2b9a670a01bfcb8ca5ad1313b26eda4a2b12c222c8e8f5c233733"
+          },
+          "trace": [
+            {
+              "type": "progress",
+              "gap": 16.43920135498047,
+              "bestResponseValues": [
+                50.68242645263672,
+                -34.24322509765625
+              ],
+              "target": 10000,
+              "iterations": 1,
+              "nashConvChips": 16.43920135498047
+            },
+            {
+              "type": "progress",
+              "gap": 0.02007293701171875,
+              "bestResponseValues": [
+                36.79814910888672,
+                -36.778076171875
+              ],
+              "target": 10000,
+              "iterations": 500,
+              "nashConvChips": 0.02007293701171875
+            },
+            {
+              "type": "progress",
+              "gap": 0.01813507080078125,
+              "bestResponseValues": [
+                36.79733657836914,
+                -36.77920150756836
+              ],
+              "target": 10000,
+              "iterations": 1000,
+              "nashConvChips": 0.01813507080078125
+            },
+            {
+              "type": "progress",
+              "gap": 0.0240020751953125,
+              "bestResponseValues": [
+                36.802452087402344,
+                -36.77845001220703
+              ],
+              "target": 10000,
+              "iterations": 1500,
+              "nashConvChips": 0.0240020751953125
+            },
+            {
+              "type": "progress",
+              "gap": 0.024852752685546875,
+              "bestResponseValues": [
+                36.80270767211914,
+                -36.777854919433594
+              ],
+              "target": 10000,
+              "iterations": 2000,
+              "nashConvChips": 0.024852752685546875
+            },
+            {
+              "type": "progress",
+              "gap": 0.0078582763671875,
+              "bestResponseValues": [
+                36.78867721557617,
+                -36.780818939208984
+              ],
+              "target": 10000,
+              "iterations": 2500,
+              "nashConvChips": 0.0078582763671875
+            },
+            {
+              "type": "progress",
+              "gap": 0.01827239990234375,
+              "bestResponseValues": [
+                36.79452133178711,
+                -36.776248931884766
+              ],
+              "target": 10000,
+              "iterations": 3000,
+              "nashConvChips": 0.01827239990234375
+            },
+            {
+              "type": "progress",
+              "gap": 0.0284271240234375,
+              "bestResponseValues": [
+                36.806236267089844,
+                -36.777809143066406
+              ],
+              "target": 10000,
+              "iterations": 3500,
+              "nashConvChips": 0.0284271240234375
+            },
+            {
+              "type": "progress",
+              "gap": 0.022594451904296875,
+              "bestResponseValues": [
+                36.80326843261719,
+                -36.78067398071289
+              ],
+              "target": 10000,
+              "iterations": 4000,
+              "nashConvChips": 0.022594451904296875
+            },
+            {
+              "type": "progress",
+              "gap": 0.027446746826171875,
+              "bestResponseValues": [
+                36.80815505981445,
+                -36.78070831298828
+              ],
+              "target": 10000,
+              "iterations": 4500,
+              "nashConvChips": 0.027446746826171875
+            },
+            {
+              "type": "progress",
+              "gap": 0.03908538818359375,
+              "bestResponseValues": [
+                36.80213165283203,
+                -36.76304626464844
+              ],
+              "target": 10000,
+              "iterations": 5000,
+              "nashConvChips": 0.03908538818359375
+            },
+            {
+              "type": "progress",
+              "gap": 0.033321380615234375,
+              "bestResponseValues": [
+                36.79609680175781,
+                -36.76277542114258
+              ],
+              "target": 10000,
+              "iterations": 5500,
+              "nashConvChips": 0.033321380615234375
+            },
+            {
+              "type": "progress",
+              "gap": 0.037548065185546875,
+              "bestResponseValues": [
+                36.8041877746582,
+                -36.766639709472656
+              ],
+              "target": 10000,
+              "iterations": 6000,
+              "nashConvChips": 0.037548065185546875
+            },
+            {
+              "type": "progress",
+              "gap": 0.01165008544921875,
+              "bestResponseValues": [
+                36.790287017822266,
+                -36.77863693237305
+              ],
+              "target": 10000,
+              "iterations": 6500,
+              "nashConvChips": 0.01165008544921875
+            },
+            {
+              "type": "progress",
+              "gap": 0.03343963623046875,
+              "bestResponseValues": [
+                36.80323028564453,
+                -36.76979064941406
+              ],
+              "target": 10000,
+              "iterations": 7000,
+              "nashConvChips": 0.03343963623046875
+            },
+            {
+              "type": "progress",
+              "gap": 0.0288543701171875,
+              "bestResponseValues": [
+                36.80282974243164,
+                -36.77397537231445
+              ],
+              "target": 10000,
+              "iterations": 7500,
+              "nashConvChips": 0.0288543701171875
+            },
+            {
+              "type": "progress",
+              "gap": 0.017913818359375,
+              "bestResponseValues": [
+                36.78752136230469,
+                -36.76960754394531
+              ],
+              "target": 10000,
+              "iterations": 8000,
+              "nashConvChips": 0.017913818359375
+            },
+            {
+              "type": "progress",
+              "gap": 0.017673492431640625,
+              "bestResponseValues": [
+                36.785736083984375,
+                -36.768062591552734
+              ],
+              "target": 10000,
+              "iterations": 8500,
+              "nashConvChips": 0.017673492431640625
+            },
+            {
+              "type": "progress",
+              "gap": 0.012722015380859375,
+              "bestResponseValues": [
+                36.79088592529297,
+                -36.77816390991211
+              ],
+              "target": 10000,
+              "iterations": 9000,
+              "nashConvChips": 0.012722015380859375
+            },
+            {
+              "type": "progress",
+              "gap": 0.01114654541015625,
+              "bestResponseValues": [
+                36.789947509765625,
+                -36.77880096435547
+              ],
+              "target": 10000,
+              "iterations": 9500,
+              "nashConvChips": 0.01114654541015625
+            },
+            {
+              "type": "progress",
+              "gap": 0.0303802490234375,
+              "bestResponseValues": [
+                36.803646087646484,
+                -36.77326583862305
+              ],
+              "target": 10000,
+              "iterations": 10000,
+              "nashConvChips": 0.0303802490234375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monotone-heart-blockers",
+      "version": 1,
+      "runs": [
+        {
+          "iterations": 500,
+          "status": "PASS",
+          "solverElapsedMs": 109.9004,
+          "totalWallSeconds": 0.4547,
+          "oracleSeconds": 0.031,
+          "requestFile": "artifacts/solver-scenarios/monotone-heart-blockers-500.request.json",
+          "resultFile": "artifacts/solver-scenarios/monotone-heart-blockers-500.result.json",
+          "oracleFile": "artifacts/solver-scenarios/monotone-heart-blockers-500.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 522,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 38.53006577906793,
+            "dualityGapChips": 7.105427357601002e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                38.52844612617446,
+                -38.52844612617446
+              ],
+              "bestResponseEVChips": [
+                38.62268066395589,
+                -38.404704231942866
+              ],
+              "deviationGainsChips": [
+                0.09423453778143198,
+                0.12374189423159265
+              ],
+              "nashConvChips": 0.21797643201302463,
+              "exploitabilityChips": 0.10898821600651232,
+              "exploitabilityPotPercent": 0.10898821600651232,
+              "equilibriumValueIntervalOOP": [
+                38.404704231942866,
+                38.62268066395589
+              ],
+              "realizationResidual": 9.020562075079397e-17
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.21797943115234375,
+                "independent": 0.21797643201302463,
+                "absoluteDifference": 2.9991393191153293e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.10898971557617188,
+                "independent": 0.10898821600651232,
+                "absoluteDifference": 1.4995696595576646e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.10898971557617186,
+                "independent": 0.10898821600651232,
+                "absoluteDifference": 1.4995696595437868e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 5.273979368780601e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 3.8148038754570734e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 136,
+            "reachChecks": 96,
+            "maximumReachDifference": 2.9802322387695312e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 2.730176234422288e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "7c81d5389e64c7eee9a72021bbeacf2121bc6ba9e3536d515bc949a8e8eccd9b",
+            "outputSha256": "f59ad572141e8ae95330866d8e0f77c55a507449698e492235149d552731be5e"
+          },
+          "trace": [
+            {
+              "type": "progress",
+              "gap": 92.6109733581543,
+              "bestResponseValues": [
+                75.28094482421875,
+                17.330028533935547
+              ],
+              "target": 500,
+              "iterations": 1,
+              "nashConvChips": 92.6109733581543
+            },
+            {
+              "type": "progress",
+              "gap": 0.21797943115234375,
+              "bestResponseValues": [
+                38.622684478759766,
+                -38.40470504760742
+              ],
+              "target": 500,
+              "iterations": 500,
+              "nashConvChips": 0.21797943115234375
+            }
+          ]
+        },
+        {
+          "iterations": 2000,
+          "status": "PASS",
+          "solverElapsedMs": 133.7992,
+          "totalWallSeconds": 0.5007,
+          "oracleSeconds": 0.0305,
+          "requestFile": "artifacts/solver-scenarios/monotone-heart-blockers-2000.request.json",
+          "resultFile": "artifacts/solver-scenarios/monotone-heart-blockers-2000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/monotone-heart-blockers-2000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 522,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 38.53006577906793,
+            "dualityGapChips": 7.105427357601002e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                38.53013291575945,
+                -38.53013291575945
+              ],
+              "bestResponseEVChips": [
+                38.618678428521186,
+                -38.481513870583065
+              ],
+              "deviationGainsChips": [
+                0.08854551276173339,
+                0.04861904517638749
+              ],
+              "nashConvChips": 0.13716455793812088,
+              "exploitabilityChips": 0.06858227896906044,
+              "exploitabilityPotPercent": 0.06858227896906044,
+              "equilibriumValueIntervalOOP": [
+                38.481513870583065,
+                38.618678428521186
+              ],
+              "realizationResidual": 5.551115123125783e-17
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.13716888427734375,
+                "independent": 0.13716455793812088,
+                "absoluteDifference": 4.326339222870956e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.06858444213867188,
+                "independent": 0.06858227896906044,
+                "absoluteDifference": 2.163169611435478e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.06858444213867188,
+                "independent": 0.06858227896906044,
+                "absoluteDifference": 2.163169611435478e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 5.193346410692357e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 4.432806939291822e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 136,
+            "reachChecks": 96,
+            "maximumReachDifference": 2.9802322387695312e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 2.7269366711379917e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "c96d02c4ac035b0b7028011ee55e7b34882e95fbdbdd59bf8171447db6d691f3",
+            "outputSha256": "6a63f676f3a001a7dac55f9b711909c6a6810fe2f5aaab30c42952590f5fcb9b"
+          },
+          "trace": [
+            {
+              "target": 2000,
+              "iterations": 1,
+              "nashConvChips": 92.6109733581543,
+              "type": "progress",
+              "gap": 92.6109733581543,
+              "bestResponseValues": [
+                75.28094482421875,
+                17.330028533935547
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 500,
+              "nashConvChips": 0.21797943115234375,
+              "type": "progress",
+              "gap": 0.21797943115234375,
+              "bestResponseValues": [
+                38.622684478759766,
+                -38.40470504760742
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 1000,
+              "nashConvChips": 0.10168838500976562,
+              "type": "progress",
+              "gap": 0.10168838500976562,
+              "bestResponseValues": [
+                38.62265396118164,
+                -38.520965576171875
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 1500,
+              "nashConvChips": 0.23790740966796875,
+              "type": "progress",
+              "gap": 0.23790740966796875,
+              "bestResponseValues": [
+                38.62456512451172,
+                -38.38665771484375
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 2000,
+              "nashConvChips": 0.13716888427734375,
+              "type": "progress",
+              "gap": 0.13716888427734375,
+              "bestResponseValues": [
+                38.618682861328125,
+                -38.48151397705078
+              ]
+            }
+          ]
+        },
+        {
+          "iterations": 10000,
+          "status": "PASS",
+          "solverElapsedMs": 305.4679,
+          "totalWallSeconds": 0.6486,
+          "oracleSeconds": 0.0369,
+          "requestFile": "artifacts/solver-scenarios/monotone-heart-blockers-10000.request.json",
+          "resultFile": "artifacts/solver-scenarios/monotone-heart-blockers-10000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/monotone-heart-blockers-10000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 522,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 38.53006577906793,
+            "dualityGapChips": 7.105427357601002e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                38.52919372748819,
+                -38.52919372748819
+              ],
+              "bestResponseEVChips": [
+                38.61695364721688,
+                -38.430066632578885
+              ],
+              "deviationGainsChips": [
+                0.0877599197286898,
+                0.09912709490930638
+              ],
+              "nashConvChips": 0.18688701463799617,
+              "exploitabilityChips": 0.09344350731899809,
+              "exploitabilityPotPercent": 0.09344350731899809,
+              "equilibriumValueIntervalOOP": [
+                38.430066632578885,
+                38.61695364721688
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.1868896484375,
+                "independent": 0.18688701463799617,
+                "absoluteDifference": 2.6337995038261397e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.09344482421875,
+                "independent": 0.09344350731899809,
+                "absoluteDifference": 1.3168997519130698e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.09344482421875,
+                "independent": 0.09344350731899809,
+                "absoluteDifference": 1.3168997519130698e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 5.256468256220614e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 1.477549588457805e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 136,
+            "reachChecks": 96,
+            "maximumReachDifference": 2.9802322387695312e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 2.753024133994586e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "d182cf066b4a3a0b96ed214f5193c991e8cd646cc895451298624e0f4155841e",
+            "outputSha256": "575a03dc39391c5819cdf88d8ffbbafc634651e3dbe3cacbf0bbe685a4c403b7"
+          },
+          "trace": [
+            {
+              "nashConvChips": 92.6109733581543,
+              "type": "progress",
+              "gap": 92.6109733581543,
+              "bestResponseValues": [
+                75.28094482421875,
+                17.330028533935547
+              ],
+              "target": 10000,
+              "iterations": 1
+            },
+            {
+              "nashConvChips": 0.21797943115234375,
+              "type": "progress",
+              "gap": 0.21797943115234375,
+              "bestResponseValues": [
+                38.622684478759766,
+                -38.40470504760742
+              ],
+              "target": 10000,
+              "iterations": 500
+            },
+            {
+              "nashConvChips": 0.10168838500976562,
+              "type": "progress",
+              "gap": 0.10168838500976562,
+              "bestResponseValues": [
+                38.62265396118164,
+                -38.520965576171875
+              ],
+              "target": 10000,
+              "iterations": 1000
+            },
+            {
+              "nashConvChips": 0.23790740966796875,
+              "type": "progress",
+              "gap": 0.23790740966796875,
+              "bestResponseValues": [
+                38.62456512451172,
+                -38.38665771484375
+              ],
+              "target": 10000,
+              "iterations": 1500
+            },
+            {
+              "nashConvChips": 0.13716888427734375,
+              "type": "progress",
+              "gap": 0.13716888427734375,
+              "bestResponseValues": [
+                38.618682861328125,
+                -38.48151397705078
+              ],
+              "target": 10000,
+              "iterations": 2000
+            },
+            {
+              "nashConvChips": 0.164337158203125,
+              "type": "progress",
+              "gap": 0.164337158203125,
+              "bestResponseValues": [
+                38.592559814453125,
+                -38.42822265625
+              ],
+              "target": 10000,
+              "iterations": 2500
+            },
+            {
+              "nashConvChips": 0.22510528564453125,
+              "type": "progress",
+              "gap": 0.22510528564453125,
+              "bestResponseValues": [
+                38.6044807434082,
+                -38.37937545776367
+              ],
+              "target": 10000,
+              "iterations": 3000
+            },
+            {
+              "nashConvChips": 0.1804656982421875,
+              "type": "progress",
+              "gap": 0.1804656982421875,
+              "bestResponseValues": [
+                38.67059326171875,
+                -38.49012756347656
+              ],
+              "target": 10000,
+              "iterations": 3500
+            },
+            {
+              "nashConvChips": 0.14308547973632812,
+              "type": "progress",
+              "gap": 0.14308547973632812,
+              "bestResponseValues": [
+                38.611236572265625,
+                -38.4681510925293
+              ],
+              "target": 10000,
+              "iterations": 4000
+            },
+            {
+              "nashConvChips": 0.2388916015625,
+              "type": "progress",
+              "gap": 0.2388916015625,
+              "bestResponseValues": [
+                38.67413330078125,
+                -38.43524169921875
+              ],
+              "target": 10000,
+              "iterations": 4500
+            },
+            {
+              "nashConvChips": 0.22643280029296875,
+              "type": "progress",
+              "gap": 0.22643280029296875,
+              "bestResponseValues": [
+                38.551822662353516,
+                -38.32538986206055
+              ],
+              "target": 10000,
+              "iterations": 5000
+            },
+            {
+              "nashConvChips": 0.2192535400390625,
+              "type": "progress",
+              "gap": 0.2192535400390625,
+              "bestResponseValues": [
+                38.65796661376953,
+                -38.43871307373047
+              ],
+              "target": 10000,
+              "iterations": 5500
+            },
+            {
+              "nashConvChips": 0.08754730224609375,
+              "type": "progress",
+              "gap": 0.08754730224609375,
+              "bestResponseValues": [
+                38.59309005737305,
+                -38.50554275512695
+              ],
+              "target": 10000,
+              "iterations": 6000
+            },
+            {
+              "nashConvChips": 0.18373870849609375,
+              "type": "progress",
+              "gap": 0.18373870849609375,
+              "bestResponseValues": [
+                38.560611724853516,
+                -38.37687301635742
+              ],
+              "target": 10000,
+              "iterations": 6500
+            },
+            {
+              "nashConvChips": 0.1200714111328125,
+              "type": "progress",
+              "gap": 0.1200714111328125,
+              "bestResponseValues": [
+                38.601688385009766,
+                -38.48161697387695
+              ],
+              "target": 10000,
+              "iterations": 7000
+            },
+            {
+              "nashConvChips": 0.188995361328125,
+              "type": "progress",
+              "gap": 0.188995361328125,
+              "bestResponseValues": [
+                38.576419830322266,
+                -38.38742446899414
+              ],
+              "target": 10000,
+              "iterations": 7500
+            },
+            {
+              "nashConvChips": 0.2632102966308594,
+              "type": "progress",
+              "gap": 0.2632102966308594,
+              "bestResponseValues": [
+                38.60662078857422,
+                -38.34341049194336
+              ],
+              "target": 10000,
+              "iterations": 8000
+            },
+            {
+              "nashConvChips": 0.06011962890625,
+              "type": "progress",
+              "gap": 0.06011962890625,
+              "bestResponseValues": [
+                38.576133728027344,
+                -38.516014099121094
+              ],
+              "target": 10000,
+              "iterations": 8500
+            },
+            {
+              "nashConvChips": 0.2755470275878906,
+              "type": "progress",
+              "gap": 0.2755470275878906,
+              "bestResponseValues": [
+                38.643653869628906,
+                -38.368106842041016
+              ],
+              "target": 10000,
+              "iterations": 9000
+            },
+            {
+              "nashConvChips": 0.18626785278320312,
+              "type": "progress",
+              "gap": 0.18626785278320312,
+              "bestResponseValues": [
+                38.660770416259766,
+                -38.47450256347656
+              ],
+              "target": 10000,
+              "iterations": 9500
+            },
+            {
+              "nashConvChips": 0.1868896484375,
+              "type": "progress",
+              "gap": 0.1868896484375,
+              "bestResponseValues": [
+                38.6169548034668,
+                -38.4300651550293
+              ],
+              "target": 10000,
+              "iterations": 10000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paired-queen-boats",
+      "version": 1,
+      "runs": [
+        {
+          "iterations": 500,
+          "status": "PASS",
+          "solverElapsedMs": 137.1112,
+          "totalWallSeconds": 0.5045,
+          "oracleSeconds": 0.0539,
+          "requestFile": "artifacts/solver-scenarios/paired-queen-boats-500.request.json",
+          "resultFile": "artifacts/solver-scenarios/paired-queen-boats-500.result.json",
+          "oracleFile": "artifacts/solver-scenarios/paired-queen-boats-500.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 27,
+              "publicTerminals": 17,
+              "informationSets": [
+                40,
+                40
+              ],
+              "sequences": [
+                105,
+                105
+              ],
+              "compatibleWeightedAssignments": 52,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 884,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 21.567785632435626,
+            "dualityGapChips": 0.0,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                21.568347957088392,
+                -21.568347957088392
+              ],
+              "bestResponseEVChips": [
+                21.63116759452222,
+                -21.48817187511494
+              ],
+              "deviationGainsChips": [
+                0.06281963743382946,
+                0.08017608197345183
+              ],
+              "nashConvChips": 0.14299571940728129,
+              "exploitabilityChips": 0.07149785970364064,
+              "exploitabilityPotPercent": 0.07149785970364064,
+              "equilibriumValueIntervalOOP": [
+                21.48817187511494,
+                21.63116759452222
+              ],
+              "realizationResidual": 5.551115141562537e-17
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.14299964904785156,
+                "independent": 0.14299571940728129,
+                "absoluteDifference": 3.929640570277115e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.07149982452392578,
+                "independent": 0.07149785970364064,
+                "absoluteDifference": 1.9648202851385577e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.07149982452392578,
+                "independent": 0.07149785970364064,
+                "absoluteDifference": 1.9648202851385577e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 1.1396790355888697e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 5.066032908729312e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 52,
+            "conditionalEvChecks": 237,
+            "reachChecks": 160,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 17,
+            "maximumConditionalEvDifferenceChips": 2.8809583767497315e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "efc298649f655dcb8b031013bb756a8f7f6790cd4efd2d4613341da36c544e20",
+            "outputSha256": "4e151cef482bf7b39f919829d35bc4e56e410f0ae21c467a3293019f2cc7c07f"
+          },
+          "trace": [
+            {
+              "nashConvChips": 125.18169212341309,
+              "iterations": 1,
+              "target": 500,
+              "bestResponseValues": [
+                101.75762939453125,
+                23.424062728881836
+              ],
+              "gap": 125.18169212341309,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.14299964904785156,
+              "iterations": 500,
+              "target": 500,
+              "bestResponseValues": [
+                21.631166458129883,
+                -21.48816680908203
+              ],
+              "gap": 0.14299964904785156,
+              "type": "progress"
+            }
+          ]
+        },
+        {
+          "iterations": 2000,
+          "status": "PASS",
+          "solverElapsedMs": 159.8093,
+          "totalWallSeconds": 0.4968,
+          "oracleSeconds": 0.0338,
+          "requestFile": "artifacts/solver-scenarios/paired-queen-boats-2000.request.json",
+          "resultFile": "artifacts/solver-scenarios/paired-queen-boats-2000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/paired-queen-boats-2000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 27,
+              "publicTerminals": 17,
+              "informationSets": [
+                40,
+                40
+              ],
+              "sequences": [
+                105,
+                105
+              ],
+              "compatibleWeightedAssignments": 52,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 884,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 21.567785632435626,
+            "dualityGapChips": 0.0,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                21.56716837347315,
+                -21.56716837347315
+              ],
+              "bestResponseEVChips": [
+                21.58869022497266,
+                -21.49808952831578
+              ],
+              "deviationGainsChips": [
+                0.02152185149950725,
+                0.06907884515737095
+              ],
+              "nashConvChips": 0.0906006966568782,
+              "exploitabilityChips": 0.0453003483284391,
+              "exploitabilityPotPercent": 0.0453003483284391,
+              "equilibriumValueIntervalOOP": [
+                21.49808952831578,
+                21.58869022497266
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.09060287475585938,
+                "independent": 0.0906006966568782,
+                "absoluteDifference": 2.1780989811759355e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.04530143737792969,
+                "independent": 0.0453003483284391,
+                "absoluteDifference": 1.0890494905879677e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.04530143737792969,
+                "independent": 0.0453003483284391,
+                "absoluteDifference": 1.0890494905879677e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 1.1784764097910738e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 1.4864531223679478e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 52,
+            "conditionalEvChecks": 237,
+            "reachChecks": 160,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 17,
+            "maximumConditionalEvDifferenceChips": 2.8572116477221243e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "36fafa937ebaf9a5b8d4cba95448668c501ae4985c3bb3d3f96a824e9d55c3d1",
+            "outputSha256": "29ca77d331918752dd145ba8b76fad9e142f259ff91e844852349c79c85200d0"
+          },
+          "trace": [
+            {
+              "target": 2000,
+              "iterations": 1,
+              "nashConvChips": 125.18169212341309,
+              "type": "progress",
+              "gap": 125.18169212341309,
+              "bestResponseValues": [
+                101.75762939453125,
+                23.424062728881836
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 500,
+              "nashConvChips": 0.14299964904785156,
+              "type": "progress",
+              "gap": 0.14299964904785156,
+              "bestResponseValues": [
+                21.631166458129883,
+                -21.48816680908203
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 1000,
+              "nashConvChips": 0.10778427124023438,
+              "type": "progress",
+              "gap": 0.10778427124023438,
+              "bestResponseValues": [
+                21.602386474609375,
+                -21.49460220336914
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 1500,
+              "nashConvChips": 0.13980865478515625,
+              "type": "progress",
+              "gap": 0.13980865478515625,
+              "bestResponseValues": [
+                21.627120971679688,
+                -21.48731231689453
+              ]
+            },
+            {
+              "target": 2000,
+              "iterations": 2000,
+              "nashConvChips": 0.09060287475585938,
+              "type": "progress",
+              "gap": 0.09060287475585938,
+              "bestResponseValues": [
+                21.58869171142578,
+                -21.498088836669922
+              ]
+            }
+          ]
+        },
+        {
+          "iterations": 10000,
+          "status": "PASS",
+          "solverElapsedMs": 303.3828,
+          "totalWallSeconds": 0.6253,
+          "oracleSeconds": 0.0421,
+          "requestFile": "artifacts/solver-scenarios/paired-queen-boats-10000.request.json",
+          "resultFile": "artifacts/solver-scenarios/paired-queen-boats-10000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/paired-queen-boats-10000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 27,
+              "publicTerminals": 17,
+              "informationSets": [
+                40,
+                40
+              ],
+              "sequences": [
+                105,
+                105
+              ],
+              "compatibleWeightedAssignments": 52,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 884,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 21.567785632435626,
+            "dualityGapChips": 0.0,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                21.56817697490926,
+                -21.56817697490926
+              ],
+              "bestResponseEVChips": [
+                21.605681220823044,
+                -21.5141660114433
+              ],
+              "deviationGainsChips": [
+                0.03750424591378376,
+                0.05401096346595935
+              ],
+              "nashConvChips": 0.09151520937974311,
+              "exploitabilityChips": 0.045757604689871556,
+              "exploitabilityPotPercent": 0.045757604689871556,
+              "equilibriumValueIntervalOOP": [
+                21.5141660114433,
+                21.605681220823044
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.09151268005371094,
+                "independent": 0.09151520937974311,
+                "absoluteDifference": 2.5293260321745947e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.04575634002685547,
+                "independent": 0.045757604689871556,
+                "absoluteDifference": 1.2646630160872974e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.04575634002685547,
+                "independent": 0.045757604689871556,
+                "absoluteDifference": 1.2646630160872974e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 1.1929054721804278e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 2.6624734346114565e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 52,
+            "conditionalEvChecks": 237,
+            "reachChecks": 160,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 17,
+            "maximumConditionalEvDifferenceChips": 2.894949382437062e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "114b94c7e882eebd0c499b84db00f5aebf1403a4d600d182b417598fdc42fe00",
+            "outputSha256": "40b5230fc01b697d8b3da657bbaf9424e2b05d72a9ccb2595da03751962e062f"
+          },
+          "trace": [
+            {
+              "gap": 125.18169212341309,
+              "type": "progress",
+              "nashConvChips": 125.18169212341309,
+              "iterations": 1,
+              "target": 10000,
+              "bestResponseValues": [
+                101.75762939453125,
+                23.424062728881836
+              ]
+            },
+            {
+              "gap": 0.14299964904785156,
+              "type": "progress",
+              "nashConvChips": 0.14299964904785156,
+              "iterations": 500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.631166458129883,
+                -21.48816680908203
+              ]
+            },
+            {
+              "gap": 0.10778427124023438,
+              "type": "progress",
+              "nashConvChips": 0.10778427124023438,
+              "iterations": 1000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.602386474609375,
+                -21.49460220336914
+              ]
+            },
+            {
+              "gap": 0.13980865478515625,
+              "type": "progress",
+              "nashConvChips": 0.13980865478515625,
+              "iterations": 1500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.627120971679688,
+                -21.48731231689453
+              ]
+            },
+            {
+              "gap": 0.09060287475585938,
+              "type": "progress",
+              "nashConvChips": 0.09060287475585938,
+              "iterations": 2000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.58869171142578,
+                -21.498088836669922
+              ]
+            },
+            {
+              "gap": 0.14131736755371094,
+              "type": "progress",
+              "nashConvChips": 0.14131736755371094,
+              "iterations": 2500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.639734268188477,
+                -21.498416900634766
+              ]
+            },
+            {
+              "gap": 0.11568069458007812,
+              "type": "progress",
+              "nashConvChips": 0.11568069458007812,
+              "iterations": 3000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.620182037353516,
+                -21.504501342773438
+              ]
+            },
+            {
+              "gap": 0.13304519653320312,
+              "type": "progress",
+              "nashConvChips": 0.13304519653320312,
+              "iterations": 3500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.629718780517578,
+                -21.496673583984375
+              ]
+            },
+            {
+              "gap": 0.10299491882324219,
+              "type": "progress",
+              "nashConvChips": 0.10299491882324219,
+              "iterations": 4000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.619367599487305,
+                -21.516372680664062
+              ]
+            },
+            {
+              "gap": 0.1028594970703125,
+              "type": "progress",
+              "nashConvChips": 0.1028594970703125,
+              "iterations": 4500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.61411476135254,
+                -21.511255264282227
+              ]
+            },
+            {
+              "gap": 0.09429740905761719,
+              "type": "progress",
+              "nashConvChips": 0.09429740905761719,
+              "iterations": 5000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.592514038085938,
+                -21.49821662902832
+              ]
+            },
+            {
+              "gap": 0.09816932678222656,
+              "type": "progress",
+              "nashConvChips": 0.09816932678222656,
+              "iterations": 5500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.609516143798828,
+                -21.5113468170166
+              ]
+            },
+            {
+              "gap": 0.10041046142578125,
+              "type": "progress",
+              "nashConvChips": 0.10041046142578125,
+              "iterations": 6000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.620502471923828,
+                -21.520092010498047
+              ]
+            },
+            {
+              "gap": 0.10668182373046875,
+              "type": "progress",
+              "nashConvChips": 0.10668182373046875,
+              "iterations": 6500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.616872787475586,
+                -21.510190963745117
+              ]
+            },
+            {
+              "gap": 0.09308242797851562,
+              "type": "progress",
+              "nashConvChips": 0.09308242797851562,
+              "iterations": 7000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.613964080810547,
+                -21.52088165283203
+              ]
+            },
+            {
+              "gap": 0.08908271789550781,
+              "type": "progress",
+              "nashConvChips": 0.08908271789550781,
+              "iterations": 7500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.62062644958496,
+                -21.531543731689453
+              ]
+            },
+            {
+              "gap": 0.08599472045898438,
+              "type": "progress",
+              "nashConvChips": 0.08599472045898438,
+              "iterations": 8000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.635698318481445,
+                -21.54970359802246
+              ]
+            },
+            {
+              "gap": 0.08173370361328125,
+              "type": "progress",
+              "nashConvChips": 0.08173370361328125,
+              "iterations": 8500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.613061904907227,
+                -21.531328201293945
+              ]
+            },
+            {
+              "gap": 0.07386589050292969,
+              "type": "progress",
+              "nashConvChips": 0.07386589050292969,
+              "iterations": 9000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.61699104309082,
+                -21.54312515258789
+              ]
+            },
+            {
+              "gap": 0.09141921997070312,
+              "type": "progress",
+              "nashConvChips": 0.09141921997070312,
+              "iterations": 9500,
+              "target": 10000,
+              "bestResponseValues": [
+                21.62718963623047,
+                -21.535770416259766
+              ]
+            },
+            {
+              "gap": 0.09151268005371094,
+              "type": "progress",
+              "nashConvChips": 0.09151268005371094,
+              "iterations": 10000,
+              "target": 10000,
+              "bestResponseValues": [
+                21.60567855834961,
+                -21.5141658782959
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "straight-board-shared-value",
+      "version": 1,
+      "runs": [
+        {
+          "iterations": 500,
+          "status": "PASS",
+          "solverElapsedMs": 108.2208,
+          "totalWallSeconds": 0.4518,
+          "oracleSeconds": 0.0402,
+          "requestFile": "artifacts/solver-scenarios/straight-board-shared-value-500.request.json",
+          "resultFile": "artifacts/solver-scenarios/straight-board-shared-value-500.result.json",
+          "oracleFile": "artifacts/solver-scenarios/straight-board-shared-value-500.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 60,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 540,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 0.10593944364704999,
+            "dualityGapChips": 8.881784197001252e-16,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                0.10588564759289332,
+                -0.10588564759289332
+              ],
+              "bestResponseEVChips": [
+                0.12223150117776527,
+                -0.0992767082803474
+              ],
+              "deviationGainsChips": [
+                0.01634585358487195,
+                0.006608939312545914
+              ],
+              "nashConvChips": 0.022954792897417864,
+              "exploitabilityChips": 0.011477396448708932,
+              "exploitabilityPotPercent": 0.011477396448708932,
+              "equilibriumValueIntervalOOP": [
+                0.0992767082803474,
+                0.12223150117776527
+              ],
+              "realizationResidual": 5.551115123125783e-17
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.022960424423217773,
+                "independent": 0.022954792897417864,
+                "absoluteDifference": 5.631525799909554e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.011480212211608887,
+                "independent": 0.011477396448708932,
+                "absoluteDifference": 2.815762899954777e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.011480212211608887,
+                "independent": 0.011477396448708932,
+                "absoluteDifference": 2.815762899954777e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 3.916323227659557e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 4.457151197012621e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 60,
+            "conditionalEvChecks": 136,
+            "reachChecks": 96,
+            "maximumReachDifference": 5.364418020903372e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 1.2947143375185988e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "6edc906cebe8106c26d505702e0fbcd66e365ac3388b52b867dd727499889103",
+            "outputSha256": "a8214e846e8ab69b007709fdc562fefe9e618d5b16d13c194c58856bd4446f95"
+          },
+          "trace": [
+            {
+              "nashConvChips": 53.161805152893066,
+              "iterations": 1,
+              "target": 500,
+              "bestResponseValues": [
+                8.800515174865723,
+                44.361289978027344
+              ],
+              "gap": 53.161805152893066,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.022960424423217773,
+              "iterations": 500,
+              "target": 500,
+              "bestResponseValues": [
+                0.12223267555236816,
+                -0.09927225112915039
+              ],
+              "gap": 0.022960424423217773,
+              "type": "progress"
+            }
+          ]
+        },
+        {
+          "iterations": 2000,
+          "status": "PASS",
+          "solverElapsedMs": 162.3318,
+          "totalWallSeconds": 0.5191,
+          "oracleSeconds": 0.0444,
+          "requestFile": "artifacts/solver-scenarios/straight-board-shared-value-2000.request.json",
+          "resultFile": "artifacts/solver-scenarios/straight-board-shared-value-2000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/straight-board-shared-value-2000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 60,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 540,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 0.10593944364704999,
+            "dualityGapChips": 8.881784197001252e-16,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                0.10593150297056875,
+                -0.10593150297056875
+              ],
+              "bestResponseEVChips": [
+                0.1304147446951882,
+                -0.10392394415549733
+              ],
+              "deviationGainsChips": [
+                0.024483241724619464,
+                0.0020075588150714196
+              ],
+              "nashConvChips": 0.026490800539690884,
+              "exploitabilityChips": 0.013245400269845442,
+              "exploitabilityPotPercent": 0.013245400269845442,
+              "equilibriumValueIntervalOOP": [
+                0.10392394415549733,
+                0.1304147446951882
+              ],
+              "realizationResidual": 5.551115123125783e-17
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.026493549346923828,
+                "independent": 0.026490800539690884,
+                "absoluteDifference": 2.748807232944017e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.013246774673461914,
+                "independent": 0.013245400269845442,
+                "absoluteDifference": 1.3744036164720086e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.013246774673461914,
+                "independent": 0.013245400269845442,
+                "absoluteDifference": 1.3744036164720086e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 3.9082046160432427e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 3.2459896037728697e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 60,
+            "conditionalEvChecks": 136,
+            "reachChecks": 96,
+            "maximumReachDifference": 5.364418020903372e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 1.2961130266830878e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "c14eb6be847ed980102cd90f2d1ed8a61c5100b208846f6ce86fc0a296290950",
+            "outputSha256": "e7fdb06127765509347dded7e695c61e2d249b8fbdee1c7f261a11d6deb35464"
+          },
+          "trace": [
+            {
+              "bestResponseValues": [
+                8.800515174865723,
+                44.361289978027344
+              ],
+              "target": 2000,
+              "iterations": 1,
+              "nashConvChips": 53.161805152893066,
+              "type": "progress",
+              "gap": 53.161805152893066
+            },
+            {
+              "bestResponseValues": [
+                0.12223267555236816,
+                -0.09927225112915039
+              ],
+              "target": 2000,
+              "iterations": 500,
+              "nashConvChips": 0.022960424423217773,
+              "type": "progress",
+              "gap": 0.022960424423217773
+            },
+            {
+              "bestResponseValues": [
+                0.1308588981628418,
+                -0.09296441078186035
+              ],
+              "target": 2000,
+              "iterations": 1000,
+              "nashConvChips": 0.037894487380981445,
+              "type": "progress",
+              "gap": 0.037894487380981445
+            },
+            {
+              "bestResponseValues": [
+                0.12434744834899902,
+                -0.09969139099121094
+              ],
+              "target": 2000,
+              "iterations": 1500,
+              "nashConvChips": 0.024656057357788086,
+              "type": "progress",
+              "gap": 0.024656057357788086
+            },
+            {
+              "bestResponseValues": [
+                0.13041424751281738,
+                -0.10392069816589355
+              ],
+              "target": 2000,
+              "iterations": 2000,
+              "nashConvChips": 0.026493549346923828,
+              "type": "progress",
+              "gap": 0.026493549346923828
+            }
+          ]
+        },
+        {
+          "iterations": 10000,
+          "status": "PASS",
+          "solverElapsedMs": 276.3514,
+          "totalWallSeconds": 0.6249,
+          "oracleSeconds": 0.0516,
+          "requestFile": "artifacts/solver-scenarios/straight-board-shared-value-10000.request.json",
+          "resultFile": "artifacts/solver-scenarios/straight-board-shared-value-10000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/straight-board-shared-value-10000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 60,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 540,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 0.10593944364704999,
+            "dualityGapChips": 8.881784197001252e-16,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                0.10591833585667088,
+                -0.10591833585667088
+              ],
+              "bestResponseEVChips": [
+                0.12893782144704957,
+                -0.09808246941328536
+              ],
+              "deviationGainsChips": [
+                0.023019485590378697,
+                0.00783586644338552
+              ],
+              "nashConvChips": 0.030855352033764216,
+              "exploitabilityChips": 0.015427676016882108,
+              "exploitabilityPotPercent": 0.015427676016882108,
+              "equilibriumValueIntervalOOP": [
+                0.09808246941328536,
+                0.12893782144704957
+              ],
+              "realizationResidual": 5.551115123125783e-17
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.030856847763061523,
+                "independent": 0.030855352033764216,
+                "absoluteDifference": 1.4957292973072356e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.015428423881530762,
+                "independent": 0.015427676016882108,
+                "absoluteDifference": 7.478646486536178e-07
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.015428423881530762,
+                "independent": 0.015427676016882108,
+                "absoluteDifference": 7.478646486536178e-07
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 3.90467742431011e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 2.072761063676154e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 60,
+            "conditionalEvChecks": 136,
+            "reachChecks": 96,
+            "maximumReachDifference": 5.364418020903372e-08,
+            "undefinedZeroOpponentReachRows": 8,
+            "maximumConditionalEvDifferenceChips": 1.298935224269826e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "15af397c98fedc6fcfa2116b02536e7975c11865af98d9da5ca943bf5730f13c",
+            "outputSha256": "df6aaca11c8088839a9ece80a4c6f6b77ce534f681e2acf32b4982b93f6357a2"
+          },
+          "trace": [
+            {
+              "gap": 53.161805152893066,
+              "type": "progress",
+              "nashConvChips": 53.161805152893066,
+              "iterations": 1,
+              "target": 10000,
+              "bestResponseValues": [
+                8.800515174865723,
+                44.361289978027344
+              ]
+            },
+            {
+              "gap": 0.022960424423217773,
+              "type": "progress",
+              "nashConvChips": 0.022960424423217773,
+              "iterations": 500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12223267555236816,
+                -0.09927225112915039
+              ]
+            },
+            {
+              "gap": 0.037894487380981445,
+              "type": "progress",
+              "nashConvChips": 0.037894487380981445,
+              "iterations": 1000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.1308588981628418,
+                -0.09296441078186035
+              ]
+            },
+            {
+              "gap": 0.024656057357788086,
+              "type": "progress",
+              "nashConvChips": 0.024656057357788086,
+              "iterations": 1500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12434744834899902,
+                -0.09969139099121094
+              ]
+            },
+            {
+              "gap": 0.026493549346923828,
+              "type": "progress",
+              "nashConvChips": 0.026493549346923828,
+              "iterations": 2000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.13041424751281738,
+                -0.10392069816589355
+              ]
+            },
+            {
+              "gap": 0.0179595947265625,
+              "type": "progress",
+              "nashConvChips": 0.0179595947265625,
+              "iterations": 2500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.11705684661865234,
+                -0.09909725189208984
+              ]
+            },
+            {
+              "gap": 0.02245330810546875,
+              "type": "progress",
+              "nashConvChips": 0.02245330810546875,
+              "iterations": 3000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12328886985778809,
+                -0.10083556175231934
+              ]
+            },
+            {
+              "gap": 0.024075984954833984,
+              "type": "progress",
+              "nashConvChips": 0.024075984954833984,
+              "iterations": 3500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12740468978881836,
+                -0.10332870483398438
+              ]
+            },
+            {
+              "gap": 0.02647995948791504,
+              "type": "progress",
+              "nashConvChips": 0.02647995948791504,
+              "iterations": 4000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12714600563049316,
+                -0.10066604614257812
+              ]
+            },
+            {
+              "gap": 0.02371358871459961,
+              "type": "progress",
+              "nashConvChips": 0.02371358871459961,
+              "iterations": 4500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12458348274230957,
+                -0.10086989402770996
+              ]
+            },
+            {
+              "gap": 0.00792837142944336,
+              "type": "progress",
+              "nashConvChips": 0.00792837142944336,
+              "iterations": 5000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.1064612865447998,
+                -0.09853291511535645
+              ]
+            },
+            {
+              "gap": 0.0435490608215332,
+              "type": "progress",
+              "nashConvChips": 0.0435490608215332,
+              "iterations": 5500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12109637260437012,
+                -0.07754731178283691
+              ]
+            },
+            {
+              "gap": 0.02091240882873535,
+              "type": "progress",
+              "nashConvChips": 0.02091240882873535,
+              "iterations": 6000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12100100517272949,
+                -0.10008859634399414
+              ]
+            },
+            {
+              "gap": 0.036040544509887695,
+              "type": "progress",
+              "nashConvChips": 0.036040544509887695,
+              "iterations": 6500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.1275160312652588,
+                -0.0914754867553711
+              ]
+            },
+            {
+              "gap": 0.03404712677001953,
+              "type": "progress",
+              "nashConvChips": 0.03404712677001953,
+              "iterations": 7000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.11377143859863281,
+                -0.07972431182861328
+              ]
+            },
+            {
+              "gap": 0.03359866142272949,
+              "type": "progress",
+              "nashConvChips": 0.03359866142272949,
+              "iterations": 7500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12276601791381836,
+                -0.08916735649108887
+              ]
+            },
+            {
+              "gap": 0.035181283950805664,
+              "type": "progress",
+              "nashConvChips": 0.035181283950805664,
+              "iterations": 8000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.11281633377075195,
+                -0.07763504981994629
+              ]
+            },
+            {
+              "gap": 0.011324644088745117,
+              "type": "progress",
+              "nashConvChips": 0.011324644088745117,
+              "iterations": 8500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.11213135719299316,
+                -0.10080671310424805
+              ]
+            },
+            {
+              "gap": 0.0440523624420166,
+              "type": "progress",
+              "nashConvChips": 0.0440523624420166,
+              "iterations": 9000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.12770724296569824,
+                -0.08365488052368164
+              ]
+            },
+            {
+              "gap": 0.03339672088623047,
+              "type": "progress",
+              "nashConvChips": 0.03339672088623047,
+              "iterations": 9500,
+              "target": 10000,
+              "bestResponseValues": [
+                0.13292527198791504,
+                -0.09952855110168457
+              ]
+            },
+            {
+              "gap": 0.030856847763061523,
+              "type": "progress",
+              "nashConvChips": 0.030856847763061523,
+              "iterations": 10000,
+              "target": 10000,
+              "bestResponseValues": [
+                0.1289372444152832,
+                -0.09808039665222168
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ace-high-explicit-dead",
+      "version": 1,
+      "runs": [
+        {
+          "iterations": 500,
+          "status": "PASS",
+          "solverElapsedMs": 107.6145,
+          "totalWallSeconds": 0.4386,
+          "oracleSeconds": 0.0311,
+          "requestFile": "artifacts/solver-scenarios/ace-high-explicit-dead-500.request.json",
+          "resultFile": "artifacts/solver-scenarios/ace-high-explicit-dead-500.result.json",
+          "oracleFile": "artifacts/solver-scenarios/ace-high-explicit-dead-500.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 62,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 558,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 26.974927180104025,
+            "dualityGapChips": 7.105427357601002e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                26.974868504509963,
+                -26.974868504509963
+              ],
+              "bestResponseEVChips": [
+                26.989305959102108,
+                -26.92984514029962
+              ],
+              "deviationGainsChips": [
+                0.014437454592144405,
+                0.04502336421034414
+              ],
+              "nashConvChips": 0.059460818802488546,
+              "exploitabilityChips": 0.029730409401244273,
+              "exploitabilityPotPercent": 0.02973040940124427,
+              "equilibriumValueIntervalOOP": [
+                26.92984514029962,
+                26.989305959102108
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.05946540832519531,
+                "independent": 0.059460818802488546,
+                "absoluteDifference": 4.589522706766047e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.029732704162597656,
+                "independent": 0.029730409401244273,
+                "absoluteDifference": 2.2947613533830236e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.029732704162597656,
+                "independent": 0.02973040940124427,
+                "absoluteDifference": 2.294761353386493e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 3.588757984118729e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 5.259159610915276e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 62,
+            "conditionalEvChecks": 160,
+            "reachChecks": 96,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 0,
+            "maximumConditionalEvDifferenceChips": 1.0136809436289695e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "4651ec2e92653949efd230c4a5d7ece50866bd1be825d4f125669cd0095e4c31",
+            "outputSha256": "e3ece514b4308264333c5bb5251061837f940f90e3ea1652a5a072a21e525359"
+          },
+          "trace": [
+            {
+              "target": 500,
+              "iterations": 1,
+              "nashConvChips": 52.50142478942871,
+              "type": "progress",
+              "gap": 52.50142478942871,
+              "bestResponseValues": [
+                57.7087516784668,
+                -5.207326889038086
+              ]
+            },
+            {
+              "target": 500,
+              "iterations": 500,
+              "nashConvChips": 0.05946540832519531,
+              "type": "progress",
+              "gap": 0.05946540832519531,
+              "bestResponseValues": [
+                26.98931121826172,
+                -26.929845809936523
+              ]
+            }
+          ]
+        },
+        {
+          "iterations": 2000,
+          "status": "PASS",
+          "solverElapsedMs": 158.3152,
+          "totalWallSeconds": 0.5648,
+          "oracleSeconds": 0.0358,
+          "requestFile": "artifacts/solver-scenarios/ace-high-explicit-dead-2000.request.json",
+          "resultFile": "artifacts/solver-scenarios/ace-high-explicit-dead-2000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/ace-high-explicit-dead-2000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 62,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 558,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 26.974927180104025,
+            "dualityGapChips": 7.105427357601002e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                26.974871545024193,
+                -26.974871545024193
+              ],
+              "bestResponseEVChips": [
+                26.989189409793003,
+                -26.949884804624432
+              ],
+              "deviationGainsChips": [
+                0.014317864768809585,
+                0.02498674039976123
+              ],
+              "nashConvChips": 0.039304605168570816,
+              "exploitabilityChips": 0.019652302584285408,
+              "exploitabilityPotPercent": 0.019652302584285408,
+              "equilibriumValueIntervalOOP": [
+                26.949884804624432,
+                26.989189409793003
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.039310455322265625,
+                "independent": 0.039304605168570816,
+                "absoluteDifference": 5.850153694808569e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.019655227661132812,
+                "independent": 0.019652302584285408,
+                "absoluteDifference": 2.9250768474042843e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.019655227661132812,
+                "independent": 0.019652302584285408,
+                "absoluteDifference": 2.9250768474042843e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 3.5971857315075795e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 7.367550747261475e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 62,
+            "conditionalEvChecks": 160,
+            "reachChecks": 96,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 0,
+            "maximumConditionalEvDifferenceChips": 1.0143615227775626e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "a8443b4560c467d69b53e63e314c6e72e7bea77e959b51dc3c6e1824f5666b07",
+            "outputSha256": "be0b49de7f8514796d3f319eac03d704e1f56551aaf36cf33fa5c34ba872ff59"
+          },
+          "trace": [
+            {
+              "target": 2000,
+              "bestResponseValues": [
+                57.7087516784668,
+                -5.207326889038086
+              ],
+              "gap": 52.50142478942871,
+              "type": "progress",
+              "nashConvChips": 52.50142478942871,
+              "iterations": 1
+            },
+            {
+              "target": 2000,
+              "bestResponseValues": [
+                26.98931121826172,
+                -26.929845809936523
+              ],
+              "gap": 0.05946540832519531,
+              "type": "progress",
+              "nashConvChips": 0.05946540832519531,
+              "iterations": 500
+            },
+            {
+              "target": 2000,
+              "bestResponseValues": [
+                26.986434936523438,
+                -26.93393325805664
+              ],
+              "gap": 0.052501678466796875,
+              "type": "progress",
+              "nashConvChips": 0.052501678466796875,
+              "iterations": 1000
+            },
+            {
+              "target": 2000,
+              "bestResponseValues": [
+                27.019268035888672,
+                -26.973426818847656
+              ],
+              "gap": 0.045841217041015625,
+              "type": "progress",
+              "nashConvChips": 0.045841217041015625,
+              "iterations": 1500
+            },
+            {
+              "target": 2000,
+              "bestResponseValues": [
+                26.98919677734375,
+                -26.949886322021484
+              ],
+              "gap": 0.039310455322265625,
+              "type": "progress",
+              "nashConvChips": 0.039310455322265625,
+              "iterations": 2000
+            }
+          ]
+        },
+        {
+          "iterations": 10000,
+          "status": "PASS",
+          "solverElapsedMs": 229.5807,
+          "totalWallSeconds": 0.5761,
+          "oracleSeconds": 0.0328,
+          "requestFile": "artifacts/solver-scenarios/ace-high-explicit-dead-10000.request.json",
+          "resultFile": "artifacts/solver-scenarios/ace-high-explicit-dead-10000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/ace-high-explicit-dead-10000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 15,
+              "publicTerminals": 9,
+              "informationSets": [
+                24,
+                24
+              ],
+              "sequences": [
+                57,
+                57
+              ],
+              "compatibleWeightedAssignments": 62,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 558,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 26.974927180104025,
+            "dualityGapChips": 7.105427357601002e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                26.974876702486036,
+                -26.974876702486036
+              ],
+              "bestResponseEVChips": [
+                26.997480629335847,
+                -26.953115477247927
+              ],
+              "deviationGainsChips": [
+                0.022603926849811273,
+                0.02176122523810875
+              ],
+              "nashConvChips": 0.04436515208792002,
+              "exploitabilityChips": 0.02218257604396001,
+              "exploitabilityPotPercent": 0.02218257604396001,
+              "equilibriumValueIntervalOOP": [
+                26.953115477247927,
+                26.997480629335847
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.04437065124511719,
+                "independent": 0.04436515208792002,
+                "absoluteDifference": 5.499157197164095e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.022185325622558594,
+                "independent": 0.02218257604396001,
+                "absoluteDifference": 2.7495785985820476e-06
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.022185325622558594,
+                "independent": 0.02218257604396001,
+                "absoluteDifference": 2.7495785985820476e-06
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 3.588098564932807e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 5.485166106211636e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 62,
+            "conditionalEvChecks": 160,
+            "reachChecks": 96,
+            "maximumReachDifference": 4.172325152040912e-08,
+            "undefinedZeroOpponentReachRows": 0,
+            "maximumConditionalEvDifferenceChips": 1.0139909818462911e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "015bc784c8cd5df214a4204369889f800e4863cde266a6291a3b4c32c8368ddc",
+            "outputSha256": "4b239b346bef806ebd28bfd06b513e7cb9de5623f1480c20a720a3c92313c47c"
+          },
+          "trace": [
+            {
+              "gap": 52.50142478942871,
+              "bestResponseValues": [
+                57.7087516784668,
+                -5.207326889038086
+              ],
+              "target": 10000,
+              "iterations": 1,
+              "nashConvChips": 52.50142478942871,
+              "type": "progress"
+            },
+            {
+              "gap": 0.05946540832519531,
+              "bestResponseValues": [
+                26.98931121826172,
+                -26.929845809936523
+              ],
+              "target": 10000,
+              "iterations": 500,
+              "nashConvChips": 0.05946540832519531,
+              "type": "progress"
+            },
+            {
+              "gap": 0.052501678466796875,
+              "bestResponseValues": [
+                26.986434936523438,
+                -26.93393325805664
+              ],
+              "target": 10000,
+              "iterations": 1000,
+              "nashConvChips": 0.052501678466796875,
+              "type": "progress"
+            },
+            {
+              "gap": 0.045841217041015625,
+              "bestResponseValues": [
+                27.019268035888672,
+                -26.973426818847656
+              ],
+              "target": 10000,
+              "iterations": 1500,
+              "nashConvChips": 0.045841217041015625,
+              "type": "progress"
+            },
+            {
+              "gap": 0.039310455322265625,
+              "bestResponseValues": [
+                26.98919677734375,
+                -26.949886322021484
+              ],
+              "target": 10000,
+              "iterations": 2000,
+              "nashConvChips": 0.039310455322265625,
+              "type": "progress"
+            },
+            {
+              "gap": 0.058010101318359375,
+              "bestResponseValues": [
+                27.01492691040039,
+                -26.95691680908203
+              ],
+              "target": 10000,
+              "iterations": 2500,
+              "nashConvChips": 0.058010101318359375,
+              "type": "progress"
+            },
+            {
+              "gap": 0.037151336669921875,
+              "bestResponseValues": [
+                26.997520446777344,
+                -26.960369110107422
+              ],
+              "target": 10000,
+              "iterations": 3000,
+              "nashConvChips": 0.037151336669921875,
+              "type": "progress"
+            },
+            {
+              "gap": 0.04169273376464844,
+              "bestResponseValues": [
+                26.98828125,
+                -26.94658851623535
+              ],
+              "target": 10000,
+              "iterations": 3500,
+              "nashConvChips": 0.04169273376464844,
+              "type": "progress"
+            },
+            {
+              "gap": 0.024417877197265625,
+              "bestResponseValues": [
+                26.980998992919922,
+                -26.956581115722656
+              ],
+              "target": 10000,
+              "iterations": 4000,
+              "nashConvChips": 0.024417877197265625,
+              "type": "progress"
+            },
+            {
+              "gap": 0.046535491943359375,
+              "bestResponseValues": [
+                26.990680694580078,
+                -26.94414520263672
+              ],
+              "target": 10000,
+              "iterations": 4500,
+              "nashConvChips": 0.046535491943359375,
+              "type": "progress"
+            },
+            {
+              "gap": 0.03927803039550781,
+              "bestResponseValues": [
+                27.00796890258789,
+                -26.968690872192383
+              ],
+              "target": 10000,
+              "iterations": 5000,
+              "nashConvChips": 0.03927803039550781,
+              "type": "progress"
+            },
+            {
+              "gap": 0.042140960693359375,
+              "bestResponseValues": [
+                27.00445556640625,
+                -26.96231460571289
+              ],
+              "target": 10000,
+              "iterations": 5500,
+              "nashConvChips": 0.042140960693359375,
+              "type": "progress"
+            },
+            {
+              "gap": 0.03808784484863281,
+              "bestResponseValues": [
+                27.009075164794922,
+                -26.97098731994629
+              ],
+              "target": 10000,
+              "iterations": 6000,
+              "nashConvChips": 0.03808784484863281,
+              "type": "progress"
+            },
+            {
+              "gap": 0.04992485046386719,
+              "bestResponseValues": [
+                26.99980926513672,
+                -26.94988441467285
+              ],
+              "target": 10000,
+              "iterations": 6500,
+              "nashConvChips": 0.04992485046386719,
+              "type": "progress"
+            },
+            {
+              "gap": 0.027435302734375,
+              "bestResponseValues": [
+                26.984634399414062,
+                -26.957199096679688
+              ],
+              "target": 10000,
+              "iterations": 7000,
+              "nashConvChips": 0.027435302734375,
+              "type": "progress"
+            },
+            {
+              "gap": 0.03448486328125,
+              "bestResponseValues": [
+                27.000324249267578,
+                -26.965839385986328
+              ],
+              "target": 10000,
+              "iterations": 7500,
+              "nashConvChips": 0.03448486328125,
+              "type": "progress"
+            },
+            {
+              "gap": 0.036376953125,
+              "bestResponseValues": [
+                27.001598358154297,
+                -26.965221405029297
+              ],
+              "target": 10000,
+              "iterations": 8000,
+              "nashConvChips": 0.036376953125,
+              "type": "progress"
+            },
+            {
+              "gap": 0.03386497497558594,
+              "bestResponseValues": [
+                26.98556900024414,
+                -26.951704025268555
+              ],
+              "target": 10000,
+              "iterations": 8500,
+              "nashConvChips": 0.03386497497558594,
+              "type": "progress"
+            },
+            {
+              "gap": 0.040462493896484375,
+              "bestResponseValues": [
+                27.003719329833984,
+                -26.9632568359375
+              ],
+              "target": 10000,
+              "iterations": 9000,
+              "nashConvChips": 0.040462493896484375,
+              "type": "progress"
+            },
+            {
+              "gap": 0.04029083251953125,
+              "bestResponseValues": [
+                26.988018035888672,
+                -26.94772720336914
+              ],
+              "target": 10000,
+              "iterations": 9500,
+              "nashConvChips": 0.04029083251953125,
+              "type": "progress"
+            },
+            {
+              "gap": 0.04437065124511719,
+              "bestResponseValues": [
+                26.997486114501953,
+                -26.953115463256836
+              ],
+              "target": 10000,
+              "iterations": 10000,
+              "nashConvChips": 0.04437065124511719,
+              "type": "progress"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paired-five-raise-abstraction",
+      "version": 1,
+      "runs": [
+        {
+          "iterations": 500,
+          "status": "PASS",
+          "solverElapsedMs": 141.2394,
+          "totalWallSeconds": 0.5868,
+          "oracleSeconds": 0.0703,
+          "requestFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-500.request.json",
+          "resultFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-500.result.json",
+          "oracleFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-500.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 27,
+              "publicTerminals": 17,
+              "informationSets": [
+                40,
+                40
+              ],
+              "sequences": [
+                105,
+                105
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 986,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 15.027532145440587,
+            "dualityGapChips": 5.329070518200751e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                15.027510495251004,
+                -15.027510495251004
+              ],
+              "bestResponseEVChips": [
+                15.03654810099656,
+                -15.022461718931993
+              ],
+              "deviationGainsChips": [
+                0.009037605745556121,
+                0.005048776319011239
+              ],
+              "nashConvChips": 0.01408638206456736,
+              "exploitabilityChips": 0.00704319103228368,
+              "exploitabilityPotPercent": 0.00704319103228368,
+              "equilibriumValueIntervalOOP": [
+                15.022461718931993,
+                15.03654810099656
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.014085769653320312,
+                "independent": 0.01408638206456736,
+                "absoluteDifference": 6.124112470473619e-07
+              },
+              "exploitabilityChips": {
+                "reported": 0.007042884826660156,
+                "independent": 0.00704319103228368,
+                "absoluteDifference": 3.0620562352368097e-07
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.007042884826660155,
+                "independent": 0.00704319103228368,
+                "absoluteDifference": 3.0620562352454833e-07
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 1.1651749964869396e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 1.1259166399213427e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 240,
+            "reachChecks": 160,
+            "maximumReachDifference": 3.5237333939619475e-08,
+            "undefinedZeroOpponentReachRows": 16,
+            "maximumConditionalEvDifferenceChips": 3.2919523675900564e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "6d42c9d3baed85faf39ad7c671aa862a63190d654158fe4d02570329d53ddd2a",
+            "outputSha256": "6c9dbced1a6a09e14cb629adb761602a75e265a6fbedb1d430269113d08e48c0"
+          },
+          "trace": [
+            {
+              "nashConvChips": 107.73579978942871,
+              "iterations": 1,
+              "target": 500,
+              "bestResponseValues": [
+                92.05916595458984,
+                15.676633834838867
+              ],
+              "gap": 107.73579978942871,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.014085769653320312,
+              "iterations": 500,
+              "target": 500,
+              "bestResponseValues": [
+                15.036548614501953,
+                -15.022462844848633
+              ],
+              "gap": 0.014085769653320312,
+              "type": "progress"
+            }
+          ]
+        },
+        {
+          "iterations": 2000,
+          "status": "PASS",
+          "solverElapsedMs": 152.1469,
+          "totalWallSeconds": 0.5459,
+          "oracleSeconds": 0.0373,
+          "requestFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-2000.request.json",
+          "resultFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-2000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-2000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 27,
+              "publicTerminals": 17,
+              "informationSets": [
+                40,
+                40
+              ],
+              "sequences": [
+                105,
+                105
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 986,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 15.027532145440587,
+            "dualityGapChips": 5.329070518200751e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                15.027528518486598,
+                -15.027528518486598
+              ],
+              "bestResponseEVChips": [
+                15.032819152019135,
+                -15.025416190686508
+              ],
+              "deviationGainsChips": [
+                0.0052906335325371145,
+                0.0021123278000896306
+              ],
+              "nashConvChips": 0.007402961332626745,
+              "exploitabilityChips": 0.0037014806663133726,
+              "exploitabilityPotPercent": 0.0037014806663133726,
+              "equilibriumValueIntervalOOP": [
+                15.025416190686508,
+                15.032819152019135
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.007401466369628906,
+                "independent": 0.007402961332626745,
+                "absoluteDifference": 1.4949629978389112e-06
+              },
+              "exploitabilityChips": {
+                "reported": 0.003700733184814453,
+                "independent": 0.0037014806663133726,
+                "absoluteDifference": 7.474814989194556e-07
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.003700733184814453,
+                "independent": 0.0037014806663133726,
+                "absoluteDifference": 7.474814989194556e-07
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 1.1651444431493019e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 1.311442963114473e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 240,
+            "reachChecks": 160,
+            "maximumReachDifference": 3.5255130814704216e-08,
+            "undefinedZeroOpponentReachRows": 16,
+            "maximumConditionalEvDifferenceChips": 3.2907063811649095e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "f9ea7e96d387ba892349cd372bf94056952f6c71ec1a037d00e622525b87990c",
+            "outputSha256": "b3c432866edf3788e36a1fff9a6045cb26ca475b7bc808953e3a3f496f161481"
+          },
+          "trace": [
+            {
+              "type": "progress",
+              "gap": 107.73579978942871,
+              "bestResponseValues": [
+                92.05916595458984,
+                15.676633834838867
+              ],
+              "target": 2000,
+              "iterations": 1,
+              "nashConvChips": 107.73579978942871
+            },
+            {
+              "type": "progress",
+              "gap": 0.014085769653320312,
+              "bestResponseValues": [
+                15.036548614501953,
+                -15.022462844848633
+              ],
+              "target": 2000,
+              "iterations": 500,
+              "nashConvChips": 0.014085769653320312
+            },
+            {
+              "type": "progress",
+              "gap": 0.007256507873535156,
+              "bestResponseValues": [
+                15.030466079711914,
+                -15.023209571838379
+              ],
+              "target": 2000,
+              "iterations": 1000,
+              "nashConvChips": 0.007256507873535156
+            },
+            {
+              "type": "progress",
+              "gap": 0.006861686706542969,
+              "bestResponseValues": [
+                15.029195785522461,
+                -15.022334098815918
+              ],
+              "target": 2000,
+              "iterations": 1500,
+              "nashConvChips": 0.006861686706542969
+            },
+            {
+              "type": "progress",
+              "gap": 0.007401466369628906,
+              "bestResponseValues": [
+                15.032817840576172,
+                -15.025416374206543
+              ],
+              "target": 2000,
+              "iterations": 2000,
+              "nashConvChips": 0.007401466369628906
+            }
+          ]
+        },
+        {
+          "iterations": 10000,
+          "status": "PASS",
+          "solverElapsedMs": 307.5666,
+          "totalWallSeconds": 0.6845,
+          "oracleSeconds": 0.0355,
+          "requestFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-10000.request.json",
+          "resultFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-10000.result.json",
+          "oracleFile": "artifacts/solver-scenarios/paired-five-raise-abstraction-10000.oracle.json",
+          "verification": {
+            "status": "PASS",
+            "errors": [],
+            "thresholds": {
+              "metricToleranceChips": 0.001,
+              "maximumNashConvChips": 0.5,
+              "lpPrimalDualToleranceChips": 1e-08,
+              "reachTolerance": 1e-06
+            },
+            "tree": {
+              "publicNodes": 27,
+              "publicTerminals": 17,
+              "informationSets": [
+                40,
+                40
+              ],
+              "sequences": [
+                105,
+                105
+              ],
+              "compatibleWeightedAssignments": 58,
+              "positiveCombosAfterKnownBlockers": [
+                8,
+                8
+              ],
+              "payoffNonzeros": 986,
+              "utilityConvention": "Centered zero-sum chips: winner pot/2 plus opponent new investment; loser negative pot/2 minus own new investment. Uncalled chips are returned. Tied matched showdowns are zero."
+            },
+            "equilibriumValueOOPChips": 15.027532145440587,
+            "dualityGapChips": 5.329070518200751e-15,
+            "independentStrategyQuality": {
+              "profileEVChips": [
+                15.027527777283037,
+                -15.027527777283037
+              ],
+              "bestResponseEVChips": [
+                15.030705461984063,
+                -15.024750249135383
+              ],
+              "deviationGainsChips": [
+                0.0031776847010256404,
+                0.0027775281476536406
+              ],
+              "nashConvChips": 0.005955212848679281,
+              "exploitabilityChips": 0.0029776064243396405,
+              "exploitabilityPotPercent": 0.0029776064243396405,
+              "equilibriumValueIntervalOOP": [
+                15.024750249135383,
+                15.030705461984063
+              ],
+              "realizationResidual": 1.1102230246251565e-16
+            },
+            "reportedMetricComparisons": {
+              "nashConvChips": {
+                "reported": 0.005955696105957031,
+                "independent": 0.005955212848679281,
+                "absoluteDifference": 4.832572777502264e-07
+              },
+              "exploitabilityChips": {
+                "reported": 0.0029778480529785156,
+                "independent": 0.0029776064243396405,
+                "absoluteDifference": 2.416286388751132e-07
+              },
+              "exploitabilityPercentPot": {
+                "reported": 0.0029778480529785156,
+                "independent": 0.0029776064243396405,
+                "absoluteDifference": 2.416286388751132e-07
+              },
+              "profileEvChips": {
+                "maximumAbsoluteDifference": 1.1659585297252306e-07
+              },
+              "upstreamBestResponseValues": {
+                "maximumAbsoluteDifference": 1.4469503248903948e-06
+              }
+            },
+            "pokerKitCompatiblePairRankChecks": 58,
+            "conditionalEvChecks": 240,
+            "reachChecks": 160,
+            "maximumReachDifference": 3.525604119758441e-08,
+            "undefinedZeroOpponentReachRows": 16,
+            "maximumConditionalEvDifferenceChips": 3.2907727458564295e-06,
+            "method": "Independent complete finite river sequence-form primal/dual LP and exact best responses; separate PokerKit rankings/tree/payouts",
+            "inputSha256": "72a6635975a7324b0f570295f9ac1fba053a5ef68029530fe159d0d8e5d062f5",
+            "outputSha256": "6261340cce0fb47004b2d977a7df9a2d0cf85935e022f0313888f20e86e8aee4"
+          },
+          "trace": [
+            {
+              "nashConvChips": 107.73579978942871,
+              "iterations": 1,
+              "target": 10000,
+              "bestResponseValues": [
+                92.05916595458984,
+                15.676633834838867
+              ],
+              "gap": 107.73579978942871,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.014085769653320312,
+              "iterations": 500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.036548614501953,
+                -15.022462844848633
+              ],
+              "gap": 0.014085769653320312,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.007256507873535156,
+              "iterations": 1000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.030466079711914,
+                -15.023209571838379
+              ],
+              "gap": 0.007256507873535156,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.006861686706542969,
+              "iterations": 1500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.029195785522461,
+                -15.022334098815918
+              ],
+              "gap": 0.006861686706542969,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.007401466369628906,
+              "iterations": 2000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.032817840576172,
+                -15.025416374206543
+              ],
+              "gap": 0.007401466369628906,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.006072998046875,
+              "iterations": 2500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.028820037841797,
+                -15.022747039794922
+              ],
+              "gap": 0.006072998046875,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.0070705413818359375,
+              "iterations": 3000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.03116226196289,
+                -15.024091720581055
+              ],
+              "gap": 0.0070705413818359375,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.0064411163330078125,
+              "iterations": 3500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.032768249511719,
+                -15.026327133178711
+              ],
+              "gap": 0.0064411163330078125,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.0081787109375,
+              "iterations": 4000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.032350540161133,
+                -15.024171829223633
+              ],
+              "gap": 0.0081787109375,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.00728607177734375,
+              "iterations": 4500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.030609130859375,
+                -15.023323059082031
+              ],
+              "gap": 0.00728607177734375,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.005817413330078125,
+              "iterations": 5000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.028793334960938,
+                -15.02297592163086
+              ],
+              "gap": 0.005817413330078125,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.005421638488769531,
+              "iterations": 5500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.028834342956543,
+                -15.023412704467773
+              ],
+              "gap": 0.005421638488769531,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.0059642791748046875,
+              "iterations": 6000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.030460357666016,
+                -15.024496078491211
+              ],
+              "gap": 0.0059642791748046875,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.006587982177734375,
+              "iterations": 6500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.030889511108398,
+                -15.024301528930664
+              ],
+              "gap": 0.006587982177734375,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.00592041015625,
+              "iterations": 7000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.031913757324219,
+                -15.025993347167969
+              ],
+              "gap": 0.00592041015625,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.005805015563964844,
+              "iterations": 7500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.03157901763916,
+                -15.025774002075195
+              ],
+              "gap": 0.005805015563964844,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.0057964324951171875,
+              "iterations": 8000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.031879425048828,
+                -15.026082992553711
+              ],
+              "gap": 0.0057964324951171875,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.005680084228515625,
+              "iterations": 8500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.031940460205078,
+                -15.026260375976562
+              ],
+              "gap": 0.005680084228515625,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.0060520172119140625,
+              "iterations": 9000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.031707763671875,
+                -15.025655746459961
+              ],
+              "gap": 0.0060520172119140625,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.006153106689453125,
+              "iterations": 9500,
+              "target": 10000,
+              "bestResponseValues": [
+                15.031375885009766,
+                -15.025222778320312
+              ],
+              "gap": 0.006153106689453125,
+              "type": "progress"
+            },
+            {
+              "nashConvChips": 0.005955696105957031,
+              "iterations": 10000,
+              "target": 10000,
+              "bestResponseValues": [
+                15.030704498291016,
+                -15.024748802185059
+              ],
+              "gap": 0.005955696105957031,
+              "type": "progress"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elapsedSeconds": 9.627,
+  "status": "PASS",
+  "limitations": [
+    "Quality gate applies to the complete specified zero-sum two-player river abstraction, not other bet sizes, streets or multiway games.",
+    "Global NashConv is not a per-hand error bound. Per-combination EV equality is separately checked against the reported strategy, not labelled equilibrium action regret.",
+    "All three fixed iteration checkpoints are retained, including any earlier checkpoint above the quality gate; final packs use the predetermined 10000-iteration result.",
+    "LP numeric feasibility/value tolerance is 1e-8 chips; Java float metric/EV agreement tolerance is 0.001 chips for these 100-chip pots.",
+    "Zero-opponent-reach conditional EV is undefined; any labelled solver fallback there is excluded from conditional-EV agreement claims.",
+    "No GPU, model, paid API, server listener or deployment is involved."
+  ]
+}

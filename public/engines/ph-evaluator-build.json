@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "upstream": "https://github.com/HenryRLee/PokerHandEvaluator",
+  "revision": "10be452e4c1ee40a6a56f06457f46bff27ca495a",
+  "version": "0.6.1",
+  "license": "Apache-2.0",
+  "portVersion": 1,
+  "compiler": "clang version 22.1.8 (https://github.com/llvm/llvm-project ca7933e47d3a3451d81e72ac174dcb5aa28b59d1)",
+  "target": "wasm32-unknown-unknown",
+  "optimization": "-O3",
+  "runtime": "freestanding; no WASI; no imports; one thread",
+  "memoryBytes": 393216,
+  "stackBytes": 65536,
+  "bytes": 174063,
+  "sha256": "092a30b76ac3f1a3e20e2d17e6f75a61541fa445109d3ea5fc5b83c5ccc92b6e",
+  "sourceFiles": [
+    {
+      "path": "LICENSE",
+      "sha256": "77085581b9984ea45e643c4945a04754d0f0410816e7b49808fa9f47d7e2af7e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "c1997b8cf93bf4c60c31f277283317e4b08282043cac334c5937eb36ac4ae268"
+    },
+    {
+      "path": "cpp/CMakeLists.txt",
+      "sha256": "8ba75c0a91872b8390e3961d7b74e70621d6ee23ea5959dfac206cc426959e50"
+    },
+    {
+      "path": "cpp/include/phevaluator/phevaluator.h",
+      "sha256": "0dd46696a0f2655ff6c8c394e3b665bae47b67f92b9de9ef611c18c24dabed8c"
+    },
+    {
+      "path": "cpp/include/phevaluator/card.h",
+      "sha256": "59e3803da3376c49e1bd4bd3d89c04f4a875c9aa5a1f33e29d087dc4fcc332a3"
+    },
+    {
+      "path": "cpp/include/phevaluator/rank.h",
+      "sha256": "4ebc10dbc259ccbda00b03a891db7c7c11c494890ccf4cc3fc1b835c18d71730"
+    },
+    {
+      "path": "cpp/src/hash.h",
+      "sha256": "52da81255b39e2be91f1beba6b4f766296684b1c30c27cd0de6a5c171618ced2"
+    },
+    {
+      "path": "cpp/src/tables.h",
+      "sha256": "14d9ad93a4b45b0eac8a96f182b73e3f506f96fb1ba822c40d74c0c4611659ac"
+    },
+    {
+      "path": "cpp/src/rank.c",
+      "sha256": "9c3a630c0e50521d4a212f2ebaff26f9ae42a8194da20bc2048a8b21d70a7e39"
+    },
+    {
+      "path": "cpp/src/dptables.c",
+      "sha256": "f0c8353de11c816db54322e027d72ddd5fe17d5cd9b2e28fb9a11c551bbf70fc"
+    },
+    {
+      "path": "cpp/src/tables_bitwise.c",
+      "sha256": "0cf17422b9dca612ae4a3e5b0b2c3ef60309e3b5503b8d796d7de637bc5c73b8"
+    },
+    {
+      "path": "cpp/src/evaluator5.c",
+      "sha256": "70aa60901513465a5af2f58864e4b527181351291d2ca6263e419f442aa2b0b4"
+    },
+    {
+      "path": "cpp/src/evaluator6.c",
+      "sha256": "785c21c4b19fe8b2620c08e5654f0bdb55476f84fe0b982d9d019df0c850c313"
+    },
+    {
+      "path": "cpp/src/evaluator7.c",
+      "sha256": "23a421d977ad7fdb9befb69c010f121060925fd312977b6771e5d3cc85c272f2"
+    },
+    {
+      "path": "cpp/src/hash.c",
+      "sha256": "04b667fb72c61135bae458dfa4ee51445202194a58dc142aae0a6950e0bd13ee"
+    },
+    {
+      "path": "cpp/src/hashtable.c",
+      "sha256": "e1dbf4ca6867a661aad8aaee4d160ddeeccf2515c868989c2f06e11f9f43f157"
+    },
+    {
+      "path": "cpp/src/hashtable5.c",
+      "sha256": "573ba6c11af89ba05bc456f356ea189458a3f17b3e7a2188060bba7c6defb535"
+    },
+    {
+      "path": "cpp/src/hashtable6.c",
+      "sha256": "ad6ccd5a1a1058c334f0ec5f83df5b5f98d67ca452b80ede80ed109adde34388"
+    },
+    {
+      "path": "cpp/src/hashtable7.c",
+      "sha256": "077015a421cf979213a045e412ece0b22f6ccad7dd080ad17cb5c8b097c60cd7"
+    }
+  ],
+  "portFiles": [
+    {
+      "path": "pok-port/stdio.h",
+      "sha256": "b1482b7207e60de65895ba1770a99fccc15a0a1f1f62848030ff2e6f43b7229a"
+    },
+    {
+      "path": "pok-port/runtime.c",
+      "sha256": "0965bc36af69cf5d472e552cb127bf74ed87ceb517d4af3edfff6180a2898f8d"
+    }
+  ]
+}

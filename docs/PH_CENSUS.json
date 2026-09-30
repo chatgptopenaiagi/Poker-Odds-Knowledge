@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-09-30T09:15:37.557Z",
+  "method": "EXHAUSTIVE FIVE-CARD CENSUS plus independent referenceFive rank mapping",
+  "engine": "ph-evaluator-0.6.1/10be452e4c1ee40a6a56f06457f46bff27ca495a/pok-wasm-port-1",
+  "sha256": "092a30b76ac3f1a3e20e2d17e6f75a61541fa445109d3ea5fc5b83c5ccc92b6e",
+  "samples": 2598960,
+  "categories": [
+    1302540,
+    1098240,
+    123552,
+    54912,
+    10200,
+    5108,
+    3744,
+    624,
+    40
+  ],
+  "distinctRanks": 7462,
+  "disagreements": 0,
+  "orderingDisagreements": 0,
+  "elapsedMs": 3357.2676,
+  "metrics": {
+    "bytes": 174063,
+    "memoryBytes": 393216,
+    "compileAndInstantiateMs": 1.4745000000000061
+  },
+  "independentOracle": "Original POK reference classifier; external PokerKit check tracked separately",
+  "status": "PASS"
+}

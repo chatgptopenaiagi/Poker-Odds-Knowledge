@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "analysisRevision",
+    "operation",
+    "variant",
+    "ruleset",
+    "engine",
+    "executionPermission",
+    "informationScope",
+    "board",
+    "dead",
+    "players",
+    "learner",
+    "pot",
+    "effectiveStack",
+    "tree",
+    "method",
+    "targetGap",
+    "budget"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "analysisRevision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "operation": {
+      "const": "solve"
+    },
+    "variant": {
+      "const": "holdem-high"
+    },
+    "ruleset": {
+      "const": "pok-hu-river-no-rake-v1"
+    },
+    "engine": {
+      "const": "texas-holdem-java-dcfr"
+    },
+    "executionPermission": {
+      "const": "local-solver-opt-in"
+    },
+    "informationScope": {
+      "enum": [
+        "range-study",
+        "review"
+      ]
+    },
+    "board": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[2-9TJQKA][cdhs]$"
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "dead": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[2-9TJQKA][cdhs]$"
+      },
+      "minItems": 0,
+      "maxItems": 10
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "position",
+          "combinations"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "pattern": "^[a-zA-Z0-9_-]+$"
+          },
+          "position": {
+            "enum": [
+              "OOP",
+              "IP"
+            ]
+          },
+          "combinations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "cards",
+                "weight"
+              ],
+              "properties": {
+                "cards": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[2-9TJQKA][cdhs]$"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "weight": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000000
+                }
+              }
+            },
+            "minItems": 1,
+            "maxItems": 32
+          }
+        }
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "learner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "playerId",
+        "cards"
+      ],
+      "properties": {
+        "playerId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[2-9TJQKA][cdhs]$"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "pot": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 10000
+    },
+    "effectiveStack": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "tree": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "betSizes",
+        "raiseTo",
+        "maxRaises"
+      ],
+      "properties": {
+        "betSizes": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "minItems": 1,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "raiseTo": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "minItems": 0,
+          "maxItems": 1,
+          "uniqueItems": true
+        },
+        "maxRaises": {
+          "enum": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "method": {
+      "const": "discounted-cfr"
+    },
+    "targetGap": {
+      "type": "number",
+      "minimum": 0.000001,
+      "maximum": 10000
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "iterations",
+        "timeMs",
+        "memoryMiB",
+        "threads"
+      ],
+      "properties": {
+        "iterations": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 20000
+        },
+        "timeMs": {
+          "type": "integer",
+          "minimum": 100,
+          "maximum": 15000
+        },
+        "memoryMiB": {
+          "const": 512
+        },
+        "threads": {
+          "const": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {"id":"royal-spades","cards":"Ts Js Qs Ks As","category":8,"rawRank":1},
+  {"id":"royal-clubs-seven","cards":"Tc Jc Qc Kc Ac 2d 3h","category":8,"rawRank":1},
+  {"id":"wheel-straight-flush","cards":"As 2s 3s 4s 5s","category":8,"rawRank":10},
+  {"id":"quad-aces-king","cards":"As Ac Ah Ad Ks","category":7,"rawRank":11},
+  {"id":"aces-full-kings","cards":"As Ac Ah Ks Kc","category":6,"rawRank":167},
+  {"id":"seven-two-trips","cards":"As Ac Ah Ks Kc Kh 2d","category":6,"rawRank":167},
+  {"id":"ace-high-flush","cards":"As Qs Js 9s 2s 5c 6d","category":5},
+  {"id":"wheel-mixed","cards":"Ac 2s 3h 4d 5c Qd Kh","category":4,"rawRank":1609},
+  {"id":"six-high-beats-wheel","cards":"Ac 2s 3h 4d 5c 6d Kh","category":4,"rawRank":1608},
+  {"id":"broadway-six","cards":"Ac Ks Qh Jd Tc 2d","category":4,"rawRank":1600},
+  {"id":"trips-seven","cards":"As Ac Ah Ks Qd 3s 2h","category":3,"rawRank":1610},
+  {"id":"two-pair-seven","cards":"As Ac Ks Kc Qd 3s 2h","category":2,"rawRank":2468},
+  {"id":"three-pairs","cards":"As Ac Ks Kc Qd Qs 2h","category":2,"rawRank":2468},
+  {"id":"one-pair","cards":"As Ac Ks Qd Jh 3s 2h","category":1,"rawRank":3326},
+  {"id":"high-card","cards":"As Kc Qs Jh 9d 3s 2h","category":0,"rawRank":6186},
+  {"id":"lowest-five","cards":"7c 5d 4h 3s 2c","category":0,"rawRank":7462},
+  {"id":"six-card-flush","cards":"2c 4c 7c 9c Ac Kd","category":5},
+  {"id":"board-tie-one","cards":"As Ks Qs Js Ts 2d 3d","category":8,"rawRank":1},
+  {"id":"board-tie-two","cards":"As Ks Qs Js Ts 4c 5c","category":8,"rawRank":1}
+]

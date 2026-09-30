@@ -1,0 +1,213 @@
+{
+  "observedAt": "2026-09-30T09:55:44.650943+00:00",
+  "repositories": [
+    {
+      "repository": "bupticybee/TexasHoldemSolverJava",
+      "url": "https://github.com/bupticybee/TexasHoldemSolverJava",
+      "defaultBranch": "master",
+      "archived": false,
+      "licenseHint": "MIT",
+      "pushedAt": "2026-09-30T05:16:17Z",
+      "revision": "e90d1bb4c7cf6fbd433428d6acf41f606e0c8530",
+      "commitDate": "2021-11-29T03:56:23Z"
+    },
+    {
+      "repository": "bupticybee/TexasSolver",
+      "url": "https://github.com/bupticybee/TexasSolver",
+      "defaultBranch": "master",
+      "archived": false,
+      "licenseHint": "AGPL-3.0",
+      "pushedAt": "2026-08-26T07:35:55Z",
+      "revision": "d12197b6d409a10474a7138ec2fb662b02588c09",
+      "commitDate": "2026-08-26T07:35:55Z"
+    },
+    {
+      "repository": "b-inary/postflop-solver",
+      "url": "https://github.com/b-inary/postflop-solver",
+      "defaultBranch": "main",
+      "archived": false,
+      "licenseHint": "AGPL-3.0",
+      "pushedAt": "2024-07-09T07:11:20Z",
+      "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+      "commitDate": "2023-10-01T12:59:55Z"
+    },
+    {
+      "repository": "b-inary/wasm-postflop",
+      "url": "https://github.com/b-inary/wasm-postflop",
+      "defaultBranch": "main",
+      "archived": false,
+      "licenseHint": "AGPL-3.0",
+      "pushedAt": "2023-10-01T13:10:48Z",
+      "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+      "commitDate": "2023-10-01T13:10:31Z"
+    },
+    {
+      "repository": "google-deepmind/open_spiel",
+      "url": "https://github.com/google-deepmind/open_spiel",
+      "defaultBranch": "master",
+      "archived": false,
+      "licenseHint": "Apache-2.0",
+      "pushedAt": "2026-08-31T20:35:43Z",
+      "revision": "48401890ee9857e611678302371378175a8e4c6b",
+      "commitDate": "2026-08-31T20:31:36Z"
+    }
+  ],
+  "files": [
+    {
+      "repository": "bupticybee/TexasHoldemSolverJava",
+      "revision": "e90d1bb4c7cf6fbd433428d6acf41f606e0c8530",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/bupticybee/TexasHoldemSolverJava/e90d1bb4c7cf6fbd433428d6acf41f606e0c8530/README.md",
+      "bytes": 12724,
+      "sha256": "ae8994b9c277a5a53f8689bd59d03b1c0d3aa28c5c318e0aeb2e512e39a61c5b",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "bupticybee/TexasHoldemSolverJava",
+      "revision": "e90d1bb4c7cf6fbd433428d6acf41f606e0c8530",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/bupticybee/TexasHoldemSolverJava/e90d1bb4c7cf6fbd433428d6acf41f606e0c8530/LICENSE",
+      "bytes": 1067,
+      "sha256": "962df5fb81cb75e5726db1148bf05060718ef30988834aea3d12c4a124b2b4f2",
+      "status": "INSPECTED"
+    },
+    {
+      "path": "TexasHoldemSolverJava.iml",
+      "url": "https://raw.githubusercontent.com/bupticybee/TexasHoldemSolverJava/e90d1bb4c7cf6fbd433428d6acf41f606e0c8530/TexasHoldemSolverJava.iml",
+      "status": "UNAVAILABLE",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "repository": "bupticybee/TexasSolver",
+      "revision": "d12197b6d409a10474a7138ec2fb662b02588c09",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/bupticybee/TexasSolver/d12197b6d409a10474a7138ec2fb662b02588c09/README.md",
+      "bytes": 4423,
+      "sha256": "79ce91b6283630156529abbe76924d8a233c81a463f7baf0c50881328a4672a7",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "bupticybee/TexasSolver",
+      "revision": "d12197b6d409a10474a7138ec2fb662b02588c09",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/bupticybee/TexasSolver/d12197b6d409a10474a7138ec2fb662b02588c09/LICENSE",
+      "bytes": 34523,
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+      "status": "INSPECTED"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/bupticybee/TexasSolver/d12197b6d409a10474a7138ec2fb662b02588c09/CMakeLists.txt",
+      "status": "UNAVAILABLE",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "repository": "b-inary/postflop-solver",
+      "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/README.md",
+      "bytes": 4995,
+      "sha256": "aa517e067eb0b9e3d474d5ff39e05d788e29e7b5c60e6594bd0627bbf906aa36",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "b-inary/postflop-solver",
+      "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "b-inary/postflop-solver",
+      "revision": "9d1509fe5077d019825f833eed04b16d342dfda1",
+      "path": "Cargo.toml",
+      "url": "https://raw.githubusercontent.com/b-inary/postflop-solver/9d1509fe5077d019825f833eed04b16d342dfda1/Cargo.toml",
+      "bytes": 661,
+      "sha256": "2b7f563ac5db2bbf86224c0074c9988f326ebe55775818767ca62c89ff6de7d8",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "b-inary/wasm-postflop",
+      "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/b-inary/wasm-postflop/97360db7644329b1c23a7adf06e9aa59406e4d4b/README.md",
+      "bytes": 6622,
+      "sha256": "34d3b6c59c2b7d753b5c9f17d11a94d52031d7b72c636cb0546481b4facaaf92",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "b-inary/wasm-postflop",
+      "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/b-inary/wasm-postflop/97360db7644329b1c23a7adf06e9aa59406e4d4b/LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "b-inary/wasm-postflop",
+      "revision": "97360db7644329b1c23a7adf06e9aa59406e4d4b",
+      "path": "package.json",
+      "url": "https://raw.githubusercontent.com/b-inary/wasm-postflop/97360db7644329b1c23a7adf06e9aa59406e4d4b/package.json",
+      "bytes": 1922,
+      "sha256": "ae2705a17b38dcd249bf4e6fe71ee91b3568a981f91adf74c4cbce711da0a35f",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "google-deepmind/open_spiel",
+      "revision": "48401890ee9857e611678302371378175a8e4c6b",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/open_spiel/48401890ee9857e611678302371378175a8e4c6b/README.md",
+      "bytes": 4610,
+      "sha256": "57057c144957e606acd15315d4a0200832702ea8fb7aa3ec616bbd0a2f1f9ed1",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "google-deepmind/open_spiel",
+      "revision": "48401890ee9857e611678302371378175a8e4c6b",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/google-deepmind/open_spiel/48401890ee9857e611678302371378175a8e4c6b/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "google-deepmind/open_spiel",
+      "revision": "48401890ee9857e611678302371378175a8e4c6b",
+      "path": "setup.py",
+      "url": "https://raw.githubusercontent.com/google-deepmind/open_spiel/48401890ee9857e611678302371378175a8e4c6b/setup.py",
+      "bytes": 5414,
+      "sha256": "5c1e269cf4915292b9722f3a5255bac74fb0b5f393c26c04075c5c7e789d3557",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "google-deepmind/open_spiel",
+      "revision": "48401890ee9857e611678302371378175a8e4c6b",
+      "path": "open_spiel/python/algorithms/sequence_form_lp.py",
+      "url": "https://raw.githubusercontent.com/google-deepmind/open_spiel/48401890ee9857e611678302371378175a8e4c6b/open_spiel/python/algorithms/sequence_form_lp.py",
+      "bytes": 20680,
+      "sha256": "e4a5df3a131434ac3b81bd366bb7a21431a4ece0b7416564dc2793993e963840",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "google-deepmind/open_spiel",
+      "revision": "48401890ee9857e611678302371378175a8e4c6b",
+      "path": "open_spiel/python/algorithms/best_response.py",
+      "url": "https://raw.githubusercontent.com/google-deepmind/open_spiel/48401890ee9857e611678302371378175a8e4c6b/open_spiel/python/algorithms/best_response.py",
+      "bytes": 14272,
+      "sha256": "5fa451e78c4ba7d970c28357bc6148b9c0f02d7af95d845a8ef96018231a1511",
+      "status": "INSPECTED"
+    },
+    {
+      "repository": "google-deepmind/open_spiel",
+      "revision": "48401890ee9857e611678302371378175a8e4c6b",
+      "path": "open_spiel/python/algorithms/exploitability.py",
+      "url": "https://raw.githubusercontent.com/google-deepmind/open_spiel/48401890ee9857e611678302371378175a8e4c6b/open_spiel/python/algorithms/exploitability.py",
+      "bytes": 8657,
+      "sha256": "c9b616b3b89e7f2da8a905b72166e6373a3c079bd028804ba015906d33b88ee7",
+      "status": "INSPECTED"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "analysisRevision",
+    "inputHash",
+    "cacheKey",
+    "engineId",
+    "upstreamRevision",
+    "adapterVersion",
+    "location",
+    "status",
+    "completionReason",
+    "method",
+    "iterations",
+    "elapsedMs",
+    "nodes",
+    "rootValues",
+    "bestResponseValues",
+    "metric",
+    "trace",
+    "reproducibility",
+    "limitations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "analysisRevision": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000000
+    },
+    "inputHash": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "cacheKey": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 250
+    },
+    "engineId": {
+      "const": "texas-holdem-java-dcfr"
+    },
+    "upstreamRevision": {
+      "const": "e90d1bb4c7cf6fbd433428d6acf41f606e0c8530"
+    },
+    "adapterVersion": {
+      "const": "pok-river-1"
+    },
+    "location": {
+      "const": "local-jvm"
+    },
+    "status": {
+      "enum": [
+        "COMPLETE",
+        "PARTIAL",
+        "CANCELLED",
+        "TIMEOUT",
+        "UNSUPPORTED",
+        "ERROR"
+      ]
+    },
+    "completionReason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "method": {
+      "const": "DISCOUNTED CFR"
+    },
+    "iterations": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 20000
+    },
+    "elapsedMs": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 120000
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "actor",
+          "actions",
+          "hands"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120,
+            "pattern": "^[a-zA-Z0-9_./:-]+$"
+          },
+          "actor": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40,
+              "pattern": "^[a-zA-Z0-9_ .:-]+$"
+            },
+            "minItems": 2,
+            "maxItems": 6
+          },
+          "hands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "cards",
+                "probabilities",
+                "actionEV",
+                "reach"
+              ],
+              "properties": {
+                "cards": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[2-9TJQKA][cdhs]$"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "probabilities": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "minItems": 2,
+                  "maxItems": 6
+                },
+                "actionEV": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": -1000000000,
+                    "maximum": 1000000000
+                  },
+                  "minItems": 2,
+                  "maxItems": 6
+                },
+                "reach": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            },
+            "minItems": 1,
+            "maxItems": 32
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "rootValues": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": -1000000000,
+        "maximum": 1000000000
+      },
+      "minItems": 0,
+      "maxItems": 2
+    },
+    "bestResponseValues": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": -1000000000,
+        "maximum": 1000000000
+      },
+      "minItems": 0,
+      "maxItems": 2
+    },
+    "metric": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "value",
+            "unit",
+            "definition",
+            "exploitabilityHalf"
+          ],
+          "properties": {
+            "name": {
+              "const": "NashConv"
+            },
+            "value": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "unit": {
+              "const": "chips"
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 600
+            },
+            "exploitabilityHalf": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000000
+            }
+          }
+        }
+      ]
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "iteration",
+          "gap"
+        ],
+        "properties": {
+          "iteration": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 20000
+          },
+          "gap": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000000
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 300
+    },
+    "reproducibility": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 600
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "minItems": 0,
+      "maxItems": 20
+    }
+  }
+}

@@ -1,0 +1,51 @@
+# Mathematics and reproducibility
+
+HIL uses original TypeScript card, range, hand-ranking and equity code. No solver, model, remote service or CAS runs during ordinary play. Maxima development checks and the independent Python oracle are recorded separately in MATH_VALIDATION.md. The software is a learning tool, not a certified gambling system.
+
+## Cards and random streams
+
+The 52 cards use rank-major integer encoding, 0 through 51: rank = floor(card / 4) + 2 and suit index = card mod 4, clubs/diamonds/hearts/spades. Card parsing rejects duplicate or invalid cards. Normal deals use Fisher–Yates with `crypto.getRandomValues` and rejection sampling of each bounded integer; modulo reduction happens only below the largest multiple of the bound fitting into 2^32. There is no modulo bias. Seeded lessons/replays use documented Mulberry32 with 32-bit state; that PRNG is reproducible, not cryptographically secure. Deal, policy and equity use separate instances. The equity API takes only supplied observations; it does not accept a future deck, burns or folded players' secret cards. Revealing a card in the UI does not automatically make it an explicit dead card.
+
+## Hand evaluation
+
+`evaluator.ts` directly classifies five through seven cards from rank counts, a rank bit mask, suit counts and suit masks. Category and lexicographic kickers are encoded in base 15, with a larger integer meaning a stronger hand. The score is an ordinal rank, never an equity or percentile. Wheel straights have top rank five. Suits never break ties. The independent reference implementation sorts and groups exactly five cards, classifies their frequency pattern, and takes the maximum over every five-card subset (21 subsets for seven cards). It uses no production classifier or lookup table. Generated-hand tests compare both algorithms. A separate bounded exhaustive census checks all C(52,5) = 2,598,960 five-card combinations; it is a development command, never startup work.
+
+## Ranges
+
+The 13 × 13 grid is ace through deuce on both axes. The diagonal denotes pairs, the upper triangle suited nonpairs and the lower triangle offsuit nonpairs. A pair has six concrete combinations; a suited nonpair has four; an offsuit nonpair has twelve. All 169 cells total 1,326 unique two-card combinations before blockers.
+
+Range notation is explicit: comma/space-separated cells (`AA`, `AKs`, `AKo`), no suffix for both suitedness classes (`AK` = 16), or concrete cards (`AsKh`). `77+` means 77 through AA. `AJs+` fixes the ace and includes AJs, AQs and AKs. `ATo+` similarly increases the second rank below the first. `random` or `*` is every combination. A token suffix `:0.5` or `:50%` gives each concrete combination weight 0.5. Weights are finite 0..1; zero excludes a combination. Overlapping tokens use the maximum weight, not addition. Dash ranges and arbitrary algebra are not supported and are rejected. The editor's weights have these same semantics. Presets are educational assumptions, not solver-approved ranges.
+
+Known hero/board/explicit-dead cards remove colliding combinations. Empty ranges, duplicate concrete combinations, invalid cards, impossible fixed hands and invalid weights are errors. Opponents may have one fixed hand or one weighted range each, with one through five opponents.
+
+For numerical stability, each seat's surviving weights are divided by that seat's largest weight before internal work. This constant scale cancels from the compatibility-conditioned normalized result. `evaluatedWeight` is the sum of these internally rescaled assignment weights; original user weights remain in the recorded inputs. Editing a matrix cell changes exactly that class and preserves unrelated concrete hands and heterogeneous weights.
+
+Extreme relative weights can still cause all compatible products to underflow in floating-point arithmetic. If the total enumerated weight is zero or nonfinite, the calculation fails with an explicit precision error instead of returning NaN or a fabricated equity. Less extreme relative weights are required for that scenario. The result's `seed` is always the effective seed, including the default 20260930; `inputs.seed` preserves whether the caller actually supplied one.
+
+## Equity and exact enumeration
+
+Equity is expected fractional share of a contested showdown pot. A sole winner receives 1; a two-way tie receives 1/2; a three-way tie receives 1/3. `win` is the probability hero is the sole winner, `tie` the probability hero shares first place, and `loss` the probability hero does not win. A tie is not counted as half a win in those separate statistics. Win + tie + loss = 1, while equity incorporates the actual fraction.
+
+Every result includes the original specified inputs, known cards, surviving combination counts, implementation version, method, completed evaluations, seed, timing, units and limitations. Fixed-hand flop runouts enumerate C(45,2) = 990 unordered boards, with constant order multiplicity cancelling in the normalized result. A river against an unrestricted single opponent enumerates all C(45,2) = 990 legal opponent hands. General exact enumeration multiplies each compatible assignment's individual range weights and visits each unordered runout. The denominator is the sum of those weights, so compatibility conditioning and multiplicity are preserved. The automatic exact path is limited to a conservative upper bound of 250,000 evaluations; a requested exact job exceeding that bound is rejected rather than silently approximated. The result is labeled EXACT ENUMERATION, although weighted arithmetic is ordinary IEEE-754 arithmetic rather than symbolic rational arithmetic.
+
+Optional per-pot eligibility lists use player zero for hero and one through N for the supplied opponents. Each pot computes its own tied winners and hero share. `expectedChips` equals that share times its amount. These values model fractional pot shares; the game settlement layer separately applies its documented deterministic integer odd-chip rule. An equity against all players must not substitute for eligibility-aware side-pot equity. Per-pot confidence intervals are individual 95% intervals, not a simultaneous family guarantee.
+
+## Monte Carlo and uncertainty
+
+For larger problems the calculator uses a fixed budget from 100 to 200,000 samples (default 10,000), a displayed unsigned 32-bit seed, and a worker. Each attempt independently draws one weighted hand from each original range. If any cards collide, the **entire assignment** is rejected. Later seats are never conditionally renormalized during assignment selection. Accepted assignments therefore target the product-weight joint distribution conditioned on compatibility. The remaining board is sampled without replacement. This avoids seat-order bias from naive sequential range sampling. Work is capped at min(2,000,000, max(20,000, 200 × requested samples)) attempted assignments. Failure to complete the fixed budget is an explicit error, never an apparently successful low-sample result. A test with three compatible weighted assignments verifies exact equity 6/7, which naive sequential renormalization would distort.
+
+Each sampled pot-share outcome lies in [0,1], including fractional ties. The displayed two-sided 95% fixed-N Hoeffding interval is clipped to [0,1], with radius sqrt(log(40)/(2N)). This is conservative and does not incorrectly model ties as binary wins. It assumes independent samples under the pseudorandom simulation model. There is no claim of sequential-stopping coverage. Changing a budget starts a fresh specified calculation. Near a call threshold, an interval spanning that threshold does not justify a categorical conclusion. Monte Carlo outputs carry MONTE CARLO ESTIMATE, and percentages are displayed with sensible rounded precision.
+
+Work runs in chunks of 256 assignment attempts/evaluations. Worker messages carry request IDs. Cancellation invalidates the worker generation, and the UI must reject stale response IDs or terminate the old worker. Synchronous helpers exist for bounded development tests; the UI uses the worker for larger calculations.
+
+## Teaching formulas and assumptions
+
+For nine fixed target outs among 47 unknown cards, the next-card hit probability is 9/47, about 19.1489%. Seeing two cards from the same set gives 1 − C(38,2)/C(47,2), about 34.9676%. On the turn, nine available target outs among 46 unknown cards give 9/46, about 19.5652%. A target hit is not automatically a winning hand: dirty outs, redraws, changing targets, additional known cards and opponent ranges change the question. The rule of two and four is an APPROXIMATION.
+
+Let P include the opponent's current bet and let C be the additional call. Heads-up, one eligible pot, no rake and no future betting, break-even equity = C/(P+C). EV(call), relative to folding now, = E(P+C) − C. A pot of 60 followed by a bet of 20 gives P=80 and C=20: threshold 20%; at E=25%, EV=+5 play chips. Past contributions are sunk and must not be charged a second time.
+
+For a pure bluff of B into P0, assuming fold probability F, zero equity if called and no future decisions, EV = F×P0 − (1−F)×B. With P0=100 and B=50, zero EV occurs at F=1/3; positive EV requires strictly more. Implied odds and reverse implied odds depend on future payoff assumptions. Raw showdown equity cannot determine the optimal nonterminal action. Bots and strategic comments are STRATEGY HEURISTIC, not GTO solutions. Terminal all-in/checkdown calculations and multistreet strategic assumptions are distinct.
+
+## Verification artifacts
+
+`tests/evaluator.test.ts` covers every hand class, ties, wheels, kickers, multiple trips/pairs, malformed cards and 6,000 deterministic generated comparisons. `tests/equity.test.ts` covers combination counts, notation, weights/blockers, impossible joint ranges, exact flop and river cases, three-way board ties, per-pot eligibility, fixed-budget Monte Carlo agreement, global collision rejection, RNG isolation and progress/cancellation. `scripts/evaluator-census.ts` records the complete five-card category census. `scripts/oracle-corpus.ts` produces synthetic legal cards for a separately installed PokerKit oracle. `scripts/equity-benchmark.ts` records bounded real Node timings; browser worker timings are separate evidence in the delivery test report.

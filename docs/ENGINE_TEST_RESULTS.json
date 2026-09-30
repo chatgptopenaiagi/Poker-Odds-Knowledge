@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "unit": {
+    "numTotalTests": 368,
+    "numPassedTests": 368,
+    "numFailedTests": 0,
+    "numPendingTests": 0,
+    "success": true,
+    "startTime": 1790760875901
+  },
+  "files": [
+    {
+      "file": "analysis-client.test.ts",
+      "status": "passed",
+      "assertions": 1
+    },
+    {
+      "file": "appearance.test.ts",
+      "status": "passed",
+      "assertions": 5
+    },
+    {
+      "file": "bots.test.ts",
+      "status": "passed",
+      "assertions": 3
+    },
+    {
+      "file": "coach.test.ts",
+      "status": "passed",
+      "assertions": 7
+    },
+    {
+      "file": "engine-client.test.ts",
+      "status": "passed",
+      "assertions": 11
+    },
+    {
+      "file": "engine-i18n.test.ts",
+      "status": "passed",
+      "assertions": 43
+    },
+    {
+      "file": "engines.test.ts",
+      "status": "passed",
+      "assertions": 134
+    },
+    {
+      "file": "equity.test.ts",
+      "status": "passed",
+      "assertions": 15
+    },
+    {
+      "file": "evaluator.test.ts",
+      "status": "passed",
+      "assertions": 14
+    },
+    {
+      "file": "game.test.ts",
+      "status": "passed",
+      "assertions": 23
+    },
+    {
+      "file": "i18n.test.ts",
+      "status": "passed",
+      "assertions": 43
+    },
+    {
+      "file": "integration.test.ts",
+      "status": "passed",
+      "assertions": 3
+    },
+    {
+      "file": "lessons.test.ts",
+      "status": "passed",
+      "assertions": 7
+    },
+    {
+      "file": "migration.test.ts",
+      "status": "passed",
+      "assertions": 3
+    },
+    {
+      "file": "native-engine-canonical.test.ts",
+      "status": "passed",
+      "assertions": 5
+    },
+    {
+      "file": "native-engine.test.ts",
+      "status": "passed",
+      "assertions": 12
+    },
+    {
+      "file": "ph-evaluator.test.ts",
+      "status": "passed",
+      "assertions": 6
+    },
+    {
+      "file": "platform-ops.test.ts",
+      "status": "passed",
+      "assertions": 1
+    },
+    {
+      "file": "platform.test.ts",
+      "status": "passed",
+      "assertions": 19
+    },
+    {
+      "file": "storage.test.ts",
+      "status": "passed",
+      "assertions": 13
+    }
+  ],
+  "browser": {
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "durationMs": 46748.196,
+    "freshProfiles": true,
+    "nonLoopbackBlocked": true,
+    "screenshotsInspected": [
+      "table-desktop",
+      "drill-desktop",
+      "engines-light-comparison",
+      "engines-dark-200",
+      "engines-rtl-small"
+    ]
+  },
+  "deployment": {
+    "schemaVersion": 1,
+    "observedAt": "2026-09-30T09:33:58.9255056Z",
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "Canonical local page",
+        "expected": 200,
+        "actual": 200
+      },
+      {
+        "name": "Non-loopback source page",
+        "expected": 403,
+        "actual": 403
+      },
+      {
+        "name": "Non-loopback source JS asset",
+        "expected": 403,
+        "actual": 403
+      },
+      {
+        "name": "Application dot file denied",
+        "expected": 403,
+        "actual": 403
+      },
+      {
+        "name": "Git path denied",
+        "expected": 403,
+        "actual": 403
+      },
+      {
+        "name": "Source package not web exposed",
+        "expected": 404,
+        "actual": 404
+      }
+    ],
+    "publicFiles": 81,
+    "assetHashesMatch": true,
+    "securityHeadersPresent": true,
+    "site": "http://localhost/holdem-engines-preview/",
+    "limitations": [
+      "Non-loopback source request originated on this PC; a second external LAN device was not tested.",
+      "No Apache restart, global config edit, firewall change or new listener."
+    ],
+    "buildId": "POK-ENGINES-1.0.0-preview-0e4ad25"
+  },
+  "protocolTransport": "11 tests use simulated Worker transport; separate real browser workers tested",
+  "paidCalls": 0,
+  "remotePublication": false,
+  "nativeHttpRoute": "NOT_IMPLEMENTED; CLI only"
+}
