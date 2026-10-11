@@ -5,6 +5,20 @@ import {runAnalysis} from '../src/engines/runner';
 import {explainStudyCall} from '../src/decision-study';
 
 const result=()=>runAnalysis(fromEquityRequest({hero:parseCards('2c 3d'),board:parseCards('As Ks Qs Js Ts'),opponents:[{hand:parseCards('4c 5d')}],method:'exact'},'pok-standard',1));
+it.each([[-1e-8,'below'],[1e-8,'above'],[Number.EPSILON,'at']])('classifies a small margin %s with an explicit numerical tolerance',async(delta,classification)=>{
+ const r=await result();r.result!.equity=.5+Number(delta);r.result!.interval=[r.result!.equity,r.result!.equity];
+ const d=explainStudyCall(r,50,50);expect(d.kind==='available'&&d.calculations.comparison).toBe(classification);
+});
+it.each([[.6,.7,'above'],[.3,.4,'below']])('classifies an interval entirely on one side: %s to %s',async(lo,hi,classification)=>{
+ const r=await result();r.method=r.result!.method='MONTE CARLO ESTIMATE';r.result!.confidence=.95;r.result!.equity=(Number(lo)+Number(hi))/2;r.result!.interval=[Number(lo),Number(hi)];
+ const d=explainStudyCall(r,50,50);expect(d.kind==='available'&&d.calculations.comparison).toBe(classification);
+});
+it('rejects invalid calls, missing values and probabilities; handles zero prices',async()=>{
+ const r=await result();for(const c of [-1,NaN,Infinity,.5,1e12])expect(explainStudyCall(r,50,c).kind).toBe('unavailable');
+ for(const equity of [-.1,1.1,NaN,Infinity,undefined]){const broken=structuredClone(r);(broken.result as any).equity=equity;expect(explainStudyCall(broken,50,50).kind).toBe('unavailable')}
+ const missing=structuredClone(r);delete (missing.result as any).interval;expect(explainStudyCall(missing,50,50).kind).toBe('unavailable');
+ for(const [p,c,threshold,ev] of [[0,20,1,-10],[80,0,0,40]]){const d=explainStudyCall(r,p,c);expect(d.kind==='available'&&d.calculations).toMatchObject({threshold,incrementalEV:ev})}
+});
 it('uses fractional tied equity, immutable inputs and matching engine provenance',async()=>{
  const r=await result(),before=JSON.stringify(r),d=explainStudyCall(r,80,20);
  expect(d.kind).toBe('available');if(d.kind!=='available')return;

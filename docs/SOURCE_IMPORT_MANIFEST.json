@@ -370,8 +370,8 @@
     },
     {
       "file": "playwright.repair.config.ts",
-      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
-      "sha256": "5819ca3d71ad3e2acc5f7fc7c27595a2bc67f1cb7b6565823c64e11281437ea4"
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "cc654c5268e9ee66d7b986c54c283cf517bf70da4bc5b563ba5c1e32773061d2"
     },
     {
       "file": "scripts/record-build.mjs",
@@ -400,8 +400,8 @@
     },
     {
       "file": "src/style.css",
-      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
-      "sha256": "abb5bd6451017de4240b49f7c6b11a1e47fc6cde695e4e740328278ec58338bf"
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "de32586242b01bd5a60e9ba5d1015763147de1f35f57203954bacab2b59dc6a3"
     },
     {
       "file": "tests/card-design-browser.spec.ts",
@@ -430,8 +430,8 @@
     },
     {
       "file": "tests/ui-control-inventory.spec.ts",
-      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
-      "sha256": "e718becfdce24e2c33c756de81c1b9fa1de98ea720e4d6a706e9c8d9ad83be2d"
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "eee4eff53e469e3ed00dead6fd85b8a34dd9dd3f034438bc8edc784da96b1427"
     },
     {
       "file": "playwright.controls.config.ts",
@@ -450,18 +450,18 @@
     },
     {
       "file": "docs/POK_DECISION_INTELLIGENCE.md",
-      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
-      "sha256": "5b5d809650be1b4dbdb47c6eda17f35ace67d4c07d4d3a0fa182a47df0a93419"
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "ec3478065099c46e13824183f77af6dccae9cf2eb76b6123f512ff3bc83ecc20"
     },
     {
       "file": "src/DecisionExplanation.tsx",
-      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
-      "sha256": "03a4419ebb87bd5a7c66e2dea214ec96be1470f036e8b8b6afa78a60811b3ef4"
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "192531421371153da972dd453b0442d7312684ac3dffb72dcef64fcfebac491b"
     },
     {
       "file": "src/decision-study.ts",
-      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
-      "sha256": "ed95cc5c26ce793d92bc33a1d94958fef103e07af14f4a688d998cf204c6bc7d"
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "97b3828f9ea42e0d2f256b0e236dcbba66efb4159ed94ae6090e82f80d985d17"
     },
     {
       "file": "tests/decision-browser.spec.ts",
@@ -470,8 +470,8 @@
     },
     {
       "file": "tests/decision-study.test.ts",
-      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
-      "sha256": "6d23e7d29115aaf3d58eefe918a8fdac41fcd300b376f9ff959ae03bd362b702"
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "a3a646cbe2f7710ee6788266f6c0d9d6a4a2d8d5b6bd9c71cdde738caf95c99c"
     },
     {
       "file": "tests/play-controls-browser.spec.ts",
@@ -482,6 +482,41 @@
       "file": "tests/strategy-regression.spec.ts",
       "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
       "sha256": "8b6da4d7427efb35b42d4744d97155d2b8cb499acf370129f0ab43f6b423ebe5"
+    },
+    {
+      "file": "docs/POK_DECISION_EXPLORER.md",
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "39d83b37ddf91541ca52d0e565a08c1faf9606584d4703844a5d2a0d15b9c9f5"
+    },
+    {
+      "file": "src/DecisionExplorer.tsx",
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "2706f9c4888ff7bfb36afca00ba0730a7b219283432f8f36d1150eec3a62b3e3"
+    },
+    {
+      "file": "src/Review.tsx",
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "fb25fca150cad3b8686d5785314081eb8fc6f1436747ad51379f6dd65050a68b"
+    },
+    {
+      "file": "src/decision-explorer.ts",
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "2c276611818962f8dc767c526a8e77ee29f21cc193a4a2a47caf78acf1a73f1e"
+    },
+    {
+      "file": "tests/decision-explorer.test.ts",
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "aae9fc2d8faf8e3a05fa1ce8f356b34efa773a923a00408af6d1170eba742f27"
+    },
+    {
+      "file": "tests/explorer-browser.spec.ts",
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "0254856867d928b7bfb4578525bbb151b6dad548a5a90c045dfe28d9a36c2cc7"
+    },
+    {
+      "file": "tests/fixtures/river-decision.ts",
+      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
+      "sha256": "feaf9d2f96b3bbba77d304aa43baa5d370e1fc42a60e23b1209dad63a979e4cf"
     }
   ]
 }

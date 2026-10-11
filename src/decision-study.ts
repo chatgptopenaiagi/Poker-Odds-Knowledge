@@ -1,6 +1,9 @@
 import {validateResult,type AnalysisResult} from './engines/contract';
 import {terminalCall} from './math-study';
 
+// Probability tolerance for arithmetic roundoff, not statistical uncertainty.
+export const DECISION_EPSILON=1e-12;
+
 /** Separate terminal-call study, never a recommendation or a live action context. */
 export function explainStudyCall(analysis:AnalysisResult,pot:number,call:number){
  const unavailable=(reason:'incomplete'|'invalid-result'|'pot-model'|'amounts'|'uncertainty')=>({kind:'unavailable' as const,reason});
@@ -16,8 +19,8 @@ export function explainStudyCall(analysis:AnalysisResult,pot:number,call:number)
  const bounds:readonly[number,number]=estimated?r.interval:[r.equity,r.equity];
  const threshold=model.threshold;
  const comparison=threshold===null?'undefined':estimated
-  ?bounds[0]>threshold?'above':bounds[1]<threshold?'below':'crosses'
-  :r.equity>threshold?'above':r.equity<threshold?'below':'at';
+  ?bounds[0]>threshold+DECISION_EPSILON?'above':bounds[1]<threshold-DECISION_EPSILON?'below':'crosses'
+  :r.equity>threshold+DECISION_EPSILON?'above':r.equity<threshold-DECISION_EPSILON?'below':'at';
  return {
   kind:'available' as const,
   context:{kind:'separate-terminal-call-study' as const,potBeforeCall:pot,call},
