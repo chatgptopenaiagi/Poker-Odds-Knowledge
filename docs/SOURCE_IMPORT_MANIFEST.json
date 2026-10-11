@@ -370,8 +370,8 @@
     },
     {
       "file": "playwright.repair.config.ts",
-      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
-      "sha256": "cc654c5268e9ee66d7b986c54c283cf517bf70da4bc5b563ba5c1e32773061d2"
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "c7a45658b7c914111500d6f10b24d1277706e986d4bc996312b1a57af9093aba"
     },
     {
       "file": "scripts/record-build.mjs",
@@ -385,8 +385,8 @@
     },
     {
       "file": "src/OddsLab.tsx",
-      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
-      "sha256": "53af3c4c4005787c1cea7e1c9688d52b7671b23acfbfe13183509dca55e59643"
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "76c3b9342755b50285ae22d1deb06c413032524be182f77f824a8de1e5b70180"
     },
     {
       "file": "src/Play.tsx",
@@ -430,8 +430,8 @@
     },
     {
       "file": "tests/ui-control-inventory.spec.ts",
-      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
-      "sha256": "eee4eff53e469e3ed00dead6fd85b8a34dd9dd3f034438bc8edc784da96b1427"
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "dfa9a9bfc00f937b3ab921517c653c14a455033af4a2cde20def55a890424f49"
     },
     {
       "file": "playwright.controls.config.ts",
@@ -495,8 +495,8 @@
     },
     {
       "file": "src/Review.tsx",
-      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
-      "sha256": "fb25fca150cad3b8686d5785314081eb8fc6f1436747ad51379f6dd65050a68b"
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "f0ead863f5682ac04266d8e92726d5b7451c98547520e642fb65e61ffaf63e8c"
     },
     {
       "file": "src/decision-explorer.ts",
@@ -517,6 +517,56 @@
       "file": "tests/fixtures/river-decision.ts",
       "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
       "sha256": "feaf9d2f96b3bbba77d304aa43baa5d370e1fc42a60e23b1209dad63a979e4cf"
+    },
+    {
+      "file": "docs/POK_DECISION_EXPLORER_V2.md",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "8ca89e3bb29f14afcdd83632f573d8b225f085e9cf55ae44767028e078ecfdbb"
+    },
+    {
+      "file": "src/RangeExplorer.tsx",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "bebc94a78be7818d1852c98733e08ef89c86f83f45f190888ffeee0996bae3ad"
+    },
+    {
+      "file": "src/RangeMatrix.tsx",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "f0781f3999827e79732a3bf4646e9ee76bedbe5605cd5ebe13ecbdba7d390eef"
+    },
+    {
+      "file": "src/ResponseExplorer.tsx",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "3c73fd2700027fc8d8e1fcb7486a0dc233399cc6f0dfe76e44be78b85bc74f9c"
+    },
+    {
+      "file": "src/range-study.ts",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "d4f999df795bd03ec28eb43b84e2294b95f008276650ee8b7883b476b5dd0abb"
+    },
+    {
+      "file": "src/response-study.ts",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "c9c9e9f04be1e7ea24d705830feaf01d5328560cbc8f3d41336b5a05662e245c"
+    },
+    {
+      "file": "tests/range-browser.spec.ts",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "e09c5d5d295da1f69ce86c80a80a2390c9da0dec199d799f53db61ad465bca1f"
+    },
+    {
+      "file": "tests/range-study.test.ts",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "f295698a5291edbad753c6985bc6049ddd64e810c7c7491359dd5b75b3f76a43"
+    },
+    {
+      "file": "tests/response-browser.spec.ts",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "e521d271b5ba7042462803e55d7035339e67057a7b5f429fe7aa3ec62a7a88af"
+    },
+    {
+      "file": "tests/response-study.test.ts",
+      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
+      "sha256": "2335e8ad7bdeb8ec7d48cb7083bd1c17fd4eb839619a2b76430ba00ab18d952c"
     }
   ]
 }
