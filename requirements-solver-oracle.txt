@@ -1,0 +1,5 @@
+# Development-only, tested in an isolated CPython 3.14.7 environment.
+# No browser, APK or ordinary study runtime dependency.
+scipy==1.18.1
+numpy==2.5.3
+pokerkit==0.7.6

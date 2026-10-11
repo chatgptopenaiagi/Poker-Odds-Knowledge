@@ -1,39 +1,31 @@
-# Hold'em Insight Lab (HIL)
+# Poker Odds Knowledge
 
-An original offline-first, play-chip No-Limit Texas Hold'em learning application for this Windows PC. A complete static application: existing Apache serves the built files; cards, legal actions, payouts, probability work, lessons and local history run in the browser. No mandatory model, cloud account, Node server, Python service, PHP or MariaDB.
+An offline-first, play-chip Hold'em learning application. React/TypeScript runs legal actions, settlement, lessons, replay and browser persistence locally. Optional Node/Hono/SQLite services provide accounts and bounded local solver jobs; offline play does not require them.
 
-**Open [http://localhost/holdem-lab/](http://localhost/holdem-lab/)** or run `Open-Holdem-Lab.ps1`. If Apache is stopped, the launcher explains how to start it through the existing XAMPP Control Panel. It does not start duplicate servers or alter services. Always use this origin: `127.0.0.1` has separate browser storage.
+## Build from this checkout
 
-See [QUICKSTART.md](QUICKSTART.md) for the five-minute walkthrough. Delivery checks, versions, build identity, artifacts and limits are in [DELIVERY_MANIFEST.md](DELIVERY_MANIFEST.md) and [TEST_REPORT.md](TEST_REPORT.md). CLA acceptance is independent of poker correctness: [CLA_ACCEPTANCE.md](CLA_ACCEPTANCE.md).
+Use a compatible installed Node runtime with `node:sqlite` (the current Windows checks used Node 26.8.1), then `npm ci` from this folder. Dependencies are pinned by package-lock.json. No dependency directory from another worktree is required.
 
-## What works
+- `npm run build:web`: standard offline edition in dist, URL base /holdem-lab/.
+- `npm run build:strategy`: isolated strategy edition in strategy-dist, URL base /holdem-strategy-validation/.
+- `npm run build:server`: optional backend entrypoints in server-build.
+- `npm test`: includes native adapter tests. These intentionally fail if the native prerequisite below has not been built; do not silently skip them.
+- `node node_modules/@playwright/test/cli.js test --config playwright.cards.config.ts`: isolated built Edge card checks. The default target is loopback port 4322. Browser installation is a separate prerequisite.
 
-- Cash-style 2–6-seat NLHE with one human and three labelled local heuristic profiles; integer chips, correct heads-up order, minimum/full/short raises, cumulative reopening, main/side pots, uncalled returns and deterministic odd chips. Default six seats, 5/10 blinds and 1,000 chips each.
-- Learn, Guess-first and Practice modes; optional teaching reveal, pause/step, playback speed, reduced motion, responsive layout, English and Romanian core controls. All 28 original calculation lessons have English and Romanian prompts/explanations.
-- Odds Lab: specific hands or editable weighted ranges for up to five opponents; 13×13 combination matrix, blocker removal, explicit dead cards, exact enumeration where bounded, seeded Monte Carlo, cancellation/progress and fractional-share uncertainty.
-- Completed-hand timeline, original information sets, replay, counterfactual Odds Lab or playable branches, and saved scenarios. Strategic suggestions are heuristics, not GTO grades.
-- Versioned IndexedDB persistence, calculation accuracy/error tracking separately from chips, validated/regraded JSON imports, portable exports and confirmed resets. Pending hand and completed history save atomically; stale clicks and competing tabs are rejected.
+For a static local strategy preview after building, run `node node_modules/vite/bin/vite.js preview --mode strategy-preview --outDir strategy-dist --host 127.0.0.1 --port 4322 --strictPort`. Do not reuse a port occupied by the optional API. This serves built assets, not source. Existing Apache deployment scripts have fixed app-local destinations; inspect ownership and back up before using them. Do not deploy over an unidentified installation.
 
-## Boundaries
+## Source and dependency completeness
 
-Play chips only. No deposits, money, prizes, external poker clients, HUDs, live-table advice, network multiplayer or real-money wagering. HIL is not a GTO solver, a professional-strength bot, or regulated gaming software. Raw showdown equity does not decide every multistreet action. Unknown opponent ranges remain assumptions. Browser users can inspect their local deal; no adversarial secrecy is claimed.
+Root index.html, Playwright configurations, strategy fixtures, native wrapper, pinned third-party sources/notices, verification requirements and referenced launch scripts are included. [Import manifest](docs/SOURCE_IMPORT_MANIFEST.json) maps restored bytes to development revisions without importing development history. Private machine reports, notebooks, databases, caches, SDKs, Android-owned untracked work and test screenshots are excluded.
 
-No rake, antes, straddles, tournaments/ICM, multiple boards, CFR module, speech or Qwen narration. Histories are HIL's own records; importing third-party live hand histories is not supported. Advanced technical identifiers, range notation, method labels and raw diagnostics remain English in Romanian mode; all beginner lesson prose is translated.
+OMPEval is development/local-only. Build it from included ISC-licensed sources with [the native recipe](docs/OMPEVAL_BUILD.md) and scripts/build-ompeval.ps1; clean-checkout tests are unavailable until its native/bin output exists. Do not borrow an unexplained executable. PH browser WASM, source provenance and Apache-2.0 notices are bundled; see [PH build](docs/PH_BUILD.md). The Java solver requires its pinned build/runtime setup and explicit local permission; see engine-adapters/java. A discovery probe is not solver-quality verification.
 
-## Source, build and deployment
+## Capabilities and limits
 
-Source/Git root: `C:\xampp\CLA-HOLDEM-LAB`, verified outside Apache's web roots and aliases. Served directory: `C:\xampp\htdocs\holdem-lab`, owned by HIL's file manifest. Existing sites, including DragonHydra, are preserved. Only public build assets are deployed. The application-specific `.htaccess` denies non-loopback sources; both loopback allow and a local request using the LAN interface were tested.
+2–6-seat cash-style no-limit Hold'em, integer chips, side pots and legal-action checks; bounded exact enumeration and seeded Monte Carlo with weighted ranges/blockers; 28 lessons, grading, review/branching and local backup. PH and POK share a sampler, so their agreement is not an independent sampling oracle. Restricted heads-up river Strategy Lab and saved packs do not establish full-game GTO.
 
-Pinned packages and scripts are in package.json/package-lock.json. Use the existing Node installation. `npm ci`, `npm run build`, `npm test`, and `npm run test:browser` are the development entry points; the report distinguishes the actual executed checks. The browser suite targets the built Apache site with installed Edge, fresh contexts and non-loopback requests blocked. It does not start Vite or modify machine networking.
+Appearance includes four local card designs and independent suit colors. Graphical tens display 10; technical notation remains T. Appearance and notebooks have separate persistence. Different origins or build namespaces do not silently share progress. [Card verification](docs/CARD_THEME_FIX.md) states the executed scope.
 
-`scripts/Deploy-Holdem-Lab.ps1` updates only its dedicated directory, refuses unknown ownership/reparse points, backs up prior owned assets outside the web root, and removes only obsolete manifest-listed files. It does not change Apache configuration or restart it. Review target/configuration evidence before moving this source to another PC.
+No rake, tournaments/ICM, multiplayer, external poker-client assistance, deposits or prizes. Opponent ranges are assumptions; equity alone is not optimal strategy. Browser-local hidden cards are not adversarially secret. Optional providers, mail and AI remain unverified until separately configured; no paid provider acceptance is claimed.
 
-The test-only Python environment is `.venv` using verified Python 3.14.7; its one dependency is pinned in requirements-verification.txt. Maxima uses fixed reviewed batch input, disabled initialization and a timeout. None of these development tools is a browser backend. Original evaluator verification includes an independent five-card/best-of-21 reference, PokerKit and an exhaustive five-card census.
-
-## Further documentation
-
-- [Architecture](docs/ARCHITECTURE.md), [ruleset](docs/RULESET.md), [math methods](docs/MATH_METHODS.md)
-- [Real Maxima/Python validation](docs/MATH_VALIDATION.md), [security/offline/storage](docs/SECURITY_OFFLINE.md)
-- [Environment and bounded reuse evidence](docs/ENVIRONMENT.md), [primary-source research](RESEARCH.md), [third-party notices](THIRD_PARTY_NOTICES.md)
-
-Source is kept in local Git. No remote, publication, uploaded histories or public package was created. The supplied mission text is preserved locally and excluded from Git/build archives.
+See [rules](docs/RULESET.md), [math methods](docs/MATH_METHODS.md), [architecture](docs/ARCHITECTURE.md), and [platform architecture](docs/PLATFORM_ARCHITECTURE.md). Historical counts are not current acceptance. Local reports must distinguish source implementation, actual execution, and deployment to the owner's chosen origin.

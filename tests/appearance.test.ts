@@ -35,7 +35,7 @@ describe('appearance tokens and versioned display preferences', () => {
   });
   it('has complete bilingual source keys and no game or learning fields in its storage schema', () => {
     expect(Object.keys(appearanceRomanian).sort()).toEqual(Object.keys(appearanceEnglish).sort());
-    expect(Object.keys(defaultAppearance).sort()).toEqual(['version','mode','contrast','palette','textScale','cardScale','spacing','font','reducedMotion','tableFocus'].sort());
+    expect(Object.keys(defaultAppearance).sort()).toEqual(['version','mode','contrast','palette','textScale','cardScale','spacing','font','reducedMotion','tableFocus','cardDesign','suitColors'].sort());
   });
   it('checks all 41 translated catalogs plus Chinese script variant without claiming linguistic review', () => {
     const expected = Object.keys(appearanceEnglish).map(key => `appearance.${key}`).sort();

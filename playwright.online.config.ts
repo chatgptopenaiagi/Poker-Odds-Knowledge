@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests',testMatch:'online-browser.spec.ts',workers:1,timeout:180000,expect:{timeout:10000},retries:0,reporter:[['list'],['json',{outputFile:'artifacts/pok-online-browser-results.json'}]],outputDir:'artifacts/pok-online-test-output',use:{channel:'msedge',headless:true,baseURL:'http://127.0.0.1:4319/holdem-lab/',viewport:{width:1440,height:1000},serviceWorkers:'block',acceptDownloads:true,actionTimeout:15000,trace:'off',screenshot:'only-on-failure'}});

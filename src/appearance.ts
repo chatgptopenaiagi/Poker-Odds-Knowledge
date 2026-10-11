@@ -12,12 +12,17 @@ export const PALETTES = {
   rose: { light: '#993f5b', dark: '#f0aac3', felt: '#673047', feltBright: '#88485f' },
 } as const;
 export type Palette = keyof typeof PALETTES;
+export const CARD_DESIGNS = ['classic', 'large-index', 'minimal', 'high-contrast'] as const;
+export type CardDesign = typeof CARD_DESIGNS[number];
+export type SuitColors = 'two' | 'four';
 export type Appearance = {
+  cardDesign: CardDesign; suitColors: SuitColors;
   version: 1; mode: 'system' | 'light' | 'dark'; contrast: boolean; palette: Palette;
   textScale: number; cardScale: number; spacing: 'comfortable' | 'compact';
   font: 'system' | 'verdana' | 'serif'; reducedMotion: boolean; tableFocus: boolean;
 };
 export const defaultAppearance: Appearance = {
+  cardDesign: 'classic', suitColors: 'two',
   version: 1, mode: 'system', contrast: false, palette: 'emerald', textScale: 100,
   cardScale: 100, spacing: 'comfortable', font: 'system', reducedMotion: false, tableFocus: false,
 };
@@ -27,6 +32,8 @@ export function validateAppearance(value: unknown): Appearance {
   if (v.version !== 1) return { ...defaultAppearance };
   return {
     version: 1,
+    cardDesign: CARD_DESIGNS.includes(v.cardDesign as CardDesign) ? v.cardDesign as CardDesign : 'classic',
+    suitColors: v.suitColors === 'four' ? 'four' : 'two',
     mode: ['system', 'light', 'dark'].includes(String(v.mode)) ? v.mode as Appearance['mode'] : 'system',
     contrast: v.contrast === true,
     palette: typeof v.palette === 'string' && Object.hasOwn(PALETTES, v.palette) ? v.palette as Palette : 'emerald',
@@ -93,6 +100,7 @@ export function applyAppearance(value: Appearance) {
   element.dataset.tableFocus = String(value.tableFocus);
   element.dataset.reflow = value.textScale >= 150 ? 'true' : 'false';
   element.dataset.spacing = value.spacing;
+  element.dataset.tableReflow = String(value.textScale > 100 || value.cardScale > 100);
   element.style.fontSize = `${value.textScale}%`;
   element.style.colorScheme = element.dataset.theme;
 }

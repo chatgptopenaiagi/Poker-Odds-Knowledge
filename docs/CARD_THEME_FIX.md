@@ -1,0 +1,15 @@
+# Card design repair
+
+The previous appearance schema/drawer had card size but no deck model. Its preview bypassed the shared renderer. Graphical tens used the wire rank T. A renderer regression and a built-browser regression fail against the original behavior; original reports are retained locally.
+
+Four original CSS faces (Classic, Large Index, Minimal, High Contrast) and independent two/four suit colors now use the shared Card component, including appearance previews and a 52-card gallery. Visible tens are 10; parsers, numeric IDs, game reducer, equity and solver contracts are unchanged. Face-down cards carry no identity metadata. English/Romanian accessible names are provided; other languages explicitly disclose English card-design text fallback. This is not a claim of professionally reviewed translation coverage.
+
+Version-1 appearance records migrate additively with classic/two-color defaults. The existing origin and notebook names are unchanged. Backend sync accepts legacy records and retains new fields. Reset only changes display preferences. Enlarged text/cards put seats in normal grid flow; default table margins prevent seats from covering adjacent controls. Folded players are no longer labelled as out of chips.
+
+Fresh verification: 399 baseline unit tests passed. Targeted 38 tests passed, including the legacy-sync assertion. TypeScript passed. Four built Edge tests pass on the isolated loopback static preview: 52 identities × 4 designs × 2 suit modes, visible ranks/suits/geometry and distinct screenshot hashes; frozen complete notebook fingerprint across style/reload/reset; legacy/invalid preferences, cross-tab changes, quota-denied fallback; 1536/430 widths at 112/200% text and 140% cards; Romanian names, RTL card direction, Escape/focus return. First post-change run exposed small Large Index overflow (fixed) and an ambiguous test status locator (narrowed to the warning paragraph). Failures are retained, not counted as passes.
+
+This is preview verification, not acceptance at the owner's normal installation. All existing Apache deployments and player notebooks remain untouched. Preview: http://127.0.0.1:4322/holdem-strategy-validation/ . Open Appearance, choose Minimal or Large Index, close, inspect cards, refresh. The preview has a distinct origin from localhost port 80.
+
+Evidence stays in ignored artifacts/card-repair. No external image, font, database, account, SQL Server or WSL dependency was added. Browser-local storage is not adversarial secrecy. No APK/EXE was built.
+
+Final development gate for this slice: 415 unit tests passed in 25 files (zero skipped/failed), including real configured JVM solve/cancel and native engine tests; TypeScript passed; 14 built Edge browser tests passed on the isolated preview. One authenticated online/JVM browser case is deliberately outside this static-preview run, not a pass. The six-seat enlargement fixture is deterministic and settled; RTL community-card order is explicitly left-to-right. Existing Apache installations are still untouched.

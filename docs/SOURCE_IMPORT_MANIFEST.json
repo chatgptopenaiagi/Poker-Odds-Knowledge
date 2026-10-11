@@ -1,0 +1,442 @@
+{
+  "schema": 1,
+  "publicationBase": "e45856b543f21fea776985ec565cb9efc6ee2ae6",
+  "purpose": "Restore missing required source and reviewed card repair without importing development history",
+  "files": [
+    {
+      "file": "Open-Holdem-Lab.ps1",
+      "sourceCommit": "1149c31",
+      "sha256": "ff3d229736c2dfdb91b4f9ae9f25c140138b83f2fb85f785e96b2fd4d450c3fb"
+    },
+    {
+      "file": "Open-POK-Engine-Preview.ps1",
+      "sourceCommit": "1149c31",
+      "sha256": "2a2e3c19481da3def5c131bf7f8c787a9a10ee9bbb4a0cfa97306b7b0fc3a22b"
+    },
+    {
+      "file": "Open-POK-Strategy.ps1",
+      "sourceCommit": "1149c31",
+      "sha256": "c7c1c195d5a97173badf3ad8884e3740d4dce44dd2825e30f58ed3e9dcdd7526"
+    },
+    {
+      "file": "Open-Poker-Odds-Knowledge.ps1",
+      "sourceCommit": "1149c31",
+      "sha256": "8428464d18cf7c9419a9461f653c79170a46b41f7a0453cbf5453ba206fbd132"
+    },
+    {
+      "file": "fixtures/strategy/scenarios.json",
+      "sourceCommit": "1149c31",
+      "sha256": "ce29d3682dd86f6ade310f91f68171ff1172ab4312d022debb4bb09747944b4c"
+    },
+    {
+      "file": "index.html",
+      "sourceCommit": "1149c31",
+      "sha256": "fea5bbf9e21f7cac74ee970184d5caeb70cf664839c331cd9b007ee4b2ef75f0"
+    },
+    {
+      "file": "native/.gitignore",
+      "sourceCommit": "1149c31",
+      "sha256": "aaccb1a00557171b31d00a99a6a2666856e417964732490685cdcba9f02de491"
+    },
+    {
+      "file": "native/adapter.cpp",
+      "sourceCommit": "1149c31",
+      "sha256": "865c4df3ac54f568f64526cb2b4d1c6f9c7356501035bac958bb8e9fe0e407e7"
+    },
+    {
+      "file": "native/example.json",
+      "sourceCommit": "1149c31",
+      "sha256": "f92b7b1770e04ed7aa3f8da99565c4e5834254d705e2df79d7a3e14258062804"
+    },
+    {
+      "file": "native/vendor/nlohmann/LICENSE.MIT",
+      "sourceCommit": "1149c31",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+    },
+    {
+      "file": "native/vendor/nlohmann/PROVENANCE.md",
+      "sourceCommit": "1149c31",
+      "sha256": "0641783f0abdadcbcfaa98c2a1016e1b0c7da0a733ee80eb5f19f278a7679623"
+    },
+    {
+      "file": "native/vendor/nlohmann/json.hpp",
+      "sourceCommit": "1149c31",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "file": "native/verify-corpus.ts",
+      "sourceCommit": "1149c31",
+      "sha256": "d27847849e9da6faafbb6ae750f61c66ed8f309c2844618d0fe77e745005841d"
+    },
+    {
+      "file": "playwright.appearance.config.ts",
+      "sourceCommit": "1149c31",
+      "sha256": "d45c36b97b39d028636f55624d868dad875436751de2f86ed1cdc77ef72ed2ea"
+    },
+    {
+      "file": "playwright.config.ts",
+      "sourceCommit": "1149c31",
+      "sha256": "09df089dea0f88b173fbbd777320414c6bcc3630d33ce6408b965480f7e61d83"
+    },
+    {
+      "file": "playwright.engines.config.ts",
+      "sourceCommit": "1149c31",
+      "sha256": "e441e5eb25cd33536f32113b244e736caf3462c09a8da8650fa677d41bd4d43a"
+    },
+    {
+      "file": "playwright.online.config.ts",
+      "sourceCommit": "1149c31",
+      "sha256": "07007f0b159d38eb50ec8dc3cc56297752a8dc1ec87336cf872bf8724f669c55"
+    },
+    {
+      "file": "playwright.strategy.config.ts",
+      "sourceCommit": "1149c31",
+      "sha256": "923958c1baf81676849b3a4fefde04948044ec338952819bcdf20e64138ab062"
+    },
+    {
+      "file": "requirements-solver-oracle.txt",
+      "sourceCommit": "1149c31",
+      "sha256": "9fbc1d766c30261344387903ec384eb2fe0f05ae669ed2fd3d504541d67c43a3"
+    },
+    {
+      "file": "requirements-verification.txt",
+      "sourceCommit": "1149c31",
+      "sha256": "63c0d7b5ecd8287db79e92b44b63c87755a2bf9f3b54fe2478b43c172970034b"
+    },
+    {
+      "file": "vendor/ompeval/LICENSE-libdivide.txt",
+      "sourceCommit": "1149c31",
+      "sha256": "20066561d2b53edd70f239c0e7848dbcb54351122212352b271e87584f49d5be"
+    },
+    {
+      "file": "vendor/ompeval/LICENSE.txt",
+      "sourceCommit": "1149c31",
+      "sha256": "2d6b7246d22f18a6f3b96ff55a587e88b06d7f1ef32f246e99e03acfb2ccd742"
+    },
+    {
+      "file": "vendor/ompeval/PROVENANCE.md",
+      "sourceCommit": "1149c31",
+      "sha256": "130d76555396c8ff6a406e84b5a12d350b58765d164e0a569129b2e2a917887d"
+    },
+    {
+      "file": "vendor/ompeval/README.md",
+      "sourceCommit": "1149c31",
+      "sha256": "8904b010687f4063a091a9519946ed1576a0304d679b0baf49c5d56c1b43cf8b"
+    },
+    {
+      "file": "vendor/ompeval/SOURCE_SHA256SUMS.txt",
+      "sourceCommit": "1149c31",
+      "sha256": "b40f1b6ce9eb49e3dd00588296a77c6db94aaaa7b0d147b3a03fb23241ebbd3a"
+    },
+    {
+      "file": "vendor/ompeval/libdivide/LICENSE.txt",
+      "sourceCommit": "1149c31",
+      "sha256": "20066561d2b53edd70f239c0e7848dbcb54351122212352b271e87584f49d5be"
+    },
+    {
+      "file": "vendor/ompeval/libdivide/libdivide.h",
+      "sourceCommit": "1149c31",
+      "sha256": "b0b2cd1ae2dbacff1ee2e32092c58bafd9d9fd7452323a05c5ef6db1f5cc8b49"
+    },
+    {
+      "file": "vendor/ompeval/omp/CardRange.cpp",
+      "sourceCommit": "1149c31",
+      "sha256": "d2e188f2caff59f2cfa7cf9c1f112711a62a9e0bfb6d08743fe69552d4176c3a"
+    },
+    {
+      "file": "vendor/ompeval/omp/CardRange.h",
+      "sourceCommit": "1149c31",
+      "sha256": "ef26f8a37083635f8633ae28cc0a8912d178cfbb48c05d7cf0993f864cdfa0b4"
+    },
+    {
+      "file": "vendor/ompeval/omp/CombinedRange.cpp",
+      "sourceCommit": "1149c31",
+      "sha256": "507a3780c4e23ab491d116cb739efaeac3bd0e142c0b8d8da45d8a1eb40ffa96"
+    },
+    {
+      "file": "vendor/ompeval/omp/CombinedRange.h",
+      "sourceCommit": "1149c31",
+      "sha256": "ee7a3fda2bb7e4436b9404c79136d1723ab3b19dbfe722a3313bb4d69d303307"
+    },
+    {
+      "file": "vendor/ompeval/omp/Constants.h",
+      "sourceCommit": "1149c31",
+      "sha256": "8878a395cfabbc44a14b2aa23a0169c4107a88597af86410066729a62bd73a6b"
+    },
+    {
+      "file": "vendor/ompeval/omp/EquityCalculator.cpp",
+      "sourceCommit": "1149c31",
+      "sha256": "2fd20e45af41458af62d83e674b3060d18a781625817c6658ebb36e242eb501d"
+    },
+    {
+      "file": "vendor/ompeval/omp/EquityCalculator.h",
+      "sourceCommit": "1149c31",
+      "sha256": "7f2c4756b625be7b38ccb76a5362d11db9bdf624a24c0dea642d0298253f9599"
+    },
+    {
+      "file": "vendor/ompeval/omp/Hand.h",
+      "sourceCommit": "1149c31",
+      "sha256": "fffb11277b12b290b0ae07927628dd8871b8ad278c98af90f5f6ca8afabc4bff"
+    },
+    {
+      "file": "vendor/ompeval/omp/HandEvaluator.cpp",
+      "sourceCommit": "1149c31",
+      "sha256": "4d3b5ffab725ec4faa751efbf5f0406e3d51d53c49613598a0ee30a6c8a48ecf"
+    },
+    {
+      "file": "vendor/ompeval/omp/HandEvaluator.h",
+      "sourceCommit": "1149c31",
+      "sha256": "07e45cfdc52d74d6d0bdcc891b0a1c7427d2d629fe194061c3fae59dd6fe0295"
+    },
+    {
+      "file": "vendor/ompeval/omp/OffsetTable.hxx",
+      "sourceCommit": "1149c31",
+      "sha256": "dfcd4a77257c0f70d9131b2c0e5c3f4629ad54caf20236106fe97af10f717b7c"
+    },
+    {
+      "file": "vendor/ompeval/omp/Random.h",
+      "sourceCommit": "1149c31",
+      "sha256": "40ace718d8163f493bef92380592f11f8bb18eb09e47b9fc680c44b310a044ad"
+    },
+    {
+      "file": "vendor/ompeval/omp/Util.h",
+      "sourceCommit": "1149c31",
+      "sha256": "caa107ff2519ddb270090c0de697b9ba9b394cfb953f6fd775b801f3ae9f4e8e"
+    },
+    {
+      "file": "vendor/ph-evaluator/LICENSE",
+      "sourceCommit": "1149c31",
+      "sha256": "77085581b9984ea45e643c4945a04754d0f0410816e7b49808fa9f47d7e2af7e"
+    },
+    {
+      "file": "vendor/ph-evaluator/README.md",
+      "sourceCommit": "1149c31",
+      "sha256": "c1997b8cf93bf4c60c31f277283317e4b08282043cac334c5937eb36ac4ae268"
+    },
+    {
+      "file": "vendor/ph-evaluator/UPSTREAM.json",
+      "sourceCommit": "1149c31",
+      "sha256": "935e893a0ade4354491552a63b9722d1dc6b203cab511b51ad4135fe6e8b6185"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/CMakeLists.txt",
+      "sourceCommit": "1149c31",
+      "sha256": "8ba75c0a91872b8390e3961d7b74e70621d6ee23ea5959dfac206cc426959e50"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/include/phevaluator/card.h",
+      "sourceCommit": "1149c31",
+      "sha256": "59e3803da3376c49e1bd4bd3d89c04f4a875c9aa5a1f33e29d087dc4fcc332a3"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/include/phevaluator/phevaluator.h",
+      "sourceCommit": "1149c31",
+      "sha256": "0dd46696a0f2655ff6c8c394e3b665bae47b67f92b9de9ef611c18c24dabed8c"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/include/phevaluator/rank.h",
+      "sourceCommit": "1149c31",
+      "sha256": "4ebc10dbc259ccbda00b03a891db7c7c11c494890ccf4cc3fc1b835c18d71730"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/dptables.c",
+      "sourceCommit": "1149c31",
+      "sha256": "f0c8353de11c816db54322e027d72ddd5fe17d5cd9b2e28fb9a11c551bbf70fc"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/evaluator5.c",
+      "sourceCommit": "1149c31",
+      "sha256": "70aa60901513465a5af2f58864e4b527181351291d2ca6263e419f442aa2b0b4"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/evaluator6.c",
+      "sourceCommit": "1149c31",
+      "sha256": "785c21c4b19fe8b2620c08e5654f0bdb55476f84fe0b982d9d019df0c850c313"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/evaluator7.c",
+      "sourceCommit": "1149c31",
+      "sha256": "23a421d977ad7fdb9befb69c010f121060925fd312977b6771e5d3cc85c272f2"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/hash.c",
+      "sourceCommit": "1149c31",
+      "sha256": "04b667fb72c61135bae458dfa4ee51445202194a58dc142aae0a6950e0bd13ee"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/hash.h",
+      "sourceCommit": "1149c31",
+      "sha256": "52da81255b39e2be91f1beba6b4f766296684b1c30c27cd0de6a5c171618ced2"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/hashtable.c",
+      "sourceCommit": "1149c31",
+      "sha256": "e1dbf4ca6867a661aad8aaee4d160ddeeccf2515c868989c2f06e11f9f43f157"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/hashtable5.c",
+      "sourceCommit": "1149c31",
+      "sha256": "573ba6c11af89ba05bc456f356ea189458a3f17b3e7a2188060bba7c6defb535"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/hashtable6.c",
+      "sourceCommit": "1149c31",
+      "sha256": "ad6ccd5a1a1058c334f0ec5f83df5b5f98d67ca452b80ede80ed109adde34388"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/hashtable7.c",
+      "sourceCommit": "1149c31",
+      "sha256": "077015a421cf979213a045e412ece0b22f6ccad7dd080ad17cb5c8b097c60cd7"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/rank.c",
+      "sourceCommit": "1149c31",
+      "sha256": "9c3a630c0e50521d4a212f2ebaff26f9ae42a8194da20bc2048a8b21d70a7e39"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/tables.h",
+      "sourceCommit": "1149c31",
+      "sha256": "14d9ad93a4b45b0eac8a96f182b73e3f506f96fb1ba822c40d74c0c4611659ac"
+    },
+    {
+      "file": "vendor/ph-evaluator/cpp/src/tables_bitwise.c",
+      "sourceCommit": "1149c31",
+      "sha256": "0cf17422b9dca612ae4a3e5b0b2c3ef60309e3b5503b8d796d7de637bc5c73b8"
+    },
+    {
+      "file": "vendor/ph-evaluator/pok-port/runtime.c",
+      "sourceCommit": "1149c31",
+      "sha256": "0965bc36af69cf5d472e552cb127bf74ed87ceb517d4af3edfff6180a2898f8d"
+    },
+    {
+      "file": "vendor/ph-evaluator/pok-port/stdio.h",
+      "sourceCommit": "1149c31",
+      "sha256": "b1482b7207e60de65895ba1770a99fccc15a0a1f1f62848030ff2e6f43b7229a"
+    },
+    {
+      "file": "playwright.cards.config.ts",
+      "sourceCommit": "78d9bc0",
+      "sha256": "47bb978a396bf20a9670553a9f157fd7d3256d6bd788d7c89bad49b47c97fa8c"
+    },
+    {
+      "file": "server/app.ts",
+      "sourceCommit": "78d9bc0",
+      "sha256": "9b5f264d9dde8e2c63202a0e921591edafb229371414f3ca21e7481147532a80"
+    },
+    {
+      "file": "src/AppearanceDrawer.tsx",
+      "sourceCommit": "78d9bc0",
+      "sha256": "ae9dcc0021cb1476ab9244f7c8a11883408b10a42b603b6c2f8074539946f5b0"
+    },
+    {
+      "file": "src/appearance.ts",
+      "sourceCommit": "78d9bc0",
+      "sha256": "47666d6a531b7d20b3abab018dc9f9714ada519ec527d18283b391834fd0c1ed"
+    },
+    {
+      "file": "src/components.tsx",
+      "sourceCommit": "78d9bc0",
+      "sha256": "e255ff77ab63ca1b61c2d5082150786eaa46efc21dc547bd4cc113a3b19b646d"
+    },
+    {
+      "file": "tests/appearance.test.ts",
+      "sourceCommit": "78d9bc0",
+      "sha256": "bd3d7f985e6ebd563d411536783882d8499bd21337d2a2248298a02b913ead56"
+    },
+    {
+      "file": "tests/card-design.test.ts",
+      "sourceCommit": "78d9bc0",
+      "sha256": "5c987459ffc284e53c47ded25ffbed97b1867a6a8f41097c28c8fd8cbcbcde3c"
+    },
+    {
+      "file": "tests/platform.test.ts",
+      "sourceCommit": "78d9bc0",
+      "sha256": "5e083d33e612bca3c3a4c11f12791cf11cce0f34b89f9a7c13860c3acd2fa33f"
+    },
+    {
+      "file": "docs/CARD_THEME_FIX.md",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "f88bc70441379240a8318f0454f24ab3cf8b3d2e48f3d02c8150aec2e90467dc"
+    },
+    {
+      "file": "docs/POK_CAE_COMPATIBILITY.md",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "c025c7f508dc7d165c2bfa89f5d4de912a8df4c924258e36dac06e7372590947"
+    },
+    {
+      "file": "docs/POK_MATH_VISUALIZER.md",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "9695f1148a80e6a04d53dce3cf12290dfd22eaecc2ac2c15251b14291f2a42cf"
+    },
+    {
+      "file": "playwright.repair.config.ts",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "26cb07cd865fad173a073ab0643fab375dccdec864dafb06485c55e4e8123298"
+    },
+    {
+      "file": "scripts/record-build.mjs",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "6ed560d8bdb6ebb1583550332d9c3188d2193aa845574bd2547a8c5756b768e6"
+    },
+    {
+      "file": "src/MathVisualizer.tsx",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "59b1e3ef5e09a8e29eb5244691c9404cdb46ddd329ecfdb3a32ee64951f7dd86"
+    },
+    {
+      "file": "src/OddsLab.tsx",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "591411df9898245ac149036162815ab5ecd75632c64743cee98f127ef4a865ed"
+    },
+    {
+      "file": "src/Play.tsx",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "6da9c4209e18c65e79157317e9165b0d273eeedc2d2bf3d7acfb043c3bf841af"
+    },
+    {
+      "file": "src/math-study.ts",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "ca4f1a73a350f973b1131c4324bacafbed83e39c9be91fed2956927d466e7100"
+    },
+    {
+      "file": "src/style.css",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "abb5bd6451017de4240b49f7c6b11a1e47fc6cde695e4e740328278ec58338bf"
+    },
+    {
+      "file": "tests/card-design-browser.spec.ts",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "fcccecf4fd8792cf178ec20914e9870cee0d4e1967ba5e8cdbde5c8247a967cc"
+    },
+    {
+      "file": "tests/math-study.test.ts",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "8569ac59d4a97810e88c96de2b6518b7d3eee0a384d51d15d2bad6ebeb8829f4"
+    },
+    {
+      "file": "tests/math-visualizer-browser.spec.ts",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "04ea911c4ae9771d7ac61a6f5d87e3c7f2892499be0808b4285e6ad0d73f8aac"
+    },
+    {
+      "file": "tests/strategy-browser.spec.ts",
+      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
+      "sha256": "d8968e74c1b3a51c064cdf2d95a3d1a9c6202a359bcd9557e5f7a61768516fd3"
+    },
+    {
+      "file": "tests/installation-inventory.spec.ts",
+      "sourceCommit": "78d9bc0",
+      "sha256": "07197476ed927e6c15aee278e3444e42deabefdc3a8519f5c626d5bb0ead2ffa"
+    },
+    {
+      "file": "tests/ui-control-inventory.spec.ts",
+      "sourceCommit": "5ee0365",
+      "sha256": "28deff7baa0d1ad89d483f79339c402fb6081e778ad060eadf7b61eda1da3488"
+    },
+    {
+      "file": "playwright.controls.config.ts",
+      "sourceCommit": "5ee0365",
+      "sha256": "5ad9473cb70f5a919fa4b6d0d2d7f7c2186004b788244046f327453c2b623b27"
+    }
+  ]
+}

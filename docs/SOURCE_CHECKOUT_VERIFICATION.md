@@ -1,0 +1,11 @@
+# Source checkout verification
+
+This branch is based on the separate public source history at e45856b, not a merge of development history. Necessary missing source was restored from known committed development trees: HTML entrypoint, five historical browser configurations, strategy fixtures, native wrapper and MIT JSON dependency, OMPEval/PH source and license/provenance files, verification requirements, and launch scripts. Existing public src/server/scripts/tests/schemas/public/engine-adapters files remain. Source/import mapping is in SOURCE_IMPORT_MANIFEST.json.
+
+Fresh independent dependency installation: npm ci --ignore-scripts --no-audit --no-fund. Web, strategy and server builds and TypeScript pass. This worktree did not borrow node_modules, binary artifacts, databases or private runtime configuration from another checkout. The initial 18 prerequisite-dependent failures were retained. OMPEval was then compiled from included source with the already installed pinned Windows compiler route; its targeted 151 tests passed. A final full run has 415 tests: 413 pass, 2 fail, zero skips. Both remaining tests require the configured real Java solver (solve and cancellation), which is deliberately absent here.
+
+Java source/dependencies have a pinned retrieval/build route in engine-adapters/java/build.ps1 and dependencies.json. Configure a trusted installed JDK and guard with Configure-Runtime.ps1, then build with the documented pinned download option. No runtime configuration, JAR, secret or historical binary was copied to turn these failures green. Those two tests pass separately in the existing configured development environment; that is not clean-checkout Java acceptance.
+
+No owner browser profile or original notebook was touched. No remote push occurred. Windows system services, security, ports exposed to the LAN, global PATH and installed toolchain versions were not changed. Only a loopback static preview process was added by the development task.
+
+Legacy machine-specific acceptance reports excluded from the original export remain excluded. Their historical claims are not fresh evidence. Updated README points to included public guides; private per-machine results live outside the published tree. Native/compiler/runtime prerequisites remain explicit, not silently skipped.

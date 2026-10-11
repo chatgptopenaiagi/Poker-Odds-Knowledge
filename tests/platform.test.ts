@@ -96,8 +96,14 @@ describe('real SQLite platform and maintained authentication',()=>{
  it('validates shared appearance and rejects unfinished/invalid study records',async()=>{
   const a=await member();expect((await request('/api/sync','PUT',{revision:0,consent:true,payload:{appearance:defaultAppearance}},a)).status).toBe(200);
   expect((await (await request('/api/sync','GET',undefined,a)).json()).payload.appearance.textScale).toBe(100);
-  expect((await request('/api/sync','PUT',{revision:1,consent:true,payload:{hands:[{result:null}] }},a)).status).toBe(400);
-  expect((await request('/api/sync','PUT',{revision:1,consent:true,payload:{appearance:{...defaultAppearance,textScale:9999}}},a)).status).toBe(400);
+  const {cardDesign,suitColors,...legacy}=defaultAppearance;
+  expect((await request('/api/sync','PUT',{revision:1,consent:true,payload:{appearance:legacy}},a)).status).toBe(200);
+  expect((await (await request('/api/sync','GET',undefined,a)).json()).payload.appearance.cardDesign).toBe('classic');
+  expect((await request('/api/sync','PUT',{revision:2,consent:true,payload:{appearance:{...defaultAppearance,cardDesign:'minimal',suitColors:'four'}}},a)).status).toBe(200);
+  expect((await (await request('/api/sync','GET',undefined,a)).json()).payload.appearance).toMatchObject({cardDesign:'minimal',suitColors:'four'});
+
+  expect((await request('/api/sync','PUT',{revision:3,consent:true,payload:{hands:[{result:null}] }},a)).status).toBe(400);
+  expect((await request('/api/sync','PUT',{revision:3,consent:true,payload:{appearance:{...defaultAppearance,textScale:9999}}},a)).status).toBe(400);
  });
  it('deletes verified members through a single-purpose link and protects the last owner',async()=>{
   const a=await member();await request('/api/content','POST',{kind:'feedback',title:'Private feedback',body:'Private body.'},a);
