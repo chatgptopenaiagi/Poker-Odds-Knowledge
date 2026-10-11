@@ -437,6 +437,16 @@
       "file": "playwright.controls.config.ts",
       "sourceCommit": "5ee0365",
       "sha256": "5ad9473cb70f5a919fa4b6d0d2d7f7c2186004b788244046f327453c2b623b27"
+    },
+    {
+      "file": "ENGINE_USER_GUIDE.md",
+      "sourceCommit": "1149c31",
+      "sha256": "581ce409aa63dec4f846e6efe1ff35cc6eb361faa61b8ca5297b91eff5b97cd5"
+    },
+    {
+      "file": "QUICKSTART.md",
+      "sourceCommit": "1149c31",
+      "sha256": "956ee79b0604b80cabbc3d2a10f9557ed919f1199d86c3f947873349c59f8afb"
     }
   ]
 }
