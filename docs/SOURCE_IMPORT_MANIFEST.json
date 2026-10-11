@@ -365,13 +365,13 @@
     },
     {
       "file": "docs/POK_MATH_VISUALIZER.md",
-      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
-      "sha256": "9695f1148a80e6a04d53dce3cf12290dfd22eaecc2ac2c15251b14291f2a42cf"
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "2b064594258c6cbed36b98713f2c8e2a8711e5de288e6236958ed6a0565e1403"
     },
     {
       "file": "playwright.repair.config.ts",
-      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
-      "sha256": "26cb07cd865fad173a073ab0643fab375dccdec864dafb06485c55e4e8123298"
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "5819ca3d71ad3e2acc5f7fc7c27595a2bc67f1cb7b6565823c64e11281437ea4"
     },
     {
       "file": "scripts/record-build.mjs",
@@ -380,13 +380,13 @@
     },
     {
       "file": "src/MathVisualizer.tsx",
-      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
-      "sha256": "59b1e3ef5e09a8e29eb5244691c9404cdb46ddd329ecfdb3a32ee64951f7dd86"
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "bc85d8e1615a6debe54fb08d288417f74a740e78a89fffafb11cea60d3ea906d"
     },
     {
       "file": "src/OddsLab.tsx",
-      "sourceCommit": "5ee0365df8d58d8e5051aa3f2107b188bb01ffb8",
-      "sha256": "591411df9898245ac149036162815ab5ecd75632c64743cee98f127ef4a865ed"
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "53af3c4c4005787c1cea7e1c9688d52b7671b23acfbfe13183509dca55e59643"
     },
     {
       "file": "src/Play.tsx",
@@ -430,8 +430,8 @@
     },
     {
       "file": "tests/ui-control-inventory.spec.ts",
-      "sourceCommit": "5ee0365",
-      "sha256": "28deff7baa0d1ad89d483f79339c402fb6081e778ad060eadf7b61eda1da3488"
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "e718becfdce24e2c33c756de81c1b9fa1de98ea720e4d6a706e9c8d9ad83be2d"
     },
     {
       "file": "playwright.controls.config.ts",
@@ -447,6 +447,41 @@
       "file": "QUICKSTART.md",
       "sourceCommit": "1149c31",
       "sha256": "956ee79b0604b80cabbc3d2a10f9557ed919f1199d86c3f947873349c59f8afb"
+    },
+    {
+      "file": "docs/POK_DECISION_INTELLIGENCE.md",
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "5b5d809650be1b4dbdb47c6eda17f35ace67d4c07d4d3a0fa182a47df0a93419"
+    },
+    {
+      "file": "src/DecisionExplanation.tsx",
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "03a4419ebb87bd5a7c66e2dea214ec96be1470f036e8b8b6afa78a60811b3ef4"
+    },
+    {
+      "file": "src/decision-study.ts",
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "ed95cc5c26ce793d92bc33a1d94958fef103e07af14f4a688d998cf204c6bc7d"
+    },
+    {
+      "file": "tests/decision-browser.spec.ts",
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "b7d77246096aacebf7f2d6e6e40e35b65a0f7aaaadc92b9044a6d25aefaf9140"
+    },
+    {
+      "file": "tests/decision-study.test.ts",
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "6d23e7d29115aaf3d58eefe918a8fdac41fcd300b376f9ff959ae03bd362b702"
+    },
+    {
+      "file": "tests/play-controls-browser.spec.ts",
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "f9433cdaad43dc67db39a0bc966bf179180cd743278749dc5377c3a180685291"
+    },
+    {
+      "file": "tests/strategy-regression.spec.ts",
+      "sourceCommit": "0c61a7b62a653725f073470a3e67c9dbfdaae350",
+      "sha256": "8b6da4d7427efb35b42d4744d97155d2b8cb499acf370129f0ab43f6b423ebe5"
     }
   ]
 }

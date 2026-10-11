@@ -11,3 +11,5 @@ Unit checks cover terminal EV/threshold/zero/invalid values and independently co
 New descriptions and card labels are English/Romanian, with disclosed English fallback elsewhere. No account, AI, SQL Server, WSL or internet dependency. Existing progress/exercises are preserved. No new adaptive-learning/progress dashboard was started in this slice.
 
 Final combined built-preview gate: 14/14 browser tests pass, with 415/415 unit tests and TypeScript passing in the configured development environment. The first visualizer browser run exposed system-locale number formatting; the count now uses the selected locale. An existing same-origin assertion was corrected to compare the actual preview origin rather than a hardcoded hostname. No assertion was removed.
+
+Continuation: the existing worker-backed visualization now includes a structured terminal-call margin and sampling-interval explanation. See POK_DECISION_INTELLIGENCE.md for scope, refusal states and provenance. Historical counts above describe the prior milestone; current continuation results are recorded separately.

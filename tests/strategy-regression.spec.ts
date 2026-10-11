@@ -34,8 +34,8 @@ test.afterEach(async ({ page }, info) => {
   const evidence = networkByPage.get(page)!;
   measurements.push({ test: info.title, status: info.status, ...evidence });
   await writeFile('artifacts/solver/regression-measurements.json', JSON.stringify({ schemaVersion: 1,
-    observedAt: new Date().toISOString(), origin: 'http://localhost/holdem-strategy-preview/',
-    context: 'Fresh isolated Edge contexts; nonloopback HTTP requests blocked before initial navigation; local Apache remains reachable; no service worker', measurements }, null, 2));
+    observedAt: new Date().toISOString(), origin: new URL(page.url()).origin,
+    context: 'Fresh isolated Edge contexts; nonloopback HTTP requests blocked before initial navigation; the configured local static origin remains reachable; no service worker', measurements }, null, 2));
   expect(evidence.external, 'The public bundle must not request nonloopback resources').toEqual([]);
   expect(evidence.errors, 'No uncaught browser exceptions').toEqual([]);
   expect(evidence.consoleErrors, 'No browser console errors').toEqual([]);
@@ -277,6 +277,6 @@ test('offline real worker exact and estimated equity, editable ranges, cancellat
     workerMs, samplesPerSecond: Math.round(50_000_000 / workerMs), roundTripMs: end - start,
     animationFrameCount: frameGaps.length, maximumAnimationFrameGapMs: Math.round(Math.max(...frameGaps)),
     observedProgressUpdates: performanceData.progressValues.length,
-    exactReferenceDisplayed: exactText, method: 'real module worker in installed Edge from Apache built bundle',
+    exactReferenceDisplayed: exactText, method: 'real module worker in installed Edge from the configured built bundle',
     cancellation: 'real worker terminated, then fresh exact990 result; stale outcome absent' });
 });

@@ -1,16 +1,16 @@
 import {useMemo,useState} from 'react';
-import type {EquityResult} from './equity';
+import type {AnalysisResult} from './engines/contract';
+import {DecisionExplanation} from './DecisionExplanation';
 import type {Locale} from './i18n';
 import {Card,Cards,pct,words} from './components';
-import {nextCardCategories,terminalCall} from './math-study';
+import {nextCardCategories} from './math-study';
 
 /** A view of completed existing worker results; owns no evaluator, RNG or live-game state. */
-export function MathVisualizer({result,locale,onNextCard}:{result:EquityResult;locale:Locale;onNextCard:(card:number)=>void}){
+export function MathVisualizer({analysis,locale,onNextCard}:{analysis:AnalysisResult;locale:Locale;onNextCard:(card:number)=>void}){
+ const result=analysis.result!;
  const [pot,setPot]=useState('80'),[call,setCall]=useState('20');
  const text=(en:string,romanian:string)=>words(locale,en,romanian);
  const candidates=useMemo(()=>nextCardCategories(result.inputs),[result]);
- let model:ReturnType<typeof terminalCall>|null=null;
- try{if(pot.trim()&&call.trim())model=terminalCall(Number(pot),Number(call),result.equity)}catch{}
  const outcomeRows=[{label:text('Sole win','Câștig unic'),value:result.win},{label:text('Tied best','Egalitate'),value:result.tie},{label:text('Loss','Pierdere'),value:result.loss}];
  return <section className="math-visualizer" aria-label={text('Math visualizer','Vizualizator matematic')} data-testid="math-visualizer">
   <h3>{text('See the mathematics','Vezi matematica')}</h3>
@@ -22,7 +22,7 @@ export function MathVisualizer({result,locale,onNextCard}:{result:EquityResult;l
   {result.confidence!==null&&<p>{text('95% fixed-sample interval for expected share','Interval de 95% cu număr fix de probe pentru partea așteptată')}: {pct(result.interval[0])}–{pct(result.interval[1])}. {text('Sampling uncertainty does not validate the assumed opponent ranges.','Incertitudinea eșantionării nu validează intervalele presupuse.')}</p>}
   <fieldset><legend>{text('Decision explainer · editable study assumptions','Explicația deciziei · ipoteze de studiu editabile')}</legend><p>{text('These chip amounts are a separate study example, not your active table. Pot includes the wager you face.','Aceste sume sunt un exemplu de studiu separat, nu masa activă. Potul include pariul adversarului.')}</p>
    <div className="form-grid"><label>{text('Pot before your call','Pot înainte de plată')}<input aria-label={text('Study pot','Pot de studiu')} type="number" min={0} max={1000000000} step={1} value={pot} onChange={e=>setPot(e.target.value)}/></label><label>{text('Amount to call','Suma de plătit')}<input aria-label={text('Study call','Plată de studiu')} type="number" min={0} max={1000000000} step={1} value={call} onChange={e=>setCall(e.target.value)}/></label></div>
-   {model?<div data-testid="decision-explanation"><p>{model.threshold===null?text('No pot and no call: the threshold is undefined.','Fără pot și fără plată: pragul nu este definit.'):<>{text('Break-even expected share','Partea așteptată la pragul de rentabilitate')}: <b>{pct(model.threshold)}</b> = {call} / ({pot} + {call}).</>}</p><p>{text('Terminal call EV relative to folding','EV al plății terminale față de fold')}: <b>{model.incrementalEV.toFixed(2)}</b> {text('chips','jetoane')}.</p></div>:<p role="status">{text('Enter nonnegative whole chip amounts.','Introdu sume întregi nenegative.')}</p>}
+   <DecisionExplanation analysis={analysis} pot={pot} call={call} locale={locale}/>
    <p>{text('Assumptions: one fully eligible pot, no rake, no future betting, stated ranges. Opponent behavior and future bets are uncertain. Equity alone does not identify the best legal action; this study does not recommend a move.','Ipoteze: un singur pot eligibil integral, fără rake sau pariuri viitoare, intervalele declarate. Comportamentul adversarilor și pariurile viitoare sunt incerte. Echitatea singură nu identifică cea mai bună acțiune legală; studiul nu recomandă o mutare.')}</p>
   </fieldset>
   <details><summary>{text('Explore next-card category improvements','Explorează îmbunătățirile categoriei la cartea următoare')}</summary>
