@@ -1,0 +1,938 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026-09-30-v1",
+  "source": "Original authored scenarios; no commercial range or strategy database",
+  "scenarios": [
+    {
+      "id": "dry-broadway-bluff-catcher",
+      "version": 1,
+      "title": "A bluff catcher below the broadway draws",
+      "learningAim": "Study how value hands and missed low-card bluffs mix against one-pair calls.",
+      "hero": {
+        "actor": 0,
+        "cards": [
+          "Kc",
+          "Tc"
+        ]
+      },
+      "wording": "Original POK educational study. Assumption-dependent weighted ranges, not solver-approved preflop ranges.",
+      "request": {
+        "schema": 1,
+        "op": "solve",
+        "board": [
+          "2c",
+          "7d",
+          "9h",
+          "Js",
+          "Qc"
+        ],
+        "dead": [],
+        "ranges": [
+          [
+            {
+              "cards": [
+                "Kc",
+                "Tc"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Kd",
+                "Td"
+              ],
+              "weight": 0.85
+            },
+            {
+              "cards": [
+                "Kh",
+                "Th"
+              ],
+              "weight": 0.65
+            },
+            {
+              "cards": [
+                "Ks",
+                "Ts"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "Ad",
+                "5d"
+              ],
+              "weight": 0.45
+            },
+            {
+              "cards": [
+                "Ah",
+                "6h"
+              ],
+              "weight": 0.3
+            },
+            {
+              "cards": [
+                "Ac",
+                "4c"
+              ],
+              "weight": 0.55
+            },
+            {
+              "cards": [
+                "As",
+                "8s"
+              ],
+              "weight": 0.4
+            }
+          ],
+          [
+            {
+              "cards": [
+                "Qd",
+                "Ad"
+              ],
+              "weight": 0.8
+            },
+            {
+              "cards": [
+                "Qh",
+                "Ah"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Qs",
+                "As"
+              ],
+              "weight": 0.7
+            },
+            {
+              "cards": [
+                "Qd",
+                "Kd"
+              ],
+              "weight": 0.6
+            },
+            {
+              "cards": [
+                "Qh",
+                "Kh"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "Qs",
+                "Ks"
+              ],
+              "weight": 0.5
+            },
+            {
+              "cards": [
+                "Jd",
+                "9d"
+              ],
+              "weight": 0.35
+            },
+            {
+              "cards": [
+                "Jh",
+                "9s"
+              ],
+              "weight": 0.45
+            }
+          ]
+        ],
+        "pot": 100,
+        "effectiveStack": 200,
+        "betSizes": [
+          50
+        ],
+        "raiseTo": [],
+        "maxRaises": 0,
+        "iterations": 10000,
+        "deadlineMs": 15000
+      }
+    },
+    {
+      "id": "monotone-heart-blockers",
+      "version": 1,
+      "title": "Three hearts and the missing high heart",
+      "learningAim": "Compare flush value, high-heart blockers and bluff catchers under explicit weighted ranges.",
+      "hero": {
+        "actor": 0,
+        "cards": [
+          "Kh",
+          "Qh"
+        ]
+      },
+      "wording": "Original POK educational study. Assumption-dependent weighted ranges, not solver-approved preflop ranges.",
+      "request": {
+        "schema": 1,
+        "op": "solve",
+        "board": [
+          "Ah",
+          "Jh",
+          "7h",
+          "3c",
+          "2d"
+        ],
+        "dead": [],
+        "ranges": [
+          [
+            {
+              "cards": [
+                "Kh",
+                "Qh"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Kh",
+                "Th"
+              ],
+              "weight": 0.85
+            },
+            {
+              "cards": [
+                "Qh",
+                "Th"
+              ],
+              "weight": 0.65
+            },
+            {
+              "cards": [
+                "Th",
+                "9h"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "As",
+                "Kd"
+              ],
+              "weight": 0.45
+            },
+            {
+              "cards": [
+                "Ac",
+                "Qs"
+              ],
+              "weight": 0.3
+            },
+            {
+              "cards": [
+                "Ad",
+                "Tc"
+              ],
+              "weight": 0.55
+            },
+            {
+              "cards": [
+                "Ks",
+                "Qd"
+              ],
+              "weight": 0.4
+            }
+          ],
+          [
+            {
+              "cards": [
+                "9h",
+                "8h"
+              ],
+              "weight": 0.8
+            },
+            {
+              "cards": [
+                "8h",
+                "6h"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "6h",
+                "5h"
+              ],
+              "weight": 0.7
+            },
+            {
+              "cards": [
+                "7c",
+                "7d"
+              ],
+              "weight": 0.6
+            },
+            {
+              "cards": [
+                "As",
+                "Ad"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "Ac",
+                "Jd"
+              ],
+              "weight": 0.5
+            },
+            {
+              "cards": [
+                "Jc",
+                "Js"
+              ],
+              "weight": 0.35
+            },
+            {
+              "cards": [
+                "Kh",
+                "8c"
+              ],
+              "weight": 0.45
+            }
+          ]
+        ],
+        "pot": 100,
+        "effectiveStack": 200,
+        "betSizes": [
+          50
+        ],
+        "raiseTo": [
+          150
+        ],
+        "maxRaises": 1,
+        "iterations": 10000,
+        "deadlineMs": 15000
+      }
+    },
+    {
+      "id": "paired-queen-boats",
+      "version": 1,
+      "title": "Paired queens and full-house pressure",
+      "learningAim": "Distinguish trips from full houses while accounting for shared-card exclusions.",
+      "hero": {
+        "actor": 0,
+        "cards": [
+          "Qc",
+          "8d"
+        ]
+      },
+      "wording": "Original POK educational study. Assumption-dependent weighted ranges, not solver-approved preflop ranges.",
+      "request": {
+        "schema": 1,
+        "op": "solve",
+        "board": [
+          "Qs",
+          "Qd",
+          "8c",
+          "4h",
+          "2s"
+        ],
+        "dead": [],
+        "ranges": [
+          [
+            {
+              "cards": [
+                "Qc",
+                "8d"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Qh",
+                "8h"
+              ],
+              "weight": 0.85
+            },
+            {
+              "cards": [
+                "8s",
+                "8d"
+              ],
+              "weight": 0.65
+            },
+            {
+              "cards": [
+                "4c",
+                "4d"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "As",
+                "Kd"
+              ],
+              "weight": 0.45
+            },
+            {
+              "cards": [
+                "Ah",
+                "Jd"
+              ],
+              "weight": 0.3
+            },
+            {
+              "cards": [
+                "Kc",
+                "Tc"
+              ],
+              "weight": 0.55
+            },
+            {
+              "cards": [
+                "9d",
+                "7d"
+              ],
+              "weight": 0.4
+            }
+          ],
+          [
+            {
+              "cards": [
+                "Qh",
+                "Ac"
+              ],
+              "weight": 0.8
+            },
+            {
+              "cards": [
+                "Qc",
+                "Ah"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Qh",
+                "Kh"
+              ],
+              "weight": 0.7
+            },
+            {
+              "cards": [
+                "Qc",
+                "Kc"
+              ],
+              "weight": 0.6
+            },
+            {
+              "cards": [
+                "8h",
+                "8d"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "As",
+                "Ad"
+              ],
+              "weight": 0.5
+            },
+            {
+              "cards": [
+                "Kd",
+                "Kh"
+              ],
+              "weight": 0.35
+            },
+            {
+              "cards": [
+                "Jc",
+                "Jd"
+              ],
+              "weight": 0.45
+            }
+          ]
+        ],
+        "pot": 100,
+        "effectiveStack": 200,
+        "betSizes": [
+          40,
+          80
+        ],
+        "raiseTo": [
+          160
+        ],
+        "maxRaises": 1,
+        "iterations": 10000,
+        "deadlineMs": 15000
+      }
+    },
+    {
+      "id": "straight-board-shared-value",
+      "version": 1,
+      "title": "A straight on the board is not always the nuts",
+      "learningAim": "Study board-playing ties, higher straights and blocker-conditioned assignments.",
+      "hero": {
+        "actor": 0,
+        "cards": [
+          "Js",
+          "Qd"
+        ]
+      },
+      "wording": "Original POK educational study. Assumption-dependent weighted ranges, not solver-approved preflop ranges.",
+      "request": {
+        "schema": 1,
+        "op": "solve",
+        "board": [
+          "6c",
+          "7d",
+          "8h",
+          "9s",
+          "Tc"
+        ],
+        "dead": [],
+        "ranges": [
+          [
+            {
+              "cards": [
+                "Js",
+                "Qd"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Jh",
+                "Qh"
+              ],
+              "weight": 0.85
+            },
+            {
+              "cards": [
+                "Jc",
+                "2c"
+              ],
+              "weight": 0.65
+            },
+            {
+              "cards": [
+                "Jd",
+                "3d"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "As",
+                "Ad"
+              ],
+              "weight": 0.45
+            },
+            {
+              "cards": [
+                "Kc",
+                "Kd"
+              ],
+              "weight": 0.3
+            },
+            {
+              "cards": [
+                "5c",
+                "4c"
+              ],
+              "weight": 0.55
+            },
+            {
+              "cards": [
+                "Ts",
+                "Th"
+              ],
+              "weight": 0.4
+            }
+          ],
+          [
+            {
+              "cards": [
+                "Qc",
+                "Jh"
+              ],
+              "weight": 0.8
+            },
+            {
+              "cards": [
+                "Qd",
+                "Js"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Jc",
+                "4d"
+              ],
+              "weight": 0.7
+            },
+            {
+              "cards": [
+                "Jh",
+                "5h"
+              ],
+              "weight": 0.6
+            },
+            {
+              "cards": [
+                "Ah",
+                "Ac"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "Ks",
+                "Kh"
+              ],
+              "weight": 0.5
+            },
+            {
+              "cards": [
+                "2h",
+                "3h"
+              ],
+              "weight": 0.35
+            },
+            {
+              "cards": [
+                "8c",
+                "8d"
+              ],
+              "weight": 0.45
+            }
+          ]
+        ],
+        "pot": 100,
+        "effectiveStack": 200,
+        "betSizes": [
+          50
+        ],
+        "raiseTo": [
+          150
+        ],
+        "maxRaises": 1,
+        "iterations": 10000,
+        "deadlineMs": 15000
+      }
+    },
+    {
+      "id": "ace-high-explicit-dead",
+      "version": 1,
+      "title": "An explicit study dead card and missed draws",
+      "learningAim": "Check an explicit study dead card against already-compatible ranges, then compare thin value with missed draws.",
+      "hero": {
+        "actor": 0,
+        "cards": [
+          "Ad",
+          "Ah"
+        ]
+      },
+      "wording": "Original POK educational study. Assumption-dependent weighted ranges, not solver-approved preflop ranges.",
+      "request": {
+        "schema": 1,
+        "op": "solve",
+        "board": [
+          "Ac",
+          "9d",
+          "6h",
+          "3s",
+          "2c"
+        ],
+        "dead": [
+          "8s"
+        ],
+        "ranges": [
+          [
+            {
+              "cards": [
+                "Ad",
+                "Ah"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "9c",
+                "9h"
+              ],
+              "weight": 0.85
+            },
+            {
+              "cards": [
+                "6c",
+                "6d"
+              ],
+              "weight": 0.65
+            },
+            {
+              "cards": [
+                "5d",
+                "4d"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "Kh",
+                "Qh"
+              ],
+              "weight": 0.45
+            },
+            {
+              "cards": [
+                "Kd",
+                "Jd"
+              ],
+              "weight": 0.3
+            },
+            {
+              "cards": [
+                "Th",
+                "8h"
+              ],
+              "weight": 0.55
+            },
+            {
+              "cards": [
+                "7d",
+                "5d"
+              ],
+              "weight": 0.4
+            }
+          ],
+          [
+            {
+              "cards": [
+                "As",
+                "Qc"
+              ],
+              "weight": 0.8
+            },
+            {
+              "cards": [
+                "Ad",
+                "Qd"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "As",
+                "Jc"
+              ],
+              "weight": 0.7
+            },
+            {
+              "cards": [
+                "Ah",
+                "Jh"
+              ],
+              "weight": 0.6
+            },
+            {
+              "cards": [
+                "Kc",
+                "Ks"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "Qc",
+                "Qd"
+              ],
+              "weight": 0.5
+            },
+            {
+              "cards": [
+                "9s",
+                "Ts"
+              ],
+              "weight": 0.35
+            },
+            {
+              "cards": [
+                "5h",
+                "4h"
+              ],
+              "weight": 0.45
+            }
+          ]
+        ],
+        "pot": 100,
+        "effectiveStack": 200,
+        "betSizes": [
+          30,
+          70
+        ],
+        "raiseTo": [],
+        "maxRaises": 0,
+        "iterations": 10000,
+        "deadlineMs": 15000
+      }
+    },
+    {
+      "id": "paired-five-raise-abstraction",
+      "version": 1,
+      "title": "Two bet sizes and a full raise",
+      "learningAim": "Compare a restricted raise tree with check, bet, call and fold responses.",
+      "hero": {
+        "actor": 0,
+        "cards": [
+          "As",
+          "Ad"
+        ]
+      },
+      "wording": "Original POK educational study. Assumption-dependent weighted ranges, not solver-approved preflop ranges.",
+      "request": {
+        "schema": 1,
+        "op": "solve",
+        "board": [
+          "Ks",
+          "8d",
+          "5c",
+          "5h",
+          "2s"
+        ],
+        "dead": [],
+        "ranges": [
+          [
+            {
+              "cards": [
+                "As",
+                "Ad"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Kh",
+                "Kd"
+              ],
+              "weight": 0.85
+            },
+            {
+              "cards": [
+                "8c",
+                "8h"
+              ],
+              "weight": 0.65
+            },
+            {
+              "cards": [
+                "5d",
+                "4d"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "Ac",
+                "Qd"
+              ],
+              "weight": 0.45
+            },
+            {
+              "cards": [
+                "Qh",
+                "Jh"
+              ],
+              "weight": 0.3
+            },
+            {
+              "cards": [
+                "Tc",
+                "9c"
+              ],
+              "weight": 0.55
+            },
+            {
+              "cards": [
+                "7h",
+                "6h"
+              ],
+              "weight": 0.4
+            }
+          ],
+          [
+            {
+              "cards": [
+                "Kc",
+                "Qc"
+              ],
+              "weight": 0.8
+            },
+            {
+              "cards": [
+                "Kh",
+                "Jh"
+              ],
+              "weight": 1
+            },
+            {
+              "cards": [
+                "Kd",
+                "Td"
+              ],
+              "weight": 0.7
+            },
+            {
+              "cards": [
+                "Ah",
+                "Kc"
+              ],
+              "weight": 0.6
+            },
+            {
+              "cards": [
+                "8s",
+                "8h"
+              ],
+              "weight": 0.9
+            },
+            {
+              "cards": [
+                "5s",
+                "3s"
+              ],
+              "weight": 0.5
+            },
+            {
+              "cards": [
+                "Ad",
+                "Ac"
+              ],
+              "weight": 0.35
+            },
+            {
+              "cards": [
+                "7c",
+                "6c"
+              ],
+              "weight": 0.45
+            }
+          ]
+        ],
+        "pot": 100,
+        "effectiveStack": 200,
+        "betSizes": [
+          25,
+          75
+        ],
+        "raiseTo": [
+          175
+        ],
+        "maxRaises": 1,
+        "iterations": 10000,
+        "deadlineMs": 15000
+      }
+    }
+  ]
+}

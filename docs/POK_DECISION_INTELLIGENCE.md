@@ -1,0 +1,17 @@
+# Deterministic terminal-call study
+
+This extends the existing Odds Lab Math Visualizer, not the gameplay reducer or equity engine. `DecisionExplanation` consumes `explainStudyCall`'s structured context, assumptions, limitations, derived calculations and provenance. The input is the completed, validated `AnalysisResult` already returned by the existing EngineClient worker. Scenario edits invalidate the result through the existing request-generation guard. No new evaluator, sampler, network service or AI is introduced.
+
+The editable amounts describe a separate hypothetical study: P is the pot before calling, including the wager faced; C is the additional call. For one fully eligible pot, no refunds, no rake and no future betting, the break-even expected share is C/(P+C). The difference from the worker's fractional expected share is reported in percentage points. Incremental terminal EV relative to folding is share*(P+C)-C. Tied equity, not sole-win probability, supplies the share. A zero pot and zero call have no defined threshold; invalid amounts are refused.
+
+For Monte Carlo, the existing fixed-N 95% share interval is transformed by the same affine formulas into margin and terminal-EV intervals. If the interval touches or crosses the price, the display says the estimate does not resolve the side of the threshold. This interval concerns sampling under the entered ranges, not the correctness of those ranges, future bets, or profit guarantees. Exact enumeration uses the computed share without a sampling interval.
+
+The simplified model refuses explicit pot eligibility, per-pot results and uncalled returns. It cannot price active side pots by substituting global showdown equity. No check, bet or raise EV is inferred. This is neither an optimal-action recommendation nor full strategic EV/GTO. Gameplay/replay integration must first supply a validated decision-time context and preserve hidden information.
+
+Provenance includes input SHA-256, engine, adapter, execution location, method and completed observations. English and Romanian use the existing localization helper and locale-aware margin/EV formatting; other locales retain the disclosed English fallback. The feature works with local static HTTP and external network blocked, without accounts, SQL Server, WSL or AI.
+
+Verification includes independently derived tied-board arithmetic (50% share with 0% sole wins), above/below/equal/undefined thresholds, interval crossings and boundary contact, rejection of incomplete/unsupported inputs, immutability and provenance. A real-worker built Edge test exercises exact and Monte Carlo outputs, input invalidation, live study edits, Romanian decimal formatting and narrow layout. Mock interval fixtures test only the deterministic transform; they are not new sampling-quality evidence.
+
+The supported terminal heads-up replay connection is now implemented in Decision Explorer v1; see POK_DECISION_EXPLORER.md. It derives the legal call and eligible pot from the original decision-time state and refuses unsupported contexts without creating another replay or solver system.
+
+Numerical classification uses a 1e-12 probability tolerance solely for arithmetic roundoff. It is not a statistical confidence tolerance. Small nonzero margins outside that tolerance retain their sign and display as less than 0.1 percentage point instead of misleading signed zero. New boundary checks cover tiny margins, separated intervals, invalid/missing probabilities and zero prices.

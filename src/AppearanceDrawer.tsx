@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import {Card} from './components';
+import {CARD_DESIGNS} from './appearance';
 import { appearanceEnglish, appearanceRomanian, PALETTES, TEXT_SCALES, useAppearance, type Appearance, type AppearanceKey, type Palette } from './appearance';
 
 export function AppearanceDrawer({ locale, onClose, translate }: {
@@ -34,7 +36,14 @@ export function AppearanceDrawer({ locale, onClose, translate }: {
     <header className="drawer-header"><h2 id="appearance-title">{text('title')}</h2><button type="button" aria-label={text('close')} onClick={onClose}>×</button></header>
     <p>{text('preview')}</p>
     {!translate && !['en', 'ro'].includes(locale) && <p className="notice">{text('fallback')}</p>}
-    <section className="appearance-preview" aria-label={text('sample')}><span className="preview-card" dir="ltr">A♠</span><div><strong>{text('sample')}</strong><p>{text('sampleHelp')}</p></div></section>
+    <section className="appearance-preview" aria-label={text('sample')}><Card card={51} locale={locale}/><div><strong>{text('sample')}</strong><p>{text('sampleHelp')}</p></div></section>
+    <fieldset className="deck-chooser"><legend>{locale==='ro'?'Modelul cărților':'Card design'}</legend>
+      {!['en','ro'].includes(locale)&&<p className="muted">Card design descriptions are currently available in English and Romanian.</p>}
+      <div className="deck-options">{CARD_DESIGNS.map((design,index)=><button key={design} type="button" aria-pressed={a.cardDesign===design} onClick={()=>setAppearance({cardDesign:design})} aria-label={(locale==='ro'?['Clasic','Indici mari','Minimal','Contrast ridicat']:['Classic','Large Index','Minimal','High Contrast'])[index]}><span aria-hidden="true"><Card card={35} small design={design} colors={a.suitColors} locale={locale}/></span><span>{(locale==='ro'?['Clasic','Indici mari','Minimal','Contrast ridicat']:['Classic','Large Index','Minimal','High Contrast'])[index]}</span></button>)}</div>
+      <label>{locale==='ro'?'Culorile simbolurilor':'Suit colors'}<select aria-label={locale==='ro'?'Culorile simbolurilor':'Suit colors'} value={a.suitColors} onChange={e=>setAppearance({suitColors:e.target.value==='four'?'four':'two'})}><option value="two">{locale==='ro'?'Două culori':'Two colors'}</option><option value="four">{locale==='ro'?'Patru culori':'Four colors'}</option></select></label>
+      <div className="cards" dir="ltr" aria-label={locale==='ro'?'Previzualizarea simbolurilor':'Suit preview'}>{[32,33,34,35].map(card=><Card key={card} card={card} small locale={locale}/>)}</div>
+      <details><summary>{locale==='ro'?'Previzualizează toate cele 52 de cărți':'Preview all 52 cards'}</summary><div className="deck-gallery">{Array.from({length:52},(_,card)=><Card key={card} card={card} small locale={locale}/>)}<Card locale={locale}/><Card empty locale={locale}/></div></details>
+    </fieldset>
     <fieldset><legend>{text('mode')}</legend><div className="appearance-options">{(['system', 'light', 'dark'] as const).map(mode => <button key={mode} type="button" aria-pressed={a.mode === mode} onClick={() => setAppearance({ mode })}>{text(mode)}</button>)}</div></fieldset>
     <fieldset><legend>{text('palette')}</legend><div className="palette-grid">{Object.keys(PALETTES).map(palette => <button key={palette} type="button" aria-pressed={a.palette === palette} onClick={() => setAppearance({ palette: palette as Palette })}><span className="palette-swatch" style={{ background: PALETTES[palette as Palette].light }} aria-hidden="true"/>{text(palette as Palette)}{a.palette === palette && <span aria-hidden="true"> ✓</span>}</button>)}</div></fieldset>
     <fieldset><legend>{text('contrast')}</legend><div className="appearance-options"><button type="button" aria-pressed={!a.contrast} onClick={() => setAppearance({ contrast: false })}>{text('standard')}</button><button type="button" aria-pressed={a.contrast && a.mode === 'light'} onClick={() => setAppearance({ contrast: true, mode: 'light' })}>{text('highLight')}</button><button type="button" aria-pressed={a.contrast && a.mode === 'dark'} onClick={() => setAppearance({ contrast: true, mode: 'dark' })}>{text('highDark')}</button></div></fieldset>

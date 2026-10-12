@@ -1,0 +1,3 @@
+import {defineConfig} from '@playwright/test';
+import cards from './playwright.cards.config';
+export default defineConfig({...cards,testMatch:['card-design-browser.spec.ts','math-visualizer-browser.spec.ts','decision-browser.spec.ts','explorer-browser.spec.ts','range-browser.spec.ts','response-browser.spec.ts','response-comparison-browser.spec.ts','play-controls-browser.spec.ts','strategy-regression.spec.ts','strategy-equity.spec.ts','strategy-browser.spec.ts'],grepInvert:/authenticated built staging/,timeout:120000,reporter:[['list'],['json',{outputFile:process.env.POK_REPORT??'artifacts/card-repair/consolidated-browser.json'}]],outputDir:'artifacts/card-repair/consolidated-browser'});

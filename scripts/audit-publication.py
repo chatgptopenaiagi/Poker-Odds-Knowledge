@@ -8,7 +8,7 @@ root=Path(__file__).resolve().parents[1]
 rules={
  'credential':rb'(?i)(?:sk-(?:proj-)?[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{25,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)',
  'machine-path':rb'(?i)(?:[A-Z]:[\\/](?:Users|Codex-Projects|xampp|Python314|maxima)[^\r\n"<>]*)',
- 'private-evidence':rb'(?i)(?:9d7a2c8fb5ff4564ba2753a8ff7ae7db|DESKTOP-1TG2EVG|192\.168\.8\.8)',
+ 'private-evidence':rb'(?i)(?:DESKTOP-[A-Z0-9]{6,}|192\.168\.[0-9]{1,3}\.[0-9]{1,3})',
  'email':rb'[A-Za-z0-9_.+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}',
 }
 def scan(data):return [name for name,pattern in rules.items() if re.search(pattern,data)]
