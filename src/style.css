@@ -73,3 +73,7 @@ body{font-family:var(--font);font-size:1rem;line-height:1.6}button,input,select,
 
 /* Decision study stays in normal flow and inherits the existing appearance tokens. */
 .decision-explorer{margin-block:1rem;padding:1rem;border:1px solid var(--border);border-radius:var(--radius,12px);min-width:0;overflow-wrap:anywhere}.decision-explorer .math-hands{flex-wrap:wrap}.decision-explorer table{width:100%;margin-block:1rem;text-align:start}.decision-explorer summary{cursor:pointer;font-weight:700}.decision-explorer button[aria-pressed="true"]{outline:2px solid currentColor;outline-offset:2px}
+
+.response-model-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.response-model-grid fieldset,.response-model-grid article{min-width:0;margin:0;padding:.8rem;border:1px solid var(--line);border-radius:.5rem}.response-model-grid input{max-width:100%;box-sizing:border-box}@media(max-width:700px){.response-model-grid{grid-template-columns:1fr}}
+
+.replay-controls{flex-wrap:wrap}.replay-controls input[type=range]{flex:1 1 8rem;min-width:0;max-width:100%}

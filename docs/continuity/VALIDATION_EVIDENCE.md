@@ -21,3 +21,15 @@ Phase A fresh gate: 447/447 unit tests, 24/24 built Edge behavior tests, TypeScr
 phase-a-unit.json SHA-256: 3f804ea429c5978692c2ac2eb5f5ac5247a60f4e9ddd1394f33ade210b426119
 
 phase-a-browser.json SHA-256: 641a1d1aac694aefbe4cd87f8208d6a9e5fc8080f2d3ca053f3f4f0f5bd9a49e
+
+## V3 fresh validation
+
+456/456 unit tests in the development and source-repair checkouts; 26/26 built Edge behavior tests plus one inventory; TypeScript and web/strategy/server builds pass. Observed control/state rows: 751; 92 mapped to fresh evidence, 659 NOT_RUN. Counts are not globally unique controls. The authenticated live-backend browser case remains excluded.
+
+First failures retained locally: a positive subnormal call probability underflowed to all fold; corrected with explicit refusal. Enlarged Romanian replay counter overflow was reproduced and repaired with wrapping controls. No assertions were weakened.
+
+Representative final browser timings: two royal-board model worker runs 230.9 ms; identical-model reuse with one worker 170.9 ms; two narrow conditional ranges 32 ms. Single local observations, not universal guarantees or a statistical benchmark.
+
+v3 unit SHA-256: 321c6636eee1c637326a1484f3e3e86bf7b8b2bd584b43e91bb1a6858e0312b9
+
+v3 browser SHA-256: db5a3ab53bcc4512960adf427c8bafbe51d4844ee6e678907b3667da79280038

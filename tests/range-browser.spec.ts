@@ -12,7 +12,7 @@ test('range comparison uses real workers, exact blockers, matrix edits and isola
  await e.getByLabel('Comparison range B').fill('AsAh');await e.getByRole('button',{name:'Compare ranges',exact:true}).click();await expect(e.getByTestId('range-delta')).toHaveText('-50');
  await page.locator('.topbar-controls button').click();await page.getByRole('button',{name:'Minimal',exact:true}).click();await page.keyboard.press('Escape');await expect(e.locator('.card').first()).toHaveCSS('border-bottom-width','3px');await expect(e.getByTestId('range-delta')).toHaveText('-50');
  await page.getByLabel('Language',{exact:true}).selectOption('ro');await expect(e.getByTestId('range-comparison-result')).toContainText('Diferența de echitate');await page.setViewportSize({width:430,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
- const after=await notebook();for(const k of ['hand','hands','attempts','scenarios'])expect(after[k]).toEqual(before[k]);await page.screenshot({path:'artifacts/range-response-v2/range-ro.png',fullPage:true});await page.reload();await expect(page.getByTestId('range-comparison-result')).toHaveCount(0);expect(errors).toEqual([]);
+ const after=await notebook();for(const k of ['hand','hands','attempts','scenarios'])expect(after[k]).toEqual(before[k]);await page.screenshot({path:(process.env.POK_AUDIT_DIR??'artifacts/range-response-v2')+'/range-ro.png',fullPage:true});await page.reload();await expect(page.getByTestId('range-comparison-result')).toHaveCount(0);expect(errors).toEqual([]);
 });
 
 test('range comparison cancellation and mid-flight edits terminate obsolete work',async({page,context})=>{

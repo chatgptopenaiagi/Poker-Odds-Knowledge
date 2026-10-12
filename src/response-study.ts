@@ -27,10 +27,12 @@ export function conditionResponses(initial:string,filter:string,rate:number,know
  const base=expandRange(initial,known),rules=new Map(expandRange(filter).map(c=>[c.cards.join(','),c.weight]));
  const scale=Math.max(...base.map(c=>c.weight));let mass=0,callMass=0;
  const calling:WeightedCombo[]=[];
- for(const c of base){const w=c.weight/scale,q=(rules.get(c.cards.join(','))??0)*rate;mass+=w;const cw=w*q;
+ for(const c of base){const w=c.weight/scale,rule=rules.get(c.cards.join(','))??0,q=rule*rate;mass+=w;const cw=w*q;
+  if(rule>0&&rate>0&&q===0)throw Error('Conditional probabilities underflow; use larger probabilities.');
   if(w>0&&q>0&&cw===0)throw Error('Conditional weights underflow; use larger relative weights.');
   callMass+=cw;if(cw>0)calling.push({cards:[...c.cards],weight:cw});}
  const callProbability=callMass/mass;
+ if(callMass>0&&callProbability===0)throw Error('Conditional probabilities underflow; use larger probabilities.');
  return {foldProbability:1-callProbability,callProbability,calling,initialCount:base.length};
 }
 export type ResponseModel=ReturnType<typeof conditionResponses>;

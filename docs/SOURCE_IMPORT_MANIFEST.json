@@ -370,8 +370,8 @@
     },
     {
       "file": "playwright.repair.config.ts",
-      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
-      "sha256": "c7a45658b7c914111500d6f10b24d1277706e986d4bc996312b1a57af9093aba"
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "df338f676a136fd8aa54b73ec306fc1ebb600084ebadc387cae61d08c4ba9728"
     },
     {
       "file": "scripts/record-build.mjs",
@@ -400,8 +400,8 @@
     },
     {
       "file": "src/style.css",
-      "sourceCommit": "750276858d3606024fb7f63dc9d4118ebb0ae398",
-      "sha256": "de32586242b01bd5a60e9ba5d1015763147de1f35f57203954bacab2b59dc6a3"
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "ce7b893bff8f585d93ccdb15c7b8c4c31a25ff629d841d080aeb89f7182f791b"
     },
     {
       "file": "tests/card-design-browser.spec.ts",
@@ -430,8 +430,8 @@
     },
     {
       "file": "tests/ui-control-inventory.spec.ts",
-      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
-      "sha256": "dfa9a9bfc00f937b3ab921517c653c14a455033af4a2cde20def55a890424f49"
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "b07179636ef02a082e63b13b6905d41c058a4c2cb3ed8db41cbab39744e0e7ee"
     },
     {
       "file": "playwright.controls.config.ts",
@@ -535,8 +535,8 @@
     },
     {
       "file": "src/ResponseExplorer.tsx",
-      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
-      "sha256": "3c73fd2700027fc8d8e1fcb7486a0dc233399cc6f0dfe76e44be78b85bc74f9c"
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "a0ca603f92475434f633375a30d7a2974c5b104b9391635713dfe146ca5e2c6e"
     },
     {
       "file": "src/range-study.ts",
@@ -545,13 +545,13 @@
     },
     {
       "file": "src/response-study.ts",
-      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
-      "sha256": "c9c9e9f04be1e7ea24d705830feaf01d5328560cbc8f3d41336b5a05662e245c"
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "fb8b5bd315fccdbd536c12c0870ea60173e72e7f0f83c6470d6c3c2710aad32d"
     },
     {
       "file": "tests/range-browser.spec.ts",
-      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
-      "sha256": "e09c5d5d295da1f69ce86c80a80a2390c9da0dec199d799f53db61ad465bca1f"
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "800ce1257f8293d4ea443f7233fa4b78ad6b59eaf00265d08991f3d916a2168f"
     },
     {
       "file": "tests/range-study.test.ts",
@@ -560,13 +560,38 @@
     },
     {
       "file": "tests/response-browser.spec.ts",
-      "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
-      "sha256": "e521d271b5ba7042462803e55d7035339e67057a7b5f429fe7aa3ec62a7a88af"
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "2cbcefd58fe9e7c733b602edf3626d12a26d2fd87c4ab401deea1f5cb033f9c1"
     },
     {
       "file": "tests/response-study.test.ts",
       "sourceCommit": "23d65c4c065178cc8118b8026ddd15f58dd8fcd1",
       "sha256": "2335e8ad7bdeb8ec7d48cb7083bd1c17fd4eb839619a2b76430ba00ab18d952c"
+    },
+    {
+      "file": "docs/POK_DECISION_EXPLORER_V3.md",
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "2f4913b5d6fee7797cfd3e79885a22a0812a8e35d53056424d055ef4e1100a53"
+    },
+    {
+      "file": "src/ResponseComparison.tsx",
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "a0daea250b3660daad6fbba7c8fe4c34cfe890930ac2511785fb45a0119b250a"
+    },
+    {
+      "file": "src/response-comparison.ts",
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "8566b3795229199f8cc00fa1e543dbcd57611d29edd2ec2d9dac4758baac582e"
+    },
+    {
+      "file": "tests/response-comparison-browser.spec.ts",
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "6e452e422ffe4f113068852a9f43ea3035dd8abff2f3deca51570ecd8e6592eb"
+    },
+    {
+      "file": "tests/response-comparison.test.ts",
+      "sourceCommit": "b91c3c8253b87a1cfaf7ed6801dd465a9c4ab343",
+      "sha256": "795e7dc2d196ce1e4e58bac962e774bf4c6fe39e55c2f59ec3db218f5c8708ed"
     }
   ]
 }

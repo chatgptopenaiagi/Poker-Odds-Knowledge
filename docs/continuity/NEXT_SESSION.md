@@ -1,10 +1,13 @@
 # Resume entry point
 
-1. Read AGENTS.md and CURRENT_STATE.md. Run ./scripts/resume-development.ps1. Confirm root, branch, HEAD, dirty files and origin. Do not reset or clean.
-2. Verify origin is the canonical GitHub repository and the development branch is fetchable. Read GITHUB_STATE.md. Publication authorization is task-specific; never merge main or force-push.
-3. Inspect src/response-study.ts and src/ResponseExplorer.tsx plus tests/response-study.test.ts and tests/response-browser.spec.ts. Do not recreate v2.
-4. Next milestone after Phase A verification: compare two explicitly declared Fold/Call response models on one immutable river snapshot. Preserve conditional ranges, existing payoff equation and uncertainty. No Check EV, raises, side pots, rake or future betting.
-5. Use artifacts/range-response-v3 for new local evidence. Preserve v2 artifacts. Use isolated browser storage and the existing loopback preview only after verifying ownership.
+Read AGENTS.md and CURRENT_STATE.md. Run ./scripts/resume-development.ps1; verify root, branch, HEAD, status and origin before changes. Canonical repository is chatgptopenaiagi/Poker-Odds-Knowledge. This is the publication source lineage; never merge private development history.
 
-Bounded smoke: node node_modules/vitest/vitest.mjs run tests/range-study.test.ts tests/response-study.test.ts
-Full commands and native/JVM prerequisites: VALIDATION_EVIDENCE.md and ../SOURCE_CHECKOUT_VERIFICATION.md.
+Completed: card designs, Math Visualizer, v1 Fold/Call study, v2 ranges/blockers/response model, v3 two-model immutable river comparison. Do not recreate them. Inspect src/response-comparison.ts, src/ResponseComparison.tsx and tests/response-comparison.test.ts. V3 reuses v2 responseValue and existing workers; source provenance lives in SOURCE_IMPORT_MANIFEST.json.
+
+Bounded smoke: node node_modules/vitest/vitest.mjs run tests/range-study.test.ts tests/response-study.test.ts tests/response-comparison.test.ts
+
+Full commands/prerequisites: VALIDATION_EVIDENCE.md and ../SOURCE_CHECKOUT_VERIFICATION.md. Set POK_TEST_URL to an owned isolated strategy preview and POK_AUDIT_DIR/POK_REPORT to a new evidence directory before browser gates. Preserve artifacts/range-response-v2 and range-response-v3; do not overwrite old evidence. Missing native/JVM prerequisites are BLOCKED, not successful skips. No production credentials are required for offline recovery.
+
+Next coherent milestone: broaden the behavioral contracts for existing study/replay controls and improve unsupported-context explanations. Do not add raises, Check EV, multistreet continuation or solver claims without a separately validated model and current user scope. Model A/B sensitivity remains assumption-dependent.
+
+Never reset unknown files, alter owner notebooks/deployments, change services/CAE, force-push, merge main or release. New publication requires current authorization and staged-content review. GitHub state and independent recovery procedure are documented alongside this file.

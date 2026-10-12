@@ -1,3 +1,4 @@
+import {ResponseComparison} from './ResponseComparison';
 import {useEffect,useRef,useState} from 'react';
 import type {HandState} from './game';
 import {Cards,words} from './components';
@@ -42,5 +43,6 @@ export function ResponseExplorer({hand,locale}:{hand:HandState;locale:Locale}){
    {result.value.interval&&<p data-testid="response-uncertainty">{w('95% sampling interval for modeled EV','Interval de eșantionare 95% pentru EV modelat')}: {result.value.interval.map(n).join(' – ')}. {result.value.interval[0]<=0&&result.value.interval[1]>=0?w('Overlaps zero: statistically uncertain.','Include zero: incertitudine statistică.'):w('Conditional on fixed response assumptions.','Condiționat de ipoteze fixe de răspuns.')}</p>}
    <p>{w('EV = f × P + (1−f) × [E_call × (P+2B) − B]. Values are relative to this decision; earlier contributions are sunk. Assumptions: equal covered bet/call amounts, one eligible pot, no rake, fees, refunds, raises or future betting. Sampling intervals do not measure uncertainty about the assumed behavior. Positive EV is neither guaranteed profit nor proof of an optimal action.','EV = f × P + (1−f) × [E_call × (P+2B) − B]. Valorile sunt relative la această decizie; contribuțiile anterioare sunt deja angajate. Ipoteze: pariu și call egale acoperite, un pot eligibil, fără rake, taxe, restituiri, raise sau pariuri viitoare. Intervalele nu măsoară incertitudinea comportamentului presupus. EV pozitiv nu garantează profit sau acțiunea optimă.')}</p>
   </section>}
+ <ResponseComparison hand={hand} bet={bet} initialRange={initial} locale={locale}/>
  </details>;
 }
